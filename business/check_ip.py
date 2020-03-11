@@ -1,7 +1,10 @@
-
-import pytest
+# encoding: utf-8
 import allure
+import pytest
 import os
+
+
+
 
 def check_ip(str):
 
@@ -10,12 +13,12 @@ def check_ip(str):
     if len(l)==4:
         flag = True
         for i in l:
-            print(i)
+            # print(i)
             if i.isdigit():#判断字符串是否全部数字组成
                 # if i.startswith('0'):#判断字符串是否由0开始
                 #     return False
                 n=int(i)
-                print(n)
+                # print(n)
                 if n>=0 and n <256:
                     pass
                 else:
@@ -33,23 +36,18 @@ def check_ip(str):
         return False
 
 
-# check_ip('111.222.255.223')
-data=['001','123.1ab.234.sddf','123.123.111.222.111','111.123.256.111','000.222.255.223']
+@allure.feature('这是一个测试')
+def test_check_ip():
+    assert  check_ip('111.222.257.223')
 
-@allure.feature('测试')
-@pytest.mark.parametrize('param',data)
-def test_check_ip(param):
-    assert check_ip(param)
 
-#
-# if __name__ == '__main__':
-#     pytest.main()
 
 if __name__ == '__main__':
-    pytest.main(['--alluredir', '../report/xml'])
-    os.system('allure generate --clean ../report/xml/ -o ../report/html/')
+    # pytest.main()
 
-
+    # pytest.main(['-s', '-q', '--alluredir', './report/xml'])
+    pytest.main(['--alluredir', './report/xml'])
+    os.system('allure generate ./report/xml  -o ./report/html --clean')
 
 
 

@@ -1,0 +1,80 @@
+{
+  "uid" : "e967184fada730b5",
+  "name" : "test_check_ip[001]",
+  "fullName" : "test_check ip#test_check_ip",
+  "historyId" : "9a8db59a3ad8cbfe8187880906ce03b2",
+  "time" : {
+    "start" : 1583916568617,
+    "stop" : 1583916568617,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = check_ip('001')",
+  "statusTrace" : "param = '001'\n\n    @allure.feature('测试')\n    @pytest.mark.parametrize('param',data)\n    def test_check_ip(param):\n>       assert check_ip(param)\nE       AssertionError: assert False\nE        +  where False = check_ip('001')\n\ntest_check ip.py:42: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = check_ip('001')",
+    "statusTrace" : "param = '001'\n\n    @allure.feature('测试')\n    @pytest.mark.parametrize('param',data)\n    def test_check_ip(param):\n>       assert check_ip(param)\nE       AssertionError: assert False\nE        +  where False = check_ip('001')\n\ntest_check ip.py:42: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bd2a81c03bf89275",
+      "name" : "stdout",
+      "source" : "bd2a81c03bf89275.txt",
+      "type" : "text/plain",
+      "size" : 31
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_check ip"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "79628-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_check ip"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "'001'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e967184fada730b5.json",
+  "parameterValues" : [ "'001'" ]
+}

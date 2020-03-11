@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False\n +  where False = check_ip('001')",
+      "children" : [ {
+        "name" : "test_check_ip[001]",
+        "uid" : "e967184fada730b5",
+        "parentUid" : "e18feccdcc82ed8158b6c9a01e39ed6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1583916568617,
+          "stop" : 1583916568617,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'001'" ]
+      } ],
+      "uid" : "e18feccdcc82ed8158b6c9a01e39ed6d"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = check_ip('123.123.111.222.111')",
+      "children" : [ {
+        "name" : "test_check_ip[123.123.111.222.111]",
+        "uid" : "c79705f47dfb7c00",
+        "parentUid" : "0e9dba3d1dd2721b99b454d196acaa32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1583916568665,
+          "stop" : 1583916568666,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123.123.111.222.111'" ]
+      } ],
+      "uid" : "0e9dba3d1dd2721b99b454d196acaa32"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = check_ip('111.123.256.111')",
+      "children" : [ {
+        "name" : "test_check_ip[111.123.256.111]",
+        "uid" : "f12cea95faa18a4a",
+        "parentUid" : "dc6e05354a56a7131033981b986951df",
+        "status" : "failed",
+        "time" : {
+          "start" : 1583916568673,
+          "stop" : 1583916568674,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'111.123.256.111'" ]
+      } ],
+      "uid" : "dc6e05354a56a7131033981b986951df"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

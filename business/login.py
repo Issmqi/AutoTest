@@ -95,5 +95,7 @@ def get_encrypt_pwd(pwd):
 
 # get_encrypt_pwd('111qqq')
 # manager_login()
-# customer_01_login()
+if __name__ == '__main__':
+
+    customer_01_login()
 # customer_02_login()
