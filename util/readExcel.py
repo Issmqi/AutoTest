@@ -86,14 +86,6 @@ def main():
     # Path = values['Path']
     # Method = values['Method']
 
-    param=values['Params']
-    Params = eval(param)
-    check=values['CheckPoint']
-    CheckPoint = eval(check)
-    User = values['User']
-    Correlation = values['Correlation']
-    Active = values['Active']
-    # print(param)
 
 
 if __name__ == '__main__':

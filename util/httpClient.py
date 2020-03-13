@@ -60,22 +60,6 @@ class HttpClient:
                 body=params
 
 
-            # if self.param == "":
-            #     params = None
-            # else:
-            #     # params = eval(self.param)
-            #     params=self.param
-
-            #
-            #
-            # if self.headers == "{'Content-Type':'application/json','charset': 'UTF-8'}":
-            #     # h = None
-            #     h = eval(self.headers)
-            #     body=json.dumps(params)
-            #     # body=params
-            # else:
-            #     h = eval(self.headers)
-            #     body = params
 
             if self.user=='Manager':
                 re = self.manager_session.request(method=self.method, url=self.url, data=body, headers=h)

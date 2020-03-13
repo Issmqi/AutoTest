@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Wed Mar 11 16:49:28 CST 2020","Wed Mar 11 16:49:28 CST 2020","1","","test_check ip","","","","test_check_ip[111.123.256.111]",""
-"passed","Wed Mar 11 16:49:28 CST 2020","Wed Mar 11 16:49:28 CST 2020","0","","test_check ip","","","","test_check_ip[123.1ab.234.sddf]",""
-"failed","Wed Mar 11 16:49:28 CST 2020","Wed Mar 11 16:49:28 CST 2020","1","","test_check ip","","","","test_check_ip[123.123.111.222.111]",""
-"failed","Wed Mar 11 16:49:28 CST 2020","Wed Mar 11 16:49:28 CST 2020","0","","test_check ip","","","","test_check_ip[001]",""
-"passed","Wed Mar 11 16:49:28 CST 2020","Wed Mar 11 16:49:28 CST 2020","0","","test_check ip","","","","test_check_ip[000.222.255.223]",""
