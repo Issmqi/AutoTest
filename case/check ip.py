@@ -38,7 +38,7 @@ data=['001','123.1ab.234.sddf','123.123.111.222.111','111.123.256.111','000.222.
 
 @allure.feature('测试')
 @pytest.mark.parametrize('param',data)
-def check_ip(param):
+def test_check_ip(param):
     assert check_ip(param)
 
 #

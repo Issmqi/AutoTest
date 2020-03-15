@@ -74,8 +74,8 @@ class ReadExcel:
 def main():
     excel_data = ReadExcel()
     print(excel_data.get_rows())
-    print(excel_data.get_full_dict())
-    values=excel_data.get_row_dict(3)
+    # print(excel_data.get_full_dict())
+    values=excel_data.get_row_dict(2)
     print(values)
     a=None
 

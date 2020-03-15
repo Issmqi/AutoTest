@@ -3,7 +3,7 @@ from jsonpath import jsonpath
 from readConfig import ReadConfig
 from log import Log
 
-import login
+import initializeCookie
 import requests
 import time
 
@@ -19,9 +19,9 @@ class HttpClient:
 
         self.host=ReadConfig().get_config("HTTP","host")
 
-        self.manager_session = login.manager_login()
-        self.customer_01_session = login.customer_01_login()
-        self.customer_02_session = login.customer_02_login()
+        self.manager_session = initializeCookie.manager_login()
+        self.customer_01_session = initializeCookie.customer_01_login()
+        self.customer_02_session = initializeCookie.customer_02_login()
 
         self.sql=request_data['Sql']
         self.caseid = int(request_data['CaseId'])
