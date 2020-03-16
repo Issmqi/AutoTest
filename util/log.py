@@ -16,7 +16,7 @@ class Log:
         proDir = os.path.split(os.path.realpath(__file__))[0]
         # 连接目录和文件名
         logConfigPath = os.path.join(proDir, "log.ini")
-        # print("log.ini的路径是",logConfigPath)
+        print("log.ini的路径是",logConfigPath)
         logging.config.fileConfig(logConfigPath)
         # logging.config.fileConfig('D:/PythonWorkspace/requestTest/util/log.ini')
 
