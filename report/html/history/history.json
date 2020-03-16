@@ -1,0 +1,198 @@
+{
+  "71150134014c3e7317a29c4cc7502077" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1be603c1ec97685",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '2B订单', 'Active': 'Yes', 'CaseId': 1.0, 'CaseName': '新增销售订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584326393683,
+        "stop" : 1584326434031,
+        "duration" : 40348
+      }
+    } ]
+  },
+  "5f72b268debc2014e397983652a62c45" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "26d72687d1aabafa",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 2999 (char 2998)",
+      "time" : {
+        "start" : 1584328532051,
+        "stop" : 1584328532087,
+        "duration" : 36
+      }
+    } ]
+  },
+  "7f12575c6212ff7333a9c45a113001c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19a3bf18e4179e58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584328510369,
+        "stop" : 1584328522342,
+        "duration" : 11973
+      }
+    } ]
+  },
+  "89d28f3e596f66a6c52252aa8dde1745" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8af0607c8459e2a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584328490429,
+        "stop" : 1584328510364,
+        "duration" : 19935
+      }
+    } ]
+  },
+  "7af0d29b9393ec19afc736e163d46778" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d7ffb24f42fedb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584328522348,
+        "stop" : 1584328532038,
+        "duration" : 9690
+      }
+    } ]
+  },
+  "84327a9b074e4bd38d34d5148efbbde1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f05a7da1594c564",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '新增外部采购订单', 'Active': '', 'CaseId': 2.0, 'CaseName': '新增普通外部采购订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584326434100,
+        "stop" : 1584326459835,
+        "duration" : 25735
+      }
+    } ]
+  },
+  "1bc244bdd934145c18d671a7dab5bd5b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5bca132c25d55618",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584328532224,
+        "stop" : 1584328540463,
+        "duration" : 8239
+      }
+    } ]
+  },
+  "b425b625769258a38f9a44a90db00d7f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77e4a4a4d1fe46bc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '新增外部采购订单', 'Active': '', 'CaseId': 3.0, 'CaseName': '新增供应商直发外部采购订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584326459845,
+        "stop" : 1584326481933,
+        "duration" : 22088
+      }
+    } ]
+  },
+  "b8785a4624ccc4a3440bac37dd7a5eb7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "863aa1079cee544",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 2999 (char 2998)",
+      "time" : {
+        "start" : 1584326481945,
+        "stop" : 1584326481987,
+        "duration" : 42
+      }
+    } ]
+  },
+  "1d5dee8cafe642e68e747a6f6c14ece8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68c505fe41cbf9e5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '形态转换', 'Active': 'Yes', 'CaseId': 5.0, 'CaseName': '新增形态转换订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584326482030,
+        "stop" : 1584326500425,
+        "duration" : 18395
+      }
+    } ]
+  }
+}

@@ -35,19 +35,19 @@ def check_ip(str):
 
 # check_ip('111.222.255.223')
 data=['001','123.1ab.234.sddf','123.123.111.222.111','111.123.256.111','000.222.255.223']
-
-@allure.feature('测试')
-@pytest.mark.parametrize('param',data)
-def test_check_ip(param):
-    assert check_ip(param)
-
+#
+# @allure.feature('测试')
+# @pytest.mark.parametrize('param',data)
+# def test_check_ip(param):
+#     assert check_ip(param)
+#
 #
 # if __name__ == '__main__':
 #     pytest.main()
 
-if __name__ == '__main__':
-    pytest.main(['--alluredir', '../report/xml'])
-    os.system('allure generate --clean ../report/xml/ -o ../report/html/')
+# if __name__ == '__main__':
+#     pytest.main(['--alluredir', '../report/xml'])
+#     os.system('allure generate --clean ../report/xml/ -o ../report/html/')
 
 
 

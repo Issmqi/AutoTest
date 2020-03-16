@@ -1,0 +1,101 @@
+[ {
+  "uid" : "863aa1079cee544",
+  "name" : "test_api[case_data3]",
+  "time" : {
+    "start" : 1584326481945,
+    "stop" : 1584326481987,
+    "duration" : 42
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5bca132c25d55618",
+  "name" : "test_api[case_data4]",
+  "time" : {
+    "start" : 1584328532224,
+    "stop" : 1584328540463,
+    "duration" : 8239
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7ffb24f42fedb38",
+  "name" : "test_api[case_data2]",
+  "time" : {
+    "start" : 1584328522348,
+    "stop" : 1584328532038,
+    "duration" : 9690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77e4a4a4d1fe46bc",
+  "name" : "test_api[case_data2]",
+  "time" : {
+    "start" : 1584326459845,
+    "stop" : 1584326481933,
+    "duration" : 22088
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "19a3bf18e4179e58",
+  "name" : "test_api[case_data1]",
+  "time" : {
+    "start" : 1584328510369,
+    "stop" : 1584328522342,
+    "duration" : 11973
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26d72687d1aabafa",
+  "name" : "test_api[case_data3]",
+  "time" : {
+    "start" : 1584328532051,
+    "stop" : 1584328532087,
+    "duration" : 36
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "68c505fe41cbf9e5",
+  "name" : "test_api[case_data4]",
+  "time" : {
+    "start" : 1584326482030,
+    "stop" : 1584326500425,
+    "duration" : 18395
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1be603c1ec97685",
+  "name" : "test_api[case_data0]",
+  "time" : {
+    "start" : 1584326393683,
+    "stop" : 1584326434031,
+    "duration" : 40348
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f05a7da1594c564",
+  "name" : "test_api[case_data1]",
+  "time" : {
+    "start" : 1584326434100,
+    "stop" : 1584326459835,
+    "duration" : 25735
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8af0607c8459e2a",
+  "name" : "test_api[case_data0]",
+  "time" : {
+    "start" : 1584328490429,
+    "stop" : 1584328510364,
+    "duration" : 19935
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -10,7 +10,7 @@ case_dict=ReadExcel().get_full_dict()
 # print(case_dict)
 
 @allure.feature('渠道云接口自动化测试')
-class Test_Case:
+class TestCase:
 
     @pytest.mark.parametrize('case_data',case_dict, ids=[])
     @allure.story("接口测试")
@@ -26,6 +26,6 @@ class Test_Case:
 if __name__ == '__main__':
     # pytest.main()
     # pytest.main("test_api.py")
-    pytest.main(['--alluredir', '../report/xml'])
+    pytest.main(['-s','--alluredir', '../report/xml'])
     os.system('allure generate --clean ../report/xml/ -o ../report/html/')
 
