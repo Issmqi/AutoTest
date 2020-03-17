@@ -1,0 +1,1 @@
+"{\"timestamp\":1584438571196,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\u521b\u5efa\u8ba2\u5355\u5931\u8d25\uff1aCustomerJurisdictionClient#findByCustomerSaleorgCustomerJurisdiction(String,String) failed and no fallback available.\",\"path\":\"/b2b/order/create-order\"}"

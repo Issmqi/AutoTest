@@ -9,6 +9,7 @@ __mtime__:2018/2/1
 
 import xlrd
 import  os
+import setupMain
 from readConfig import ReadConfig
 
 ReadConfig = ReadConfig()
@@ -21,6 +22,7 @@ class ReadExcel:
         '''打开工作表'''
         # 从配置文件获取测试用例地址
         data_address=ReadConfig.get_config("DATABASE","data_address")
+        data_address=setupMain.PATH+'/data/testdata.xlsx'
         # data_address=os.path.abspath('../data/buyerdata1.xlsx')
         # 从excel提取测试用例信息
         workbook = xlrd.open_workbook(data_address)
@@ -75,7 +77,7 @@ def main():
     excel_data = ReadExcel()
     print(excel_data.get_rows())
     # print(excel_data.get_full_dict())
-    values=excel_data.get_row_dict(3)
+    values=excel_data.get_row_dict(2)
     print(values)
     a=None
 
