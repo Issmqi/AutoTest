@@ -1,0 +1,125 @@
+{
+  "uid" : "56dee67e8d7fb567",
+  "name" : "test_api[case_data6]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "29e372169dc7419f1e60e4fdf2fd5329",
+  "time" : {
+    "start" : 1584683040659,
+    "stop" : 1584683041842,
+    "duration" : 1183
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'int' object is not iterable",
+  "statusTrace" : "self = <test_api.TestCase object at 0x10b292898>\ncase_data = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data',case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self,case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\n\ntest_api.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncase = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    def api_send_check(case):\n        \"\"\"\n        接口请求并校验结果\n        :param case: 单条用例\n        :return:\n        \"\"\"\n>       code, data = apiSend.send_request(case)\nE       TypeError: 'int' object is not iterable\n\n../util/apiSendCheck.py:12: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'int' object is not iterable",
+    "statusTrace" : "self = <test_api.TestCase object at 0x10b292898>\ncase_data = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data',case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self,case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\n\ntest_api.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncase = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    def api_send_check(case):\n        \"\"\"\n        接口请求并校验结果\n        :param case: 单条用例\n        :return:\n        \"\"\"\n>       code, data = apiSend.send_request(case)\nE       TypeError: 'int' object is not iterable\n\n../util/apiSendCheck.py:12: TypeError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584683040693,
+        "stop" : 1584683040694,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "54ee638936dca4ec",
+        "name" : "delete_purchase_order",
+        "source" : "54ee638936dca4ec.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "f754415e62c05ff5",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/delete",
+        "source" : "f754415e62c05ff5.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "a62ea6680df35246",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "a62ea6680df35246.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "7f8e9a4c2b08a51e",
+        "name" : "{\"ids\": \"0bMiXNRLd50NHmOoQQgQ\", \"search_AUTH_APPCODE\": \"purchasecenterorderout\"}",
+        "source" : "7f8e9a4c2b08a51e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ec02482aadfaab12",
+      "name" : "log",
+      "source" : "ec02482aadfaab12.txt",
+      "type" : "text/plain",
+      "size" : 672
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "3739-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "56dee67e8d7fb567.json",
+  "parameterValues" : [ "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

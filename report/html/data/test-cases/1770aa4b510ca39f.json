@@ -1,0 +1,160 @@
+{
+  "uid" : "1770aa4b510ca39f",
+  "name" : "test_api[case_data4]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "af7c54f1ee7be1919183cf425a59564c",
+  "time" : {
+    "start" : 1584685124382,
+    "stop" : 1584685124758,
+    "duration" : 376
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584685124425,
+        "stop" : 1584685124427,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "150f20dea202a75c",
+        "name" : "submit_purchase_order",
+        "source" : "150f20dea202a75c.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "ea058300d1003e06",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/submitWithoutBpm",
+        "source" : "ea058300d1003e06.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "1a2230db50daadb0",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "1a2230db50daadb0.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "7bf23fc5be9ca64a",
+        "name" : "{\"billId\": \"0io7Cecemb2AJBTfPcLM\"}",
+        "source" : "7bf23fc5be9ca64a.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1584685124756,
+        "stop" : 1584685124758,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b704644aaa1848f9",
+        "name" : "200",
+        "source" : "b704644aaa1848f9.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "9ebad57f87792e74",
+        "name" : "200",
+        "source" : "9ebad57f87792e74.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d70c5659079dd405",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "d70c5659079dd405.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "a2ae086817857a3b",
+        "name" : "{'success': 'success', 'message': None, 'detailMsg': {'data': None}}",
+        "source" : "a2ae086817857a3b.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "a5c7971d537f3500",
+      "name" : "log",
+      "source" : "a5c7971d537f3500.txt",
+      "type" : "text/plain",
+      "size" : 744
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "4128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 5.0, 'Designer': '师孟奇', 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'ParameterType': 'parameter', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1770aa4b510ca39f.json",
+  "parameterValues" : [ "{'CaseId': 5.0, 'Designer': '师孟奇', 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'ParameterType': 'parameter', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

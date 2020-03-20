@@ -1,0 +1,10 @@
+INFO     request:log.py:30 ====================================================================================================
+INFO     request:log.py:30 用例名称:submit_purchase_order
+INFO     request:log.py:30 请求头:{'Content-Type':'application/json','charset': 'UTF-8'}
+INFO     request:log.py:30 请求地址:http://192.168.41.16/occ-purchase/purchase/orders/submitWithoutBpm
+INFO     request:log.py:30 请求参数:{"billId": "06QQXIUQDmhwpN0wqqy4"}
+INFO     request:log.py:30 测试用户：Manager
+INFO     request:log.py:30 响应时间为0.105095s
+INFO     request:log.py:30 请求接口结果：
+ (400, '{"timestamp":1584612628081,"status":400,"error":"Bad Request","message":"Required String parameter \'billId\' is not present","path":"/purchase/orders/submitWithoutBpm"}')
+INFO     request:log.py:30 HTTP返回状态码400与预期200不一致

@@ -7,9 +7,9 @@ json_path=setupMain.json_result_path
 def write_result(fileName,result):
     code=result[0]
     response=result[1]
-    if code==0:
-        with open(json_path+fileName+'_result.', "w") as f:
-            json.dump(response, f)
+    if code==200:
+        with open(json_path+fileName+'_result.json', "w" ,encoding='utf-8') as f:
+            json.dump(response, f ,ensure_ascii=False)
             print("加载入文件完成...")
     else:
         log.error('HTTP状态码错误，无需保留测试结果')

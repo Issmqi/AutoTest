@@ -1,0 +1,237 @@
+{
+  "uid" : "b4c9ef550b01b867",
+  "name" : "test_api[case_data6]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "29e372169dc7419f1e60e4fdf2fd5329",
+  "time" : {
+    "start" : 1584687051662,
+    "stop" : 1584687052440,
+    "duration" : 778
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584687051694,
+        "stop" : 1584687051695,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "96d40d176bae321b",
+        "name" : "delete_purchase_order",
+        "source" : "96d40d176bae321b.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "edf403f66aedc456",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/delete",
+        "source" : "edf403f66aedc456.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "8785345e5f83731c",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "8785345e5f83731c.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "c01d82239daae0bd",
+        "name" : "{\"ids\": \"0PvqnhmrRD8LlBxW1Bjb\", \"search_AUTH_APPCODE\": \"purchasecenterorderout\"}",
+        "source" : "c01d82239daae0bd.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1584687052438,
+        "stop" : 1584687052440,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ba090d7e141d7a7",
+        "name" : "200",
+        "source" : "2ba090d7e141d7a7.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "21c154bd7654b722",
+        "name" : "200",
+        "source" : "21c154bd7654b722.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "30bf4091955535e8",
+        "name" : "{}",
+        "source" : "30bf4091955535e8.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "1868346ef024b406",
+      "name" : "log",
+      "source" : "1868346ef024b406.txt",
+      "type" : "text/plain",
+      "size" : 734
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "4392-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3ae115fa5e31c76e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not subscriptable",
+      "time" : {
+        "start" : 1584685546758,
+        "stop" : 1584685548412,
+        "duration" : 1654
+      }
+    }, {
+      "uid" : "eead6c362a6404fb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584685125787,
+        "stop" : 1584685127380,
+        "duration" : 1593
+      }
+    }, {
+      "uid" : "7f8ae7a0422c7af4",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684986322,
+        "stop" : 1584684987955,
+        "duration" : 1633
+      }
+    }, {
+      "uid" : "88a85b20e6e2ddf5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684616439,
+        "stop" : 1584684618072,
+        "duration" : 1633
+      }
+    }, {
+      "uid" : "b714027527f52128",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684228292,
+        "stop" : 1584684231623,
+        "duration" : 3331
+      }
+    }, {
+      "uid" : "56dee67e8d7fb567",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584683040659,
+        "stop" : 1584683041842,
+        "duration" : 1183
+      }
+    }, {
+      "uid" : "2ba1ff5f5b57c80c",
+      "status" : "broken",
+      "statusDetails" : "Exception: 用例关联文件不存在\n文件路径： /Users/xmly/python/AutoTest/temp/purchasecenterorderout_result.json",
+      "time" : {
+        "start" : 1584675597745,
+        "stop" : 1584675597773,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "8176141c330372cf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10c64d268>({'APIName': '新增其他入库', 'CaseId': 7.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10c64d268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584612765945,
+        "stop" : 1584612768312,
+        "duration" : 2367
+      }
+    }, {
+      "uid" : "ab789ebbe45baa4c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10c00f268>({'APIName': '新增其他入库', 'CaseId': 7.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10c00f268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584497421318,
+        "stop" : 1584497456671,
+        "duration" : 35353
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b4c9ef550b01b867.json",
+  "parameterValues" : [ "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

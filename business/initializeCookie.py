@@ -30,19 +30,19 @@ def login(user,pwd):
             cookie=re.cookies
             return cookie
         else:
-            # log.info('用户%s登录失败！' % user)
+            log.info('用户%s登录失败！' % user)
             return None
     else:
         raise Exception('HTTP状态码错误！')
 
 def get_manager_cookie():
-    login(manager_user,manager_pwd)
+    return login(manager_user,manager_pwd)
 
 def get_customer_01_cookie():
-    login(customer_01_user,customer_01_pwd)
+    return login(customer_01_user,customer_01_pwd)
 
 def get_customer_02_cookie():
-    login(customer_02_user,customer_02_pwd)
+    return login(customer_02_user,customer_02_pwd)
 
 def get_encrypt_pwd(pwd):
     url='http://wws.test.ximalaya.com/occ-tools/getDecryptPwd?&password=%s&profile=&domain='%pwd

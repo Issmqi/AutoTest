@@ -1,0 +1,67 @@
+{
+  "uid" : "f5978fc1e7ca351c",
+  "name" : "test_api[case_data1]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "8afb3df15a10230890c2ef517decbe4d",
+  "time" : {
+    "start" : 1584675588048,
+    "stop" : 1584675588080,
+    "duration" : 32
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)",
+  "statusTrace" : "self = <test_api.TestCase object at 0x106d641d0>\ncase_data = {'APIName': '2B订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data',case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self,case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\n\ntest_api.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/apiSendCheck.py:12: in api_send_check\n    code, data = apiSend.send_request(case)\n../util/apiSend.py:46: in send_request\n    parameter=initializeParameter.ini_parameter(depend_case,relevance,parameter)\n../business/initializeParameter.py:22: in ini_parameter\n    param_dict=json.loads(parameter)\n/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py:354: in loads\n    return _default_decoder.decode(s)\n/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <json.decoder.JSONDecoder object at 0x106187518>\ns = '{\"ids\":02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', idx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)\n\n/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "3604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '2B订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5978fc1e7ca351c.json",
+  "parameterValues" : [ "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '2B订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

@@ -9,7 +9,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f1be603c1ec97685",
+      "uid" : "8e8ae78a9d31ef5b",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '2B订单', 'Active': 'Yes', 'CaseId': 1.0, 'CaseName': '新增销售订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
       "time" : {
@@ -29,13 +29,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "26d72687d1aabafa",
+      "uid" : "439d1d28b94c9eb5",
       "status" : "broken",
       "statusDetails" : "json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 2999 (char 2998)",
       "time" : {
         "start" : 1584328532051,
         "stop" : 1584328532087,
         "duration" : 36
+      }
+    } ]
+  },
+  "9d00e2658b19d02b609e70b4d95b642e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b00ebd15ea59ecaf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10a7c0268>({'APIName': '新增调拨单', 'CaseId': 8.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10a7c0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584687055727,
+        "stop" : 1584687058709,
+        "duration" : 2982
       }
     } ]
   },
@@ -49,7 +69,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "19a3bf18e4179e58",
+      "uid" : "9ca4565754f2f5a0",
       "status" : "passed",
       "time" : {
         "start" : 1584328510369,
@@ -68,7 +88,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8af0607c8459e2a",
+      "uid" : "ce7227f8b1860d44",
       "status" : "passed",
       "time" : {
         "start" : 1584328490429,
@@ -87,12 +107,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d7ffb24f42fedb38",
+      "uid" : "b80fa02abb635678",
       "status" : "passed",
       "time" : {
         "start" : 1584328522348,
         "stop" : 1584328532038,
         "duration" : 9690
+      }
+    } ]
+  },
+  "77f3990e89ddc59ba14767e7c5aa44c2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa75e154824e4590",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687049883,
+        "stop" : 1584687051658,
+        "duration" : 1775
       }
     } ]
   },
@@ -106,13 +145,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5f05a7da1594c564",
+      "uid" : "1983318ff4bb1446",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '新增外部采购订单', 'Active': '', 'CaseId': 2.0, 'CaseName': '新增普通外部采购订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1584326434100,
         "stop" : 1584326459835,
         "duration" : 25735
+      }
+    } ]
+  },
+  "ba5f93c5af7aa026927c81e329e78fbb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "53e607bf35167de8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687052444,
+        "stop" : 1584687055722,
+        "duration" : 3278
       }
     } ]
   },
@@ -126,7 +184,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5bca132c25d55618",
+      "uid" : "ce99a36f8a7d8341",
       "status" : "passed",
       "time" : {
         "start" : 1584328532224,
@@ -145,33 +203,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "77e4a4a4d1fe46bc",
+      "uid" : "a0aad7ef57f54ea9",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '新增外部采购订单', 'Active': '', 'CaseId': 3.0, 'CaseName': '新增供应商直发外部采购订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1584326459845,
         "stop" : 1584326481933,
         "duration" : 22088
-      }
-    } ]
-  },
-  "b8785a4624ccc4a3440bac37dd7a5eb7" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "863aa1079cee544",
-      "status" : "broken",
-      "statusDetails" : "json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 2999 (char 2998)",
-      "time" : {
-        "start" : 1584326481945,
-        "stop" : 1584326481987,
-        "duration" : 42
       }
     } ]
   },
@@ -185,13 +223,186 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "68c505fe41cbf9e5",
+      "uid" : "218ec6fb81bdcb7a",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert None\n +  where None = <function api_send_check at 0x1087d0268>({'APIName': '形态转换', 'Active': 'Yes', 'CaseId': 5.0, 'CaseName': '新增形态转换订单', ...})\n +    where <function api_send_check at 0x1087d0268> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1584326482030,
         "stop" : 1584326500425,
         "duration" : 18395
+      }
+    } ]
+  },
+  "29e372169dc7419f1e60e4fdf2fd5329" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4c9ef550b01b867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687051662,
+        "stop" : 1584687052440,
+        "duration" : 778
+      }
+    } ]
+  },
+  "8afb3df15a10230890c2ef517decbe4d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "962727dd75fc77e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687040369,
+        "stop" : 1584687042301,
+        "duration" : 1932
+      }
+    } ]
+  },
+  "f414e7b20b8f4fa42b736aec90834172" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23e52a535de67954",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687026138,
+        "stop" : 1584687040363,
+        "duration" : 14225
+      }
+    } ]
+  },
+  "c5a706d26bf712d74f0688795de7b985" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13991ac0a48e02cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687045894,
+        "stop" : 1584687049474,
+        "duration" : 3580
+      }
+    } ]
+  },
+  "cd5d614862e130f0df2e9f8a3630095e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd7bf246eec4b989",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687062893,
+        "stop" : 1584687066595,
+        "duration" : 3702
+      }
+    } ]
+  },
+  "44c0ab8f6522b1bbf3de4feb7e5edb9d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d9bd53d87c10d67d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10a7c0268>({'APIName': '新增调拨出库单', 'CaseId': 9.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10a7c0268> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1584687058773,
+        "stop" : 1584687062884,
+        "duration" : 4111
+      }
+    } ]
+  },
+  "14b73c7bbd1de28f8a6927c28e2b51dd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "28aa1b03429be7fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687042306,
+        "stop" : 1584687045889,
+        "duration" : 3583
+      }
+    } ]
+  },
+  "b8785a4624ccc4a3440bac37dd7a5eb7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8480b82a5c135af3",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 2999 (char 2998)",
+      "time" : {
+        "start" : 1584326481945,
+        "stop" : 1584326481987,
+        "duration" : 42
+      }
+    } ]
+  },
+  "af7c54f1ee7be1919183cf425a59564c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e1feafb53516d17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584687049479,
+        "stop" : 1584687049879,
+        "duration" : 400
       }
     } ]
   }

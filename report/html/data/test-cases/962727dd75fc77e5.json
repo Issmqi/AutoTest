@@ -1,0 +1,237 @@
+{
+  "uid" : "962727dd75fc77e5",
+  "name" : "test_api[case_data1]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "8afb3df15a10230890c2ef517decbe4d",
+  "time" : {
+    "start" : 1584687040369,
+    "stop" : 1584687042301,
+    "duration" : 1932
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584687040409,
+        "stop" : 1584687040412,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c5eda874f3c8f50d",
+        "name" : "delete_sales_order",
+        "source" : "c5eda874f3c8f50d.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "fc13f2e7e0d2b5d9",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/delete",
+        "source" : "fc13f2e7e0d2b5d9.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "a84c5e0007007a39",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "a84c5e0007007a39.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "83e79594dc089c33",
+        "name" : "{\"ids\": \"0iebgkeEmvGMlBMrPHx2\", \"search_AUTH_APPCODE\": \"saleorder\"}",
+        "source" : "83e79594dc089c33.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1584687042299,
+        "stop" : 1584687042301,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ad2ae12b4d70a812",
+        "name" : "200",
+        "source" : "ad2ae12b4d70a812.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3622010b1e3677de",
+        "name" : "200",
+        "source" : "3622010b1e3677de.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "b88b8ee2e7986de3",
+        "name" : "{}",
+        "source" : "b88b8ee2e7986de3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "a3ab53e127c59a3c",
+      "name" : "log",
+      "source" : "a3ab53e127c59a3c.txt",
+      "type" : "text/plain",
+      "size" : 713
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "4392-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "29e0970c63a0b98e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not subscriptable",
+      "time" : {
+        "start" : 1584685535078,
+        "stop" : 1584685538509,
+        "duration" : 3431
+      }
+    }, {
+      "uid" : "bf2a069062dbf27e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584685115768,
+        "stop" : 1584685117794,
+        "duration" : 2026
+      }
+    }, {
+      "uid" : "1d20a2e2973c723b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684972038,
+        "stop" : 1584684974312,
+        "duration" : 2274
+      }
+    }, {
+      "uid" : "ecb13f375dd7dfbb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684604467,
+        "stop" : 1584684606707,
+        "duration" : 2240
+      }
+    }, {
+      "uid" : "6a14857c5a9d9f40",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'int' object is not iterable",
+      "time" : {
+        "start" : 1584684216257,
+        "stop" : 1584684219149,
+        "duration" : 2892
+      }
+    }, {
+      "uid" : "922c9525df704177",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)",
+      "time" : {
+        "start" : 1584683025645,
+        "stop" : 1584683026076,
+        "duration" : 431
+      }
+    }, {
+      "uid" : "f5978fc1e7ca351c",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)",
+      "time" : {
+        "start" : 1584675588048,
+        "stop" : 1584675588080,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "ffbcb780321d1555",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)",
+      "time" : {
+        "start" : 1584612759152,
+        "stop" : 1584612759298,
+        "duration" : 146
+      }
+    }, {
+      "uid" : "6b49f8d41936c1ba",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)",
+      "time" : {
+        "start" : 1584497368116,
+        "stop" : 1584497368146,
+        "duration" : 30
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "962727dd75fc77e5.json",
+  "parameterValues" : [ "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

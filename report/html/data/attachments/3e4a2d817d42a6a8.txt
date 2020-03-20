@@ -1,0 +1,9 @@
+INFO     request:log.py:30 ====================================================================================================
+INFO     request:log.py:30 用例名称:delete_sales_order
+INFO     request:log.py:30 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+INFO     request:log.py:30 请求地址:http://192.168.41.16/occ-b2b-order/b2b/order/delete
+INFO     request:log.py:30 请求参数:{"ids": "0gFMp18eP5I726CwCEWC", "search_AUTH_APPCODE": "saleorder"}
+INFO     request:log.py:30 测试用户：Manager
+INFO     request:log.py:30 响应时间为2.200695s
+INFO     request:log.py:30 请求接口结果：
+ 200
