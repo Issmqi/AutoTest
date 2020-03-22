@@ -1,10 +1,20 @@
 # -*- coding: utf-8 -*-
-
-import os
+import sys,os
 import allure
 import pytest
-import apiSendCheck
-from readExcel import ReadExcel
+
+path = os.path.dirname(sys.path[0])
+print(path)
+sys.path.append(path)
+print(sys.path)
+
+from util.readExcel import ReadExcel
+import util.apiSendCheck
+from util import apiSendCheck
+
+# from utils import readExcel
+
+
 
 case_dict=ReadExcel().get_full_dict()
 # print(case_dict)

@@ -1,8 +1,14 @@
-
-import requests
-from readConfig import ReadConfig
-from log import Log
 from jsonpath import jsonpath
+import sys,os
+path = os.path.dirname(sys.path[0])
+# print(path)
+sys.path.append(path)
+print(sys.path)
+import requests
+from util.readConfig import ReadConfig
+# from readConfig import ReadConfig
+from util.log import Log
+
 
 readConfig=ReadConfig()
 log=Log()
@@ -26,7 +32,7 @@ def login(user,pwd):
     status = jsonpath(re.json(), '$.status')[0]
     if re.status_code==200:
         if status == '1':
-            # log.info('用户%s登录成功！'%user)
+            log.info('用户%s登录成功！'%user)
             cookie=re.cookies
             return cookie
         else:
