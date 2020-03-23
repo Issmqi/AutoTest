@@ -1,0 +1,164 @@
+{
+  "uid" : "95755a16091d8b07",
+  "name" : "test_api[case_data2]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "14b73c7bbd1de28f8a6927c28e2b51dd",
+  "time" : {
+    "start" : 1584947696338,
+    "stop" : 1584947696500,
+    "duration" : 162
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x1105894e0>\ncase_data = {'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x1105894e0>\ncase_data = {'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除销售订单', 'CaseId': 2.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584947696368,
+        "stop" : 1584947696370,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "efd13d6f02d0d3a2",
+        "name" : "delete_sales_order",
+        "source" : "efd13d6f02d0d3a2.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "6a2f63d1a3fdb6a0",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/delete",
+        "source" : "6a2f63d1a3fdb6a0.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "5b15b4019ef0ff54",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "5b15b4019ef0ff54.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "794eebfc31cac081",
+        "name" : "{\"ids\": \"0VQCEEytjUzkTYnwkzho\", \"search_AUTH_APPCODE\": \"saleorder\"}",
+        "source" : "794eebfc31cac081.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1584947696499,
+        "stop" : 1584947696500,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ef24a7b97d52850",
+        "name" : "200",
+        "source" : "5ef24a7b97d52850.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "8f2494b4e23a3775",
+        "name" : "500",
+        "source" : "8f2494b4e23a3775.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "709dd98ce99d0f16",
+        "name" : "{\"timestamp\":\"2020-03-23T07:12:34.177+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\"}",
+        "source" : "709dd98ce99d0f16.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d56880a75ba1cfb8",
+      "name" : "log",
+      "source" : "d56880a75ba1cfb8.txt",
+      "type" : "text/plain",
+      "size" : 905
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "5845-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "95755a16091d8b07.json",
+  "parameterValues" : [ "{'CaseId': 2.0, 'Designer': '师孟奇', 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

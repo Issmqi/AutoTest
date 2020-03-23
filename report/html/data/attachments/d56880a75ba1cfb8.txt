@@ -1,0 +1,10 @@
+[32mINFO    [0m request:log.py:85 ====================================================================================================
+[32mINFO    [0m request:log.py:85 用例名称:delete_sales_order
+[32mINFO    [0m request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+[32mINFO    [0m request:log.py:85 请求地址:http://192.168.41.16/occ-b2b-order/b2b/order/delete
+[32mINFO    [0m request:log.py:85 请求参数:{"ids": "0VQCEEytjUzkTYnwkzho", "search_AUTH_APPCODE": "saleorder"}
+[32mINFO    [0m request:log.py:85 测试用户：Manager
+[32mINFO    [0m request:log.py:85 响应时间为0.125075s
+[32mINFO    [0m request:log.py:85 请求接口结果：
+ (500, '{"timestamp":"2020-03-23T07:12:34.177+0000","status":500,"error":"Internal Server Error","message":""}')
+[32mINFO    [0m request:log.py:85 HTTP返回状态码与预期不一致

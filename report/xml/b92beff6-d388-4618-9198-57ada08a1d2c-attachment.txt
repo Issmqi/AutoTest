@@ -1,0 +1,11 @@
+[32mINFO    [0m request:log.py:85 ====================================================================================================
+[32mINFO    [0m request:log.py:85 用例名称:submit_purchase_order
+[32mINFO    [0m request:log.py:85 请求头:{'Content-Type':'application/json','charset': 'UTF-8'}
+[32mINFO    [0m request:log.py:85 请求地址:http://192.168.41.16/occ-purchase/purchase/orders/submitWithoutBpm
+[32mINFO    [0m request:log.py:85 请求参数:{"billId": "0cDTLgaDWWEuCOWTX2Zk"}
+[32mINFO    [0m request:log.py:85 测试用户：Manager
+[32mINFO    [0m request:log.py:85 响应时间为1.147589s
+[32mINFO    [0m request:log.py:85 请求接口结果：
+ (200, {'success': 'fail_global', 'message': '&#25552;&#20132;&#22833;&#36133;&#65306;RuleClient#getEnabledCommonRules() failed and no fallback available.', 'detailMsg': {}, 'stack': None, 'operate': None})
+[32mINFO    [0m request:log.py:85 json格式校验，校验关键字None与返回关键字&#25552;&#20132;&#22833;&#36133;&#65306;RuleClient#getEnabledCommonRules() failed and no fallback available.类型不一致
+[32mINFO    [0m request:log.py:85 JSON格式校验失败！
