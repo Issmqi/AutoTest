@@ -1,49 +1,49 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Mar 22 15:40:14 CST 2020","Sun Mar 22 15:40:19 CST 2020","4959","case","test_api","TestCase","","","test_api[case_data4]","
+"passed","Mon Mar 23 10:37:54 CST 2020","Mon Mar 23 10:37:56 CST 2020","1951","","test_api","TestCase","","","test_api[case_data2]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:40:22 CST 2020","Sun Mar 22 15:40:25 CST 2020","3057","case","test_api","TestCase","","","test_api[case_data7]","
+"passed","Mon Mar 23 10:38:02 CST 2020","Mon Mar 23 10:38:08 CST 2020","5829","","test_api","TestCase","","","test_api[case_data4]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:40:25 CST 2020","Sun Mar 22 15:40:39 CST 2020","13553","case","test_api","TestCase","","","test_api[case_data8]","
+"broken","Mon Mar 23 10:37:54 CST 2020","Mon Mar 23 10:37:54 CST 2020","38","","test_api","TestCase","","","test_api[case_data1]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:39:55 CST 2020","Sun Mar 22 15:39:57 CST 2020","2135","case","test_api","TestCase","","","test_api[case_data2]","
+"passed","Mon Mar 23 10:38:09 CST 2020","Mon Mar 23 10:38:10 CST 2020","721","","test_api","TestCase","","","test_api[case_data7]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:40:19 CST 2020","Sun Mar 22 15:40:20 CST 2020","644","case","test_api","TestCase","","","test_api[case_data5]","
+"passed","Mon Mar 23 10:38:41 CST 2020","Mon Mar 23 10:38:46 CST 2020","5621","","test_api","TestCase","","","test_api[case_data11]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:40:20 CST 2020","Sun Mar 22 15:40:22 CST 2020","2450","case","test_api","TestCase","","","test_api[case_data6]","
+"passed","Mon Mar 23 10:38:08 CST 2020","Mon Mar 23 10:38:09 CST 2020","1055","","test_api","TestCase","","","test_api[case_data6]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:39:57 CST 2020","Sun Mar 22 15:40:14 CST 2020","17521","case","test_api","TestCase","","","test_api[case_data3]","
+"failed","Mon Mar 23 10:38:16 CST 2020","Mon Mar 23 10:38:25 CST 2020","8600","","test_api","TestCase","","","test_api[case_data9]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"broken","Sun Mar 22 15:39:54 CST 2020","Sun Mar 22 15:39:54 CST 2020","83","case","test_api","TestCase","","","test_api[case_data1]","
+"passed","Mon Mar 23 10:37:44 CST 2020","Mon Mar 23 10:37:54 CST 2020","10067","","test_api","TestCase","","","test_api[case_data0]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:39:16 CST 2020","Sun Mar 22 15:39:54 CST 2020","37861","case","test_api","TestCase","","","test_api[case_data0]","
+"passed","Mon Mar 23 10:38:10 CST 2020","Mon Mar 23 10:38:16 CST 2020","6623","","test_api","TestCase","","","test_api[case_data8]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"failed","Sun Mar 22 15:40:39 CST 2020","Sun Mar 22 15:40:46 CST 2020","6618","case","test_api","TestCase","","","test_api[case_data9]","
+"passed","Mon Mar 23 10:37:56 CST 2020","Mon Mar 23 10:38:02 CST 2020","5665","","test_api","TestCase","","","test_api[case_data3]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Sun Mar 22 15:40:57 CST 2020","Sun Mar 22 15:41:02 CST 2020","4810","case","test_api","TestCase","","","test_api[case_data11]","
+"passed","Mon Mar 23 10:38:08 CST 2020","Mon Mar 23 10:38:08 CST 2020","290","","test_api","TestCase","","","test_api[case_data5]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"failed","Sun Mar 22 15:40:46 CST 2020","Sun Mar 22 15:40:57 CST 2020","11580","case","test_api","TestCase","","","test_api[case_data10]","
+"failed","Mon Mar 23 10:38:25 CST 2020","Mon Mar 23 10:38:41 CST 2020","15855","","test_api","TestCase","","","test_api[case_data10]","
         :param case_data: 单条测试用例数据
         :return:
         "

@@ -3,15 +3,12 @@ import setupMain
 import allure
 import json
 from jsonpath import jsonpath
-from log import Log
-log=Log()
+from util.log import Log
+
+log = Log()
 
 
-
-
-
-
-def ini_parameter(dependCase,relevanceList,parameter):
+def ini_parameter(dependCase, relevanceList, parameter):
     '''
     读取关联case的response文件,获取关键字并修改
     :param dependCase: 依赖的caseName str
@@ -19,24 +16,23 @@ def ini_parameter(dependCase,relevanceList,parameter):
     :param parameter: 请求参数 str
     :return:
     '''
-    param_dict=json.loads(parameter)
+    param_dict = json.loads(parameter)
     relevance_dict = json.loads(relevanceList)
-    path=setupMain.json_result_path+dependCase+'_result.json'
+    path = setupMain.json_result_path + dependCase + '_result.json'
     try:
         with open(path, "r", encoding="utf-8") as file:
             data = json.load(file)
             for key in relevance_dict:
-                relevance_key=relevance_dict[key]
+                relevance_key = relevance_dict[key]
                 if relevance_key in data:
-                    param_dict[key]=jsonpath(data,'$..%s'%relevance_key)[0]
+                    param_dict[key] = jsonpath(data, '$..%s' % relevance_key)[0]
                 else:
-                    log.error('参数依赖关键字%s在关联结果中找不到'%relevance_key)
+                    log.error('参数依赖关键字%s在关联结果中找不到' % relevance_key)
 
-            print('更新后params是：',param_dict)
+            # print('更新后params是：',param_dict)
             return json.dumps(param_dict)
     except FileNotFoundError:
-        raise Exception("用例关联文件不存在\n文件路径： %s" %path)
-
+        raise Exception("用例关联文件不存在\n文件路径： %s" % path)
 
 # def ini_requests(dependCase,relevance,parameter):
 #     '''
@@ -66,4 +62,3 @@ def ini_parameter(dependCase,relevanceList,parameter):
 # param_str=json.dumps(param)
 #
 # ini_parameter(relevanceCase,relevanceKeys,param_str)
-

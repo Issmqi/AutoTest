@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import apiSend
-import checkResult
+from util import apiSend
+from util import checkResult
+
 
 def api_send_check(case):
     """
@@ -14,8 +15,8 @@ def api_send_check(case):
 
     print(code)
     print(data)
-    result=checkResult.check_result(case, code, data)
-    if result==True:
+    result = checkResult.check_result(case, code, data)
+    if result == True:
         return True
     else:
         return False

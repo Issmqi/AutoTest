@@ -1,6 +1,6 @@
 import json
 import setupMain
-from log import Log
+from util.log import Log
 log=Log()
 json_path=setupMain.json_result_path
 

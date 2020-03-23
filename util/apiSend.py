@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 
 import allure
-import initializeCookie
-import apiMethod
-from log import Log
-from readConfig import ReadConfig
-import initializeParameter
-import writeResult
+from business import initializeCookie
+from util import apiMethod
+from util.log import Log
+from util.readConfig import ReadConfig
+from business import initializeParameter
+from util import writeResult
 
-readConfig=ReadConfig()
-log=Log()
+readConfig = ReadConfig()
+log = Log()
+
 
 def send_request(request_data):
     '''
@@ -22,36 +23,33 @@ def send_request(request_data):
     casename = request_data['CaseName']
     user = request_data['User']
     header = request_data['Headers']
-    parameter_type=request_data['ParameterType']
+    parameter_type = request_data['ParameterType']
     method = request_data['Method']
     path = request_data['Path']
     parameter = request_data['Params']
-    depend_case=request_data['DependCase']
-    is_depend=request_data['IsDepend']
-
+    depend_case = request_data['DependCase']
+    is_depend = request_data['IsDepend']
 
     url = host + path
-    if user=='Manager':
-        cookie=initializeCookie.get_manager_cookie()
-    elif user=='Customer_01':
-        cookie=initializeCookie.get_customer_01_cookie()
-    elif user=='Customer_02':
-        cookie=initializeCookie.get_customer_02_cookie()
+    if user == 'Manager':
+        cookie = initializeCookie.get_manager_cookie()
+    elif user == 'Customer_01':
+        cookie = initializeCookie.get_customer_01_cookie()
+    elif user == 'Customer_02':
+        cookie = initializeCookie.get_customer_02_cookie()
     else:
-        cookie=None
-
+        cookie = None
 
     if depend_case:
-        relevance=request_data['RelevanceList']
-        parameter=initializeParameter.ini_parameter(depend_case,relevance,parameter)
+        relevance = request_data['RelevanceList']
+        parameter = initializeParameter.ini_parameter(depend_case, relevance, parameter)
 
-
-    log.info("="*100)
-    log.info('用例名称:%s'%(casename))
-    log.info('请求头:%s'%header)
-    log.info('请求地址:%s'%(url))
-    log.info('请求参数:%s'%(parameter))
-    log.info('测试用户：%s'%(user))
+    log.info("=" * 100)
+    log.info('用例名称:%s' % (casename))
+    log.info('请求头:%s' % header)
+    log.info('请求地址:%s' % (url))
+    log.info('请求参数:%s' % (parameter))
+    log.info('测试用户：%s' % (user))
 
     if method == 'post':
         with allure.step("POST请求接口"):
@@ -60,7 +58,7 @@ def send_request(request_data):
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
         # result = apiMethod.post(url=url,header=header,data=parameter,cookie=cookie)
-        result = apiMethod.post_2(url=url, param_type=parameter_type, param=parameter, cookie=cookie,header=header)
+        result = apiMethod.post_2(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
 
     elif method == 'get':
         with allure.step("GET请求接口"):
@@ -68,14 +66,14 @@ def send_request(request_data):
             allure.attach("请求地址", url)
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
-        result = apiMethod.post(url=url,header=header,data=parameter)
+        result = apiMethod.post(url=url, header=header, data=parameter)
 
     else:
         result = {"code": False, "data": False}
     log.info("请求接口结果：\n %s" % str(result))
 
-    if is_depend=='Yes':
-        writeResult.write_result(casename,result)
+    if is_depend == 'Yes':
+        writeResult.write_result(casename, result)
 
     return result
 
