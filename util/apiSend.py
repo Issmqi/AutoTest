@@ -56,9 +56,18 @@ def send_request(request_data):
             allure.attach("请求接口：", str(casename))
             allure.attach("请求地址", url)
             allure.attach("请求头", str(header))
+            allure.attach("请求参数类型", parameter_type)
             allure.attach("请求参数", str(parameter))
-        # result = apiMethod.post(url=url,header=header,data=parameter,cookie=cookie)
-        result = apiMethod.post_2(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
+        result = apiMethod.post(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
+
+    elif method == 'put':
+        with allure.step("PUT请求接口"):
+            allure.attach("请求接口：", str(casename))
+            allure.attach("请求地址", url)
+            allure.attach("请求头", str(header))
+            allure.attach("请求参数类型", parameter_type)
+            allure.attach("请求参数", str(parameter))
+        result = apiMethod.put(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
 
     elif method == 'get':
         with allure.step("GET请求接口"):
@@ -66,10 +75,12 @@ def send_request(request_data):
             allure.attach("请求地址", url)
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
-        result = apiMethod.post(url=url, header=header, data=parameter)
+        result = apiMethod.get(url=url, header=header, data=parameter)
 
     else:
+        log.war('请求类型不存在！')
         result = {"code": False, "data": False}
+
     log.info("请求接口结果：\n %s" % str(result))
 
     if is_depend == 'Yes':
