@@ -1,0 +1,164 @@
+{
+  "uid" : "e1f12691014a900a",
+  "name" : "test_api[case_data17]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "e6210eba7d4acb2f03373dcaa0b53a0a",
+  "time" : {
+    "start" : 1585106120203,
+    "stop" : 1585106120245,
+    "duration" : 42
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x105b82ea0>({'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x105b82ea0> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x10661c390>\ncase_data = {'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x105b82ea0>({'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x105b82ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x105b82ea0>({'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x105b82ea0> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x10661c390>\ncase_data = {'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x105b82ea0>({'APIName': '其他出库取消签字', 'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x105b82ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585106120220,
+        "stop" : 1585106120221,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7b011483d521899f",
+        "name" : "cancel_other_out_stock",
+        "source" : "7b011483d521899f.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "7a9a392b93eb5f6b",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-out-bills/batch-cancel-sign",
+        "source" : "7a9a392b93eb5f6b.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "765490646a19e613",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "765490646a19e613.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "1226982e5cf8e51",
+        "name" : "form_data",
+        "source" : "1226982e5cf8e51.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "2ea5b2ee9bcb5552",
+        "name" : "{\"ids\": \"0AmVJnqgISoloK1e0JxT\", \"search_AUTH_APPCODE\": \"otherin\"}",
+        "source" : "2ea5b2ee9bcb5552.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585106120243,
+        "stop" : 1585106120245,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d3147f003afb8c8f",
+        "name" : "200",
+        "source" : "d3147f003afb8c8f.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "1756504fb26c5953",
+        "name" : "500",
+        "source" : "1756504fb26c5953.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "7c0cb1c81a328552",
+        "name" : "{\"timestamp\":1585105975755,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"其他出库单为空！\",\"path\":\"/stock/other-out-bills/batch-cancel-sign\"}",
+        "source" : "7c0cb1c81a328552.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2cc1ee9987407b6e",
+      "name" : "log",
+      "source" : "2cc1ee9987407b6e.txt",
+      "type" : "text/plain",
+      "size" : 958
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "37459-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'APIName': '其他出库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-out-bills/batch-cancel-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e1f12691014a900a.json",
+  "parameterValues" : [ "{'CaseId': 17.0, 'CaseName': 'cancel_other_out_stock', 'APIName': '其他出库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-out-bills/batch-cancel-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

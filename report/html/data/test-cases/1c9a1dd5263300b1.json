@@ -1,0 +1,158 @@
+{
+  "uid" : "1c9a1dd5263300b1",
+  "name" : "test_api[case_data7]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "ba5f93c5af7aa026927c81e329e78fbb",
+  "time" : {
+    "start" : 1584947841053,
+    "stop" : 1584947841163,
+    "duration" : 110
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x10ff63f60>\ncase_data = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x10ff63f60>\ncase_data = {'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10f9b3ea0>({'APIName': '删除外部采购订单', 'CaseId': 6.0, 'CaseName': 'delete_purchase_order', 'CheckTpye': 'only_check_status', ...})\nE        +    where <function api_send_check at 0x10f9b3ea0> = apiSendCheck.api_send_check\n\ntest_api.py:33: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1584947841088,
+        "stop" : 1584947841090,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b030479642c75845",
+        "name" : "delete_purchase_order",
+        "source" : "b030479642c75845.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "dafdbc5c6648aff4",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/delete",
+        "source" : "dafdbc5c6648aff4.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "c4560093e3d9e5f6",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "c4560093e3d9e5f6.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "9ca9aa8438bfcaa9",
+        "name" : "{\"ids\": \"0NLtPig3mVgdyk7cIjgb\", \"search_AUTH_APPCODE\": \"purchasecenterorderout\"}",
+        "source" : "9ca9aa8438bfcaa9.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1584947841160,
+        "stop" : 1584947841163,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "46a9844741d40e37",
+        "name" : "200",
+        "source" : "46a9844741d40e37.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "1652847e1387cc52",
+        "name" : "500",
+        "source" : "1652847e1387cc52.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "638c4c04a3f6cc99",
+        "name" : "{\"timestamp\":\"2020-03-23T07:14:58.917+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\"}",
+        "source" : "638c4c04a3f6cc99.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f6ac7c0a5ae7c28a",
+      "name" : "log",
+      "source" : "f6ac7c0a5ae7c28a.txt",
+      "type" : "text/plain",
+      "size" : 926
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "5845-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1c9a1dd5263300b1.json",
+  "parameterValues" : [ "{'CaseId': 6.0, 'Designer': '师孟奇', 'CaseName': 'delete_purchase_order', 'APIName': '删除外部采购订单', 'ParameterType': 'form_data', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

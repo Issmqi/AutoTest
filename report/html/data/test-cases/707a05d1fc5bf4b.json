@@ -1,0 +1,176 @@
+{
+  "uid" : "707a05d1fc5bf4b",
+  "name" : "test_api[case_data28]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "dfd70a8178228186c2190ae387d27f60",
+  "time" : {
+    "start" : 1585130207768,
+    "stop" : 1585130216052,
+    "duration" : 8284
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x110d5e9d8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x110d5e9d8> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x111d36c88>\ncase_data = {'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x110d5e9d8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x110d5e9d8> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x110d5e9d8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x110d5e9d8> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x111d36c88>\ncase_data = {'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x110d5e9d8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x110d5e9d8> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585130207796,
+        "stop" : 1585130207798,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d8870c1e0bb904dc",
+        "name" : "create_form_changes",
+        "source" : "d8870c1e0bb904dc.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "64c23d93e91d5e51",
+        "name" : "http://192.168.41.16/occ-stock/stock/form-changes/add",
+        "source" : "64c23d93e91d5e51.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "97de7ca86a3a5b08",
+        "name" : "{\"Content-Type\":\"application/json\",\"charset\": \"UTF-8\"}",
+        "source" : "97de7ca86a3a5b08.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "78635f0a2d27a0a5",
+        "name" : "json",
+        "source" : "78635f0a2d27a0a5.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "dd941a4b64b7b638",
+        "name" : "{\"formChangeCode\":null,\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgName\":null,\"stockOrgCode\":null,\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptName\":null,\"deptCode\":null,\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"state\":\"0\",\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":null,\"beforeChangeWarehouseName\":null,\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":null,\"afterChangeWarehouseName\":null,\"otherOutboundOrders\":null,\"otherWarehouseEntry\":null,\"ifSlotManage\":\"0\",\"otherOutStockCode\":null,\"otherInStockCode\":null,\"persistStatus\":\"new\",\"purchaseType\":\"InnerPurchase\",\"formChangeItems\":[{\"lineNumber\":10,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"},{\"lineNumber\":20,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"}]}",
+        "source" : "dd941a4b64b7b638.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585130216050,
+        "stop" : 1585130216052,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d81a364bd9597652",
+        "name" : "200",
+        "source" : "d81a364bd9597652.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ccc8ab39c0ca217c",
+        "name" : "200",
+        "source" : "ccc8ab39c0ca217c.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "785d6726a7ed0e39",
+        "name" : "{\"success\":true,\"message\":\"新增成功\",\"code\":\"200\",\"data\":{\"id\":\"0zCk6f8unLWDTIAhJNct\",\"dr\":0,\"ts\":1584195356000,\"creator\":\"gaojian\",\"creationTime\":1584195356000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"state\":0,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"formChangeCode\":\"XTZH2020031400000017\",\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgCode\":\"1210\",\"stockOrgName\":\"西安喜马拉雅网络科技有限公司\",\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptCode\":\"01010102\",\"deptName\":\"城市经理\",\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":\"test030201\",\"beforeChangeWarehouseName\":\"测试仓库030201\",\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":\"test030202\",\"afterChangeWarehouseName\":\"test030202\",\"otherOutStockId\":null,\"otherOutStockCode\":null,\"otherInStockId\":null,\"otherInStockCode\":null,\"existOtherOutInBill\":null,\"formChangeItems\":[{\"id\":\"02GovEVZaDBJzdA2OTNs\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"20\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"0RxOHbJrYeC0xyuZRkpR\",\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":\"形态转换后\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null},{\"id\":\"0lQOx801aHGLYAU7kdv9\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"10\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"07gs7c6REAsSQbx0Bgvl\",\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":\"形态转换前\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null}]}}",
+        "source" : "785d6726a7ed0e39.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d42214b1c1ccafe6",
+        "name" : "{'success': True, 'message': '新增成功', 'code': '200', 'data': {'id': '09nC86KGLDbOEoHo5Yy1', 'dr': 0, 'ts': 1585130063000, 'creator': 'smq', 'creationTime': 1585130063000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'state': 0, 'approver': None, 'approveTime': None, 'approveOpinion': None, 'sycnNCStatus': None, 'sycnOutStatus': None, 'formChangeCode': 'XTZH2020032500000016', 'formChangeDate': 1584720000000, 'stockOrgId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgCode': '1210', 'stockOrgName': '西安喜马拉雅网络科技有限公司', 'deptId': '0K1ovYvAl1Pk00oCRPjV', 'deptCode': '01010102', 'deptName': '城市经理', 'businessUserId': None, 'businessUserCode': None, 'businessUserName': None, 'remark': None, 'beforeChangeWarehouseId': '1001ZZ100000000DPAP4', 'beforeChangeWarehouseCode': 'test030201', 'beforeChangeWarehouseName': '测试仓库030201', 'afterChangeWarehouseId': '1001ZZ100000000DPAP6', 'afterChangeWarehouseCode': 'test030202', 'afterChangeWarehouseName': 'test030202', 'otherOutStockId': None, 'otherOutStockCode': None, 'otherInStockId': None, 'otherInStockCode': None, 'existOtherOutInBill': None, 'formChangeItems': [{'id': '0RvNGnW3Q6aP6BGvrBNy', 'dr': 0, 'ts': 1585130071000, 'creator': 'smq', 'creationTime': 1585130071000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'lineNumber': '20', 'groupNumber': '1', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsUnitId': 'UNIT-12', 'goodsUnitCode': 'EA', 'goodsUnitName': '个', 'changeTypeId': '0RxOHbJrYeC0xyuZRkpR', 'changeTypeCode': 'afterFormChange', 'changeTypeName': '形态转换后', 'goodsAmount': 5.0, 'remark': None, 'batchNumId': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'changeDate': None}, {'id': '0j8f7QLd89aQmogfxSOc', 'dr': 0, 'ts': 1585130071000, 'creator': 'smq', 'creationTime': 1585130071000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'lineNumber': '10', 'groupNumber': '1', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsUnitId': 'UNIT-12', 'goodsUnitCode': 'EA', 'goodsUnitName': '个', 'changeTypeId': '07gs7c6REAsSQbx0Bgvl', 'changeTypeCode': 'beforeFormChange', 'changeTypeName': '形态转换前', 'goodsAmount': 5.0, 'remark': None, 'batchNumId': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'changeDate': None}]}}",
+        "source" : "d42214b1c1ccafe6.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "73ff70af3b393d83",
+      "name" : "log",
+      "source" : "73ff70af3b393d83.txt",
+      "type" : "text/plain",
+      "size" : 5698
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "38643-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 27.0, 'CaseName': 'create_form_changes', 'APIName': '新增形态转换单', 'Headers': '{\"Content-Type\":\"application/json\",\"charset\": \"UTF-8\"}', 'Path': '/occ-stock/stock/form-changes/add', 'Method': 'post', 'ParameterType': 'json', 'Params': '{\"formChangeCode\":null,\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgName\":null,\"stockOrgCode\":null,\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptName\":null,\"deptCode\":null,\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"state\":\"0\",\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":null,\"beforeChangeWarehouseName\":null,\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":null,\"afterChangeWarehouseName\":null,\"otherOutboundOrders\":null,\"otherWarehouseEntry\":null,\"ifSlotManage\":\"0\",\"otherOutStockCode\":null,\"otherInStockCode\":null,\"persistStatus\":\"new\",\"purchaseType\":\"InnerPurchase\",\"formChangeItems\":[{\"lineNumber\":10,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"},{\"lineNumber\":20,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"}]}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":true,\"message\":\"新增成功\",\"code\":\"200\",\"data\":{\"id\":\"0zCk6f8unLWDTIAhJNct\",\"dr\":0,\"ts\":1584195356000,\"creator\":\"gaojian\",\"creationTime\":1584195356000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"state\":0,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"formChangeCode\":\"XTZH2020031400000017\",\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgCode\":\"1210\",\"stockOrgName\":\"西安喜马拉雅网络科技有限公司\",\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptCode\":\"01010102\",\"deptName\":\"城市经理\",\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":\"test030201\",\"beforeChangeWarehouseName\":\"测试仓库030201\",\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":\"test030202\",\"afterChangeWarehouseName\":\"test030202\",\"otherOutStockId\":null,\"otherOutStockCode\":null,\"otherInStockId\":null,\"otherInStockCode\":null,\"existOtherOutInBill\":null,\"formChangeItems\":[{\"id\":\"02GovEVZaDBJzdA2OTNs\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"20\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"0RxOHbJrYeC0xyuZRkpR\",\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":\"形态转换后\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null},{\"id\":\"0lQOx801aHGLYAU7kdv9\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"10\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"07gs7c6REAsSQbx0Bgvl\",\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":\"形态转换前\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null}]}}', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "707a05d1fc5bf4b.json",
+  "parameterValues" : [ "{'CaseId': 27.0, 'CaseName': 'create_form_changes', 'APIName': '新增形态转换单', 'Headers': '{\"Content-Type\":\"application/json\",\"charset\": \"UTF-8\"}', 'Path': '/occ-stock/stock/form-changes/add', 'Method': 'post', 'ParameterType': 'json', 'Params': '{\"formChangeCode\":null,\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgName\":null,\"stockOrgCode\":null,\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptName\":null,\"deptCode\":null,\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"state\":\"0\",\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":null,\"beforeChangeWarehouseName\":null,\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":null,\"afterChangeWarehouseName\":null,\"otherOutboundOrders\":null,\"otherWarehouseEntry\":null,\"ifSlotManage\":\"0\",\"otherOutStockCode\":null,\"otherInStockCode\":null,\"persistStatus\":\"new\",\"purchaseType\":\"InnerPurchase\",\"formChangeItems\":[{\"lineNumber\":10,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"},{\"lineNumber\":20,\"groupNumber\":\"1\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":null,\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":null,\"goodsAmount\":\"5\",\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":\"\",\"srcBillCode\":null,\"srcBillBcode\":null,\"srcBillType\":null,\"firstBillCode\":null,\"firstBillBcode\":null,\"firstBillType\":null,\"enableBatchNumberManage\":\"0\",\"enableBatchNoManage\":\"0\",\"enableInvStatusManage\":\"0\",\"productLineId\":\"13c512df-ad18-48e5-b75d-166a534cc410\",\"productId\":\"996cc839-60e8-4500-82c6-9a7c7b95646d\",\"persistStatus\":\"new\"}]}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":true,\"message\":\"新增成功\",\"code\":\"200\",\"data\":{\"id\":\"0zCk6f8unLWDTIAhJNct\",\"dr\":0,\"ts\":1584195356000,\"creator\":\"gaojian\",\"creationTime\":1584195356000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"state\":0,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"formChangeCode\":\"XTZH2020031400000017\",\"formChangeDate\":1584720000000,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgCode\":\"1210\",\"stockOrgName\":\"西安喜马拉雅网络科技有限公司\",\"deptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"deptCode\":\"01010102\",\"deptName\":\"城市经理\",\"businessUserId\":null,\"businessUserCode\":null,\"businessUserName\":null,\"remark\":null,\"beforeChangeWarehouseId\":\"1001ZZ100000000DPAP4\",\"beforeChangeWarehouseCode\":\"test030201\",\"beforeChangeWarehouseName\":\"测试仓库030201\",\"afterChangeWarehouseId\":\"1001ZZ100000000DPAP6\",\"afterChangeWarehouseCode\":\"test030202\",\"afterChangeWarehouseName\":\"test030202\",\"otherOutStockId\":null,\"otherOutStockCode\":null,\"otherInStockId\":null,\"otherInStockCode\":null,\"existOtherOutInBill\":null,\"formChangeItems\":[{\"id\":\"02GovEVZaDBJzdA2OTNs\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"20\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"0RxOHbJrYeC0xyuZRkpR\",\"changeTypeCode\":\"afterFormChange\",\"changeTypeName\":\"形态转换后\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null},{\"id\":\"0lQOx801aHGLYAU7kdv9\",\"dr\":0,\"ts\":1584195366000,\"creator\":\"gaojian\",\"creationTime\":1584195366000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"lineNumber\":\"10\",\"groupNumber\":\"1\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsUnitId\":\"UNIT-12\",\"goodsUnitCode\":\"EA\",\"goodsUnitName\":\"个\",\"changeTypeId\":\"07gs7c6REAsSQbx0Bgvl\",\"changeTypeCode\":\"beforeFormChange\",\"changeTypeName\":\"形态转换前\",\"goodsAmount\":5.0,\"remark\":null,\"batchNumId\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"changeDate\":null}]}}', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'IsDepend': ''}" ]
+}

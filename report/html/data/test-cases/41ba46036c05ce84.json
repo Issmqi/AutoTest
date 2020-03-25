@@ -1,0 +1,160 @@
+{
+  "uid" : "41ba46036c05ce84",
+  "name" : "test_api[case_data11]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "8d7db49cf41ff6686f06b12383965538",
+  "time" : {
+    "start" : 1585106108735,
+    "stop" : 1585106111598,
+    "duration" : 2863
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585106108754,
+        "stop" : 1585106108757,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fff08c6156c68edb",
+        "name" : "cancel_sign_other_in_stock",
+        "source" : "fff08c6156c68edb.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "f47ce38c6dde604",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-in-bills/batch-cancel-sign",
+        "source" : "f47ce38c6dde604.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "fa53b8912c42a6d4",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "fa53b8912c42a6d4.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "21953b891de04e40",
+        "name" : "form_data",
+        "source" : "21953b891de04e40.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "5e0695ec63e024e",
+        "name" : "{\"ids\": \"0AmVJnqgISoloK1e0JxT\", \"search_AUTH_APPCODE\": \"otherin\"}",
+        "source" : "5e0695ec63e024e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585106111596,
+        "stop" : 1585106111597,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7b5bad2b77a5c376",
+        "name" : "200",
+        "source" : "7b5bad2b77a5c376.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "c3527bac25a34d7c",
+        "name" : "200",
+        "source" : "c3527bac25a34d7c.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "93c824fe347b66f7",
+        "name" : "{}",
+        "source" : "93c824fe347b66f7.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "bbf284615d99b361",
+      "name" : "log",
+      "source" : "bbf284615d99b361.txt",
+      "type" : "text/plain",
+      "size" : 793
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "37459-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 11.0, 'CaseName': 'cancel_sign_other_in_stock', 'APIName': '其他入库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/batch-cancel-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41ba46036c05ce84.json",
+  "parameterValues" : [ "{'CaseId': 11.0, 'CaseName': 'cancel_sign_other_in_stock', 'APIName': '其他入库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/batch-cancel-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}
