@@ -53,28 +53,29 @@ def send_request(request_data):
 
     if method == 'post':
         with allure.step("POST请求接口"):
-            allure.attach("请求接口：", str(casename))
+            allure.attach("请求接口：", casename)
             allure.attach("请求地址", url)
-            allure.attach("请求头", str(header))
+            allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)
-            allure.attach("请求参数", str(parameter))
+            allure.attach("请求参数", parameter)
         result = apiMethod.post(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
 
     elif method == 'put':
         with allure.step("PUT请求接口"):
-            allure.attach("请求接口：", str(casename))
+            allure.attach("请求接口：", casename)
             allure.attach("请求地址", url)
-            allure.attach("请求头", str(header))
+            allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)
-            allure.attach("请求参数", str(parameter))
+            allure.attach("请求参数", parameter)
         result = apiMethod.put(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
 
     elif method == 'get':
         with allure.step("GET请求接口"):
-            allure.attach("请求接口：", str(casename))
+            allure.attach("请求接口：", casename)
             allure.attach("请求地址", url)
-            allure.attach("请求头", str(header))
-            allure.attach("请求参数", str(parameter))
+            allure.attach("请求头", header)
+            allure.attach("请求参数类型", parameter_type)
+            allure.attach("请求参数", parameter)
         result = apiMethod.get(url=url, header=header, param=parameter)
 
     else:
