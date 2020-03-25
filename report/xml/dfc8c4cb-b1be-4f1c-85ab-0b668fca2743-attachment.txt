@@ -1,0 +1,11 @@
+INFO     request:log.py:85 用户gaojian登录失败！
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:cancel_other_out_stock
+INFO     request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-stock/stock/other-out-bills/batch-cancel-sign
+INFO     request:log.py:85 请求参数:{"ids": "0AmVJnqgISoloK1e0JxT", "search_AUTH_APPCODE": "otherin"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为0.019282s
+INFO     request:log.py:85 请求接口结果：
+ (500, '{"timestamp":1585105975755,"status":500,"error":"Internal Server Error","message":"其他出库单为空！","path":"/stock/other-out-bills/batch-cancel-sign"}')
+INFO     request:log.py:85 HTTP返回状态码与预期不一致

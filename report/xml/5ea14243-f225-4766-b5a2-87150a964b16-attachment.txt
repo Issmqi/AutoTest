@@ -1,0 +1,11 @@
+[32mINFO    [0m request:log.py:85 用户gaojian登录失败！
+[32mINFO    [0m request:log.py:85 ====================================================================================================
+[32mINFO    [0m request:log.py:85 用例名称:cancel_other_out_stock
+[32mINFO    [0m request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+[32mINFO    [0m request:log.py:85 请求地址:http://192.168.41.16/occ-stock/stock/other-out-bills/batch-cancel-sign
+[32mINFO    [0m request:log.py:85 请求参数:{"ids": "0w3jt20Jzjhgj1P2G7ze", "search_AUTH_APPCODE": "otherin"}
+[32mINFO    [0m request:log.py:85 测试用户：Manager
+[32mINFO    [0m request:log.py:85 响应时间为0.022102s
+[32mINFO    [0m request:log.py:85 请求接口结果：
+ (500, '{"timestamp":1585106360181,"status":500,"error":"Internal Server Error","message":"其他出库单为空！","path":"/stock/other-out-bills/batch-cancel-sign"}')
+[32mINFO    [0m request:log.py:85 HTTP返回状态码与预期不一致

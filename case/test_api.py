@@ -4,10 +4,7 @@ import allure
 import pytest
 
 path = os.path.dirname(sys.path[0])
-print(path)
 sys.path.append(path)
-print(sys.path)
-
 from util.readExcel import ReadExcel
 from util import apiSendCheck
 
@@ -32,9 +29,8 @@ class TestCase:
         '''
         assert apiSendCheck.api_send_check(case_data)
 
-
-if __name__ == '__main__':
-    # pytest.main()
-    # pytest.main("test_api.py")
-    pytest.main(['-s', '--alluredir', '../report/xml'])
-    os.system('allure generate --clean ../report/xml/ -o ../report/html/')
+# if __name__ == '__main__':
+#     # pytest.main()
+#     # pytest.main("test_api.py")
+#     pytest.main(['-s', '--alluredir', '../report/xml'])
+#     os.system('allure generate --clean ../report/xml/ -o ../report/html/')

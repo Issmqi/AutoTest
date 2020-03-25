@@ -11,10 +11,7 @@ def api_send_check(case):
     :return:
     """
     code, data = apiSend.send_request(case)
-    # result=apiSend.send_request(case)
 
-    print(code)
-    print(data)
     result = checkResult.check_result(case, code, data)
     if result == True:
         return True
