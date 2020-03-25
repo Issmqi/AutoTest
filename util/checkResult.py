@@ -36,7 +36,7 @@ def check_json(src_data, res_data):
                     check_json(src_data[this_key], res_data[this_key])  # 递归执行check_json
 
                 elif type(src_data[this_key]) != type(res_data[this_key]):
-                    log.info("json格式校验，校验关键字%s与返回关键字%s类型不一致" % (src_data[this_key], res_data[this_key]))
+                    log.info("json格式校验，校验关键字%s:%s与返回关键字%s类型不一致" % (this_key,src_data[this_key], res_data[this_key]))
                     flag = False
                     # return flag
                     # raise Exception("json格式校验，校验关键字%s与返回关键字%s类型不一致"%(src_data[this_key],res_data[this_key]))

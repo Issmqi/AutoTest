@@ -94,7 +94,7 @@ def put(url, param_type, param, cookie, header):
         log.error(e)
 
 
-def get(header, url, data):
+def get(header, url, param):
     '''
     发送get请求
     :param header: 请求头
@@ -102,11 +102,18 @@ def get(header, url, data):
     :param data: 请求参数
     :return:
     '''
-    response = requests.get(url=url, headers=header, params=data)
+    if not header:
+        header=None
+    if not param:
+        param = None
+    else:
+        param = json.loads(param)
+    response = requests.get(url=url, headers=header, params=param)
     if response.status_code == 301:
         response = requests.get(url=response.headers['location'])
     try:
         if response.status_code != 200:
+            print(response.url)
             return response.status_code, response.text
         else:
             return response.status_code, response.json()

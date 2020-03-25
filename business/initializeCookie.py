@@ -57,7 +57,7 @@ def get_encrypt_pwd(pwd):
     return pwd_encrypt
 
 # get_encrypt_pwd('111qqq')
-# get_manager_cookie()
+get_manager_cookie()
 # if __name__ == '__main__':
 #
 #     customer_01_login()
