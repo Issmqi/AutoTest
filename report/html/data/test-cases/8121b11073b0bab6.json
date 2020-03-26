@@ -1,0 +1,185 @@
+{
+  "uid" : "8121b11073b0bab6",
+  "name" : "test_api[case_data2]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "14b73c7bbd1de28f8a6927c28e2b51dd",
+  "time" : {
+    "start" : 1585192669115,
+    "stop" : 1585192685359,
+    "duration" : 16244
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585192669158,
+        "stop" : 1585192669160,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa35d11d466f26cb",
+        "name" : "submit_sales_order",
+        "source" : "fa35d11d466f26cb.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "5b6a1c6c6e2a844d",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/submitWithoutBpm",
+        "source" : "5b6a1c6c6e2a844d.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "9e607116e4bbb0c5",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "9e607116e4bbb0c5.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "c9ce5472e0aa3da6",
+        "name" : "parameter",
+        "source" : "c9ce5472e0aa3da6.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "403e51d0849ebf25",
+        "name" : "{\"billId\": \"0gPELiwgybpJ6CD99wyn\"}",
+        "source" : "403e51d0849ebf25.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585192685355,
+        "stop" : 1585192685359,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a8fba787d5967e02",
+        "name" : "200",
+        "source" : "a8fba787d5967e02.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "4f07a101d7a5a045",
+        "name" : "200",
+        "source" : "4f07a101d7a5a045.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3322882a219ef7ca",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "3322882a219ef7ca.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3870ad36dc463f20",
+        "name" : "{'success': 'success', 'message': None, 'detailMsg': {'data': None}}",
+        "source" : "3870ad36dc463f20.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "1d285116bf3bc775",
+      "name" : "log",
+      "source" : "1d285116bf3bc775.txt",
+      "type" : "text/plain",
+      "size" : 771
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "39720-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'APIName': '提交销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bfc6097089d2b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585190893029,
+        "stop" : 1585190893101,
+        "duration" : 72
+      }
+    }, {
+      "uid" : "dcd885f907e18ce0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x107f579d8>({'APIName': '提交销售订单', 'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585190582909,
+        "stop" : 1585190582993,
+        "duration" : 84
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8121b11073b0bab6.json",
+  "parameterValues" : [ "{'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'APIName': '提交销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

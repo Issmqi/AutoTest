@@ -1,0 +1,12 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:cancel_approve_sales_order
+INFO     request:log.py:85 请求头:{'Content-Type':'application/json','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit
+INFO     request:log.py:85 请求参数:{"billId": "0sbVwt79AlUx6i2pojJv"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为0.044971s
+INFO     request:log.py:85 返回状态码:200
+INFO     request:log.py:85 返回response:
+ {'success': 'fail_global', 'message': '&#21462;&#28040;&#23457;&#25209;&#22833;&#36133;&#65306;Index: 0, Size: 0', 'detailMsg': {}, 'stack': None, 'operate': None}
+INFO     request:log.py:85 json格式校验，校验关键字message:None与返回关键字&#21462;&#28040;&#23457;&#25209;&#22833;&#36133;&#65306;Index: 0, Size: 0类型不一致
+INFO     request:log.py:85 JSON格式校验失败！

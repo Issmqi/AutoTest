@@ -28,7 +28,6 @@ def check_json(src_data, res_data):
             if key not in res_data:
                 log.info("JSON格式校验，关键字%s不在返回结果%s中" % (key, res_data))
                 flag = False
-
                 # raise Exception("JSON格式校验，关键字%s不在返回结果%s中" % (key, res_data))
             else:
                 this_key = key
@@ -36,7 +35,7 @@ def check_json(src_data, res_data):
                     check_json(src_data[this_key], res_data[this_key])  # 递归执行check_json
 
                 elif type(src_data[this_key]) != type(res_data[this_key]):
-                    log.info("json格式校验，校验关键字%s:%s与返回关键字%s类型不一致" % (this_key,src_data[this_key], res_data[this_key]))
+                    log.info("json格式校验，校验关键字%s:预期%s与返回%s类型不一致" % (this_key,src_data[this_key], res_data[this_key]))
                     flag = False
                     # return flag
                     # raise Exception("json格式校验，校验关键字%s与返回关键字%s类型不一致"%(src_data[this_key],res_data[this_key]))
@@ -73,8 +72,7 @@ def check_result(case, code, res_data):
             log.info("HTTP状态码校验通过！")
             return True
         else:
-            log.info(("HTTP返回状态码与预期不一致"))
-            # raise Exception("HTTP返回状态码与预期不一致")
+            log.info("HTTP返回状态码与预期不一致")
             return False
 
     elif check_type == 'check_json':
@@ -89,14 +87,14 @@ def check_result(case, code, res_data):
                 else:
                     expected_data_dict = json.loads(case['ExpectedData'])
                     result = check_json(expected_data_dict, res_data)
-                    if result == False:
+
+                    if not result:
                         log.info('JSON格式校验失败！')
                         return False
                     else:
                         log.info('JSON格式校验成功！')
                         return True
             else:
-                # raise Exception("HTTP返回状态码与预期不一致")
                 log.info("HTTP返回状态码%s与预期%s不一致" % (str(code), int(case['ExpectedCode'])))
                 return False
     else:

@@ -1,0 +1,10 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:get_common_purchase_details
+INFO     request:log.py:85 请求头:
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-purchase/purchase/orders/findByParentid
+INFO     request:log.py:85 请求参数:{"ids": "0O6WV1dzZLOra6FKWeB2", "search_AUTH_APPCODE": "purchasecenterorderout"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 返回状态码:500
+INFO     request:log.py:85 返回response:
+ {"timestamp":1585190468897,"status":500,"error":"Internal Server Error","message":"id 参数不能为空","path":"/purchase/orders/findByParentid"}
+INFO     request:log.py:85 HTTP返回状态码500与预期200不一致

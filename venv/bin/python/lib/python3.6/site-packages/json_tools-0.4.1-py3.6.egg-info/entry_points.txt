@@ -1,0 +1,3 @@
+[console_scripts]
+json = json_tools.__main__:main
+
