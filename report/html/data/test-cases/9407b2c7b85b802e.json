@@ -1,0 +1,194 @@
+{
+  "uid" : "9407b2c7b85b802e",
+  "name" : "test_api[case_data10]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "cd5d614862e130f0df2e9f8a3630095e",
+  "time" : {
+    "start" : 1585208154945,
+    "stop" : 1585208155922,
+    "duration" : 977
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585208154975,
+        "stop" : 1585208154977,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ef4ca306ae44b4b",
+        "name" : "submit_purchase_order",
+        "source" : "5ef4ca306ae44b4b.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "72660f6a94a754e6",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/submitWithoutBpm",
+        "source" : "72660f6a94a754e6.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "6ec2e1eddd9ef0a6",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "6ec2e1eddd9ef0a6.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "f188b69c4f1ce3fe",
+        "name" : "parameter",
+        "source" : "f188b69c4f1ce3fe.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "257f7fa2f628863",
+        "name" : "{\"billId\": \"0k8sMRqxrr5AYU32QH6g\"}",
+        "source" : "257f7fa2f628863.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585208155919,
+        "stop" : 1585208155922,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c7aceb30f9219314",
+        "name" : "200",
+        "source" : "c7aceb30f9219314.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "fb84c6d988f04ed9",
+        "name" : "200",
+        "source" : "fb84c6d988f04ed9.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "1cf6c08d882b1a46",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "1cf6c08d882b1a46.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "6b0dc5c6ba233f66",
+        "name" : "{'success': 'success', 'message': None, 'detailMsg': {'data': None}}",
+        "source" : "6b0dc5c6ba233f66.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "69b31c2909d93318",
+      "name" : "log",
+      "source" : "69b31c2909d93318.txt",
+      "type" : "text/plain",
+      "size" : 778
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "40459-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c544282a38051491",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585192717428,
+        "stop" : 1585192717719,
+        "duration" : 291
+      }
+    }, {
+      "uid" : "470c7f138b0c4283",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x1089e89d8>({'APIName': '提交外部采购订单', 'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x1089e89d8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585190924470,
+        "stop" : 1585190924889,
+        "duration" : 419
+      }
+    }, {
+      "uid" : "2bc0a20bd9d96ced",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x107f579d8>({'APIName': '提交外部采购订单', 'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585190614578,
+        "stop" : 1585190615459,
+        "duration" : 881
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9407b2c7b85b802e.json",
+  "parameterValues" : [ "{'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "662e335e2f050c2c",
+      "uid" : "30cba82fc3fae21",
       "status" : "passed",
       "time" : {
-        "start" : 1585192748542,
-        "stop" : 1585192748628,
-        "duration" : 86
+        "start" : 1585208217057,
+        "stop" : 1585208217118,
+        "duration" : 61
       }
     } ]
   },
@@ -28,12 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "da32ee9109ca2816",
+      "uid" : "5db277e87497b51a",
       "status" : "passed",
       "time" : {
-        "start" : 1585192748631,
-        "stop" : 1585192756527,
-        "duration" : 7896
+        "start" : 1585208217121,
+        "stop" : 1585208232416,
+        "duration" : 15295
       }
     } ]
   },
@@ -47,12 +47,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "617badec647ec154",
+      "uid" : "a71da5b4c8589497",
       "status" : "passed",
       "time" : {
-        "start" : 1585192712914,
-        "stop" : 1585192717302,
-        "duration" : 4388
+        "start" : 1585208151950,
+        "stop" : 1585208154696,
+        "duration" : 2746
       }
     } ]
   },
@@ -66,12 +66,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9136347eedea6c0d",
+      "uid" : "87610fc36c8f5bf2",
       "status" : "passed",
       "time" : {
-        "start" : 1585192686990,
-        "stop" : 1585192695813,
-        "duration" : 8823
+        "start" : 1585208093081,
+        "stop" : 1585208115031,
+        "duration" : 21950
       }
     } ]
   },
@@ -85,12 +85,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dcf8c096b59a2386",
+      "uid" : "753f53d8be2cbb93",
       "status" : "passed",
       "time" : {
-        "start" : 1585192702951,
-        "stop" : 1585192712909,
-        "duration" : 9958
+        "start" : 1585208135453,
+        "stop" : 1585208151945,
+        "duration" : 16492
       }
     } ]
   },
@@ -104,12 +104,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "aedadaa0be6c450d",
+      "uid" : "4bfe7d86ecb2d669",
       "status" : "passed",
       "time" : {
-        "start" : 1585192718667,
-        "stop" : 1585192719650,
-        "duration" : 983
+        "start" : 1585208159480,
+        "stop" : 1585208163100,
+        "duration" : 3620
       }
     } ]
   },
@@ -123,12 +123,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f053eafd321c9c08",
+      "uid" : "c3cde8c1bdf144f3",
       "status" : "passed",
       "time" : {
-        "start" : 1585192695817,
-        "stop" : 1585192702946,
-        "duration" : 7129
+        "start" : 1585208115036,
+        "stop" : 1585208135449,
+        "duration" : 20413
       }
     } ]
   },
@@ -142,13 +142,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fe97eb90d7e671c4",
+      "uid" : "4564ea3f12287fb5",
       "status" : "broken",
       "statusDetails" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "time" : {
-        "start" : 1585192668990,
-        "stop" : 1585192669023,
-        "duration" : 33
+        "start" : 1585208066915,
+        "stop" : 1585208067024,
+        "duration" : 109
       }
     } ]
   },
@@ -162,12 +162,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5891c13090865113",
+      "uid" : "9f3ef1e2e35838d4",
       "status" : "passed",
       "time" : {
-        "start" : 1585192647333,
-        "stop" : 1585192668983,
-        "duration" : 21650
+        "start" : 1585208032629,
+        "stop" : 1585208066893,
+        "duration" : 34264
       }
     } ]
   },
@@ -181,31 +181,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "263bd99f48344b71",
+      "uid" : "c18c6c6005aa3e7c",
       "status" : "passed",
       "time" : {
-        "start" : 1585192685364,
-        "stop" : 1585192686759,
-        "duration" : 1395
-      }
-    } ]
-  },
-  "e6210eba7d4acb2f03373dcaa0b53a0a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7b13b4e2bc18d4e2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1585192732703,
-        "stop" : 1585192733429,
-        "duration" : 726
+        "start" : 1585208087439,
+        "stop" : 1585208092220,
+        "duration" : 4781
       }
     } ]
   },
@@ -219,12 +200,50 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89d0983c3dec45e8",
+      "uid" : "9407b2c7b85b802e",
       "status" : "passed",
       "time" : {
-        "start" : 1585192717428,
-        "stop" : 1585192717719,
-        "duration" : 291
+        "start" : 1585208154945,
+        "stop" : 1585208155922,
+        "duration" : 977
+      }
+    } ]
+  },
+  "e6210eba7d4acb2f03373dcaa0b53a0a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e9cba868f0fb13cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585208188474,
+        "stop" : 1585208191965,
+        "duration" : 3491
+      }
+    } ]
+  },
+  "44c0ab8f6522b1bbf3de4feb7e5edb9d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83bc2581f9a7d89a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585208154701,
+        "stop" : 1585208154941,
+        "duration" : 240
       }
     } ]
   },
@@ -238,32 +257,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8121b11073b0bab6",
+      "uid" : "401aa6abfa136284",
       "status" : "passed",
       "time" : {
-        "start" : 1585192669115,
-        "stop" : 1585192685359,
-        "duration" : 16244
-      }
-    } ]
-  },
-  "44c0ab8f6522b1bbf3de4feb7e5edb9d" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a74b20fb6f99c62e",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10fedb9d8>({'APIName': '查询供应商直发外部采购订单详情-普通仓', 'CaseId': 8.0, 'CaseName': 'get_common_purchase_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10fedb9d8> = apiSendCheck.api_send_check",
-      "time" : {
-        "start" : 1585192717312,
-        "stop" : 1585192717415,
-        "duration" : 103
+        "start" : 1585208067354,
+        "stop" : 1585208087434,
+        "duration" : 20080
       }
     } ]
   },
@@ -277,13 +276,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6f97106eef61860",
+      "uid" : "4ca2c8bf146bcf28",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10fedb9d8>({'APIName': '新增调拨出库单', 'CaseId': 26.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10fedb9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x103b949d8>({'APIName': '新增调拨出库单', 'CaseId': 26.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x103b949d8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585192765089,
-        "stop" : 1585192779993,
-        "duration" : 14904
+        "start" : 1585208249578,
+        "stop" : 1585208266103,
+        "duration" : 16525
       }
     } ]
   },
@@ -297,31 +296,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f9a64f3dc7878977",
+      "uid" : "3e1e3f2afd3a9c5c",
       "status" : "passed",
       "time" : {
-        "start" : 1585192734292,
-        "stop" : 1585192744656,
-        "duration" : 10364
-      }
-    } ]
-  },
-  "033226df5d00bf3942f9fe3b3afcddcf" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b6b81f753d15ec89",
-      "status" : "passed",
-      "time" : {
-        "start" : 1585192747873,
-        "stop" : 1585192748538,
-        "duration" : 665
+        "start" : 1585208194565,
+        "stop" : 1585208210119,
+        "duration" : 15554
       }
     } ]
   },
@@ -335,12 +315,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "37c18ebd5bfa30d3",
+      "uid" : "69946cc6d19fd6b",
       "status" : "passed",
       "time" : {
-        "start" : 1585192733459,
-        "stop" : 1585192734276,
-        "duration" : 817
+        "start" : 1585208191969,
+        "stop" : 1585208194561,
+        "duration" : 2592
+      }
+    } ]
+  },
+  "033226df5d00bf3942f9fe3b3afcddcf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b24383f831cc3e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585208215010,
+        "stop" : 1585208217053,
+        "duration" : 2043
       }
     } ]
   },
@@ -354,31 +353,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ac6f0040cc5ffa5b",
+      "uid" : "5cf7761a822d3013",
       "status" : "passed",
       "time" : {
-        "start" : 1585192746678,
-        "stop" : 1585192747122,
-        "duration" : 444
-      }
-    } ]
-  },
-  "dfd70a8178228186c2190ae387d27f60" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "aac5b6638a356b0a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1585192780001,
-        "stop" : 1585192787471,
-        "duration" : 7470
+        "start" : 1585208211651,
+        "stop" : 1585208211817,
+        "duration" : 166
       }
     } ]
   },
@@ -392,12 +372,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "950401f58c73c706",
+      "uid" : "7ed5cab7902ef665",
       "status" : "passed",
       "time" : {
-        "start" : 1585192747126,
-        "stop" : 1585192747865,
-        "duration" : 739
+        "start" : 1585208211830,
+        "stop" : 1585208215007,
+        "duration" : 3177
+      }
+    } ]
+  },
+  "dfd70a8178228186c2190ae387d27f60" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7cfddffa34e14c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585208266111,
+        "stop" : 1585208284139,
+        "duration" : 18028
       }
     } ]
   },
@@ -411,13 +410,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b770580739526d13",
+      "uid" : "b341fc6614a0b433",
       "status" : "broken",
       "statusDetails" : "json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
       "time" : {
-        "start" : 1585192744668,
-        "stop" : 1585192746629,
-        "duration" : 1961
+        "start" : 1585208210124,
+        "stop" : 1585208211597,
+        "duration" : 1473
       }
     } ]
   },
@@ -431,12 +430,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e61fefaae5455a19",
+      "uid" : "a0c07b64c6cc1e8b",
       "status" : "passed",
       "time" : {
-        "start" : 1585192720081,
-        "stop" : 1585192721856,
-        "duration" : 1775
+        "start" : 1585208165143,
+        "stop" : 1585208167960,
+        "duration" : 2817
       }
     } ]
   },
@@ -450,12 +449,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b78737a9c013023b",
+      "uid" : "7ee1ae8f9a66bd3d",
       "status" : "passed",
       "time" : {
-        "start" : 1585192721860,
-        "stop" : 1585192732166,
-        "duration" : 10306
+        "start" : 1585208167964,
+        "stop" : 1585208187431,
+        "duration" : 19467
       }
     } ]
   },
@@ -469,12 +468,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3f9526335e9cf6e",
+      "uid" : "1d8e2ce80208f403",
       "status" : "passed",
       "time" : {
-        "start" : 1585192732172,
-        "stop" : 1585192732697,
-        "duration" : 525
+        "start" : 1585208187435,
+        "stop" : 1585208188469,
+        "duration" : 1034
       }
     } ]
   },
@@ -488,12 +487,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a54a795931f78eac",
+      "uid" : "9bdef321d33abe1c",
       "status" : "passed",
       "time" : {
-        "start" : 1585192719656,
-        "stop" : 1585192720076,
-        "duration" : 420
+        "start" : 1585208163104,
+        "stop" : 1585208165139,
+        "duration" : 2035
       }
     } ]
   },
@@ -507,13 +506,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "329e572f40b9c597",
+      "uid" : "1c043e2d4c8c3a88",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10fedb9d8>({'APIName': '新增调拨单', 'CaseId': 25.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10fedb9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x103b949d8>({'APIName': '新增调拨单', 'CaseId': 25.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x103b949d8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585192756533,
-        "stop" : 1585192765068,
-        "duration" : 8535
+        "start" : 1585208232420,
+        "stop" : 1585208249570,
+        "duration" : 17150
       }
     } ]
   },
@@ -527,12 +526,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7061ffb2ebe268ee",
+      "uid" : "10001af327e9c79c",
       "status" : "passed",
       "time" : {
-        "start" : 1585192717723,
-        "stop" : 1585192718663,
-        "duration" : 940
+        "start" : 1585208155927,
+        "stop" : 1585208159476,
+        "duration" : 3549
       }
     } ]
   },
@@ -546,13 +545,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6c8b102e58e66415",
+      "uid" : "b7332ac82809303b",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10fedb9d8>({'APIName': '删除销售订单', 'CaseId': 3.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10fedb9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x103b949d8>({'APIName': '删除销售订单', 'CaseId': 3.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x103b949d8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585192686762,
-        "stop" : 1585192686963,
-        "duration" : 201
+        "start" : 1585208092229,
+        "stop" : 1585208093071,
+        "duration" : 842
       }
     } ]
   }

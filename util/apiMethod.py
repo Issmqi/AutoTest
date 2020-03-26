@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 import json
 import requests
 import simplejson
@@ -33,8 +36,8 @@ def post(url, param_type, param, cookie, header):
         response = None
         log.error('参数类型不存在')
 
-    timing = response.elapsed.total_seconds()
-    log.info('响应时间为%ss' % timing)
+    times = response.elapsed.total_seconds()
+    log.info('响应时间为%ss' % times)
     try:
         if response.status_code != 200:
             return response.status_code, response.text

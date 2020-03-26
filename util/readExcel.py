@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# _*_ coding:utf-8 _*_
+# -*- coding: utf-8 -*-
+# !/bin/bash
 '''
 
 __author__:'shimengqi'
@@ -72,7 +72,7 @@ def main():
     excel_data = ReadExcel()
     print(excel_data.get_rows())
     # print(excel_data.get_full_dict())
-    values = excel_data.get_row_dict(21)
+    values = excel_data.get_row_dict(2)
     print(values)
     a = None
 

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# !/bin/bash
 from util.log import Log
 import allure
 import json
@@ -35,13 +36,13 @@ def check_json(src_data, res_data):
                     check_json(src_data[this_key], res_data[this_key])  # 递归执行check_json
 
                 elif type(src_data[this_key]) != type(res_data[this_key]):
-                    log.info("json格式校验，校验关键字%s:预期%s与返回%s类型不一致" % (this_key,src_data[this_key], res_data[this_key]))
+                    log.info("json格式校验，校验关键字%s:预期%s与返回%s类型不一致" % (this_key, src_data[this_key], res_data[this_key]))
                     flag = False
                     # return flag
                     # raise Exception("json格式校验，校验关键字%s与返回关键字%s类型不一致"%(src_data[this_key],res_data[this_key]))
                 else:
                     # print('%s校验通过'%this_key)
-                    pass
+                    flag = True
 
     else:
 
@@ -88,7 +89,7 @@ def check_result(case, code, res_data):
                     expected_data_dict = json.loads(case['ExpectedData'])
                     result = check_json(expected_data_dict, res_data)
 
-                    if not result:
+                    if result is False:
                         log.info('JSON格式校验失败！')
                         return False
                     else:

@@ -1,0 +1,11 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:cancel_approve_purchase_order
+INFO     request:log.py:85 请求头:{'Content-Type':'application/json','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-purchase/purchase/orders/cancelApproveWithoutBpmToSubmit
+INFO     request:log.py:85 请求参数:{"billId": "0k8sMRqxrr5AYU32QH6g"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为3.582352s
+INFO     request:log.py:85 返回状态码:200
+INFO     request:log.py:85 返回response:
+ {'success': 'success', 'message': None, 'detailMsg': {'data': None}}
+INFO     request:log.py:85 JSON格式校验成功！

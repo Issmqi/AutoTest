@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# !/bin/bash
 
 import allure
 from business import initializeCookie
