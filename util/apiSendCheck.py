@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # !/bin/bash
 
+
 from util import apiSend
 from util import checkResult
 
