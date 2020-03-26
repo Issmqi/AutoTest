@@ -21,8 +21,8 @@ def send_request(request_data):
     '''
 
     host = ReadConfig().get_config("HTTP", "host")
-    casename = request_data['CaseName']
-    print(casename)
+    case_name = request_data['CaseName']
+    print(case_name)
     user = request_data['User']
     header = request_data['Headers']
     parameter_type = request_data['ParameterType']
@@ -47,15 +47,15 @@ def send_request(request_data):
         parameter = initializeParameter.ini_parameter(depend_case, relevance, parameter)
 
     log.info("=" * 100)
-    log.info('用例名称:%s' % (casename))
+    log.info('用例名称:%s' % case_name)
     log.info('请求头:%s' % header)
-    log.info('请求地址:%s' % (url))
-    log.info('请求参数:%s' % (parameter))
-    log.info('测试用户：%s' % (user))
+    log.info('请求地址:%s' % url)
+    log.info('请求参数:%s' % parameter)
+    log.info('测试用户：%s' % user)
 
     if method == 'post':
         with allure.step("POST请求接口"):
-            allure.attach("请求接口:", casename)
+            allure.attach("请求接口:",str(case_name))
             allure.attach("请求地址:", url)
             allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)
@@ -64,7 +64,7 @@ def send_request(request_data):
 
     elif method == 'put':
         with allure.step("PUT请求接口"):
-            allure.attach("请求接口：", casename)
+            allure.attach("请求接口：", case_name)
             allure.attach("请求地址", url)
             allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)
@@ -73,7 +73,7 @@ def send_request(request_data):
 
     elif method == 'get':
         with allure.step("GET请求接口"):
-            allure.attach("请求接口：", casename)
+            allure.attach("请求接口：", case_name)
             allure.attach("请求地址", url)
             allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)
@@ -89,7 +89,7 @@ def send_request(request_data):
     # log.info("请求接口结果：\n %s" % str(result))
 
     if is_depend == 'Yes':
-        writeResult.write_result(casename, result)
+        writeResult.write_result(case_name, result)
 
     return result
 #
