@@ -1,0 +1,186 @@
+{
+  "uid" : "27341c8e27af4ab7",
+  "name" : "test_api[case_data18]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "1f83c71420f9aacfa8b39c6a404936d8",
+  "time" : {
+    "start" : 1585208191969,
+    "stop" : 1585208194561,
+    "duration" : 2592
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585208191998,
+        "stop" : 1585208191999,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4bbfccded471db33",
+        "name" : "delete_other_in_stock",
+        "source" : "4bbfccded471db33.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "a77bdd7f4dd19825",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-in-bills/delete",
+        "source" : "a77bdd7f4dd19825.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "78f0419fe0cce9aa",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "78f0419fe0cce9aa.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "53eec9f4d5beb9dd",
+        "name" : "form_data",
+        "source" : "53eec9f4d5beb9dd.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "9ddd6d148b96cbaf",
+        "name" : "{\"ids\": \"0Ofg7ysS3flmdkCLD1j6\", \"search_AUTH_APPCODE\": \"otherin\"}",
+        "source" : "9ddd6d148b96cbaf.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585208194558,
+        "stop" : 1585208194561,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e759ca4867143205",
+        "name" : "200",
+        "source" : "e759ca4867143205.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "8e082edc584a1487",
+        "name" : "200",
+        "source" : "8e082edc584a1487.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "b0ee52dda1bd3643",
+        "name" : "{}",
+        "source" : "b0ee52dda1bd3643.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "7eff0c64ac3d07ab",
+      "name" : "log",
+      "source" : "7eff0c64ac3d07ab.txt",
+      "type" : "text/plain",
+      "size" : 755
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "40459-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17.0, 'CaseName': 'delete_other_in_stock', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7b787b052250767d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585192733459,
+        "stop" : 1585192734276,
+        "duration" : 817
+      }
+    }, {
+      "uid" : "afb01c03c673dcec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585190941207,
+        "stop" : 1585190941861,
+        "duration" : 654
+      }
+    }, {
+      "uid" : "5a0d3aebdc26d96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585190631216,
+        "stop" : 1585190633179,
+        "duration" : 1963
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27341c8e27af4ab7.json",
+  "parameterValues" : [ "{'CaseId': 17.0, 'CaseName': 'delete_other_in_stock', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

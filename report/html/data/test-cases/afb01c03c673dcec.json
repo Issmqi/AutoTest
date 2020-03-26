@@ -1,0 +1,160 @@
+{
+  "uid" : "afb01c03c673dcec",
+  "name" : "test_api[case_data18]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "1f83c71420f9aacfa8b39c6a404936d8",
+  "time" : {
+    "start" : 1585190941207,
+    "stop" : 1585190941861,
+    "duration" : 654
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585190941237,
+        "stop" : 1585190941240,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7eab71d444d99bf3",
+        "name" : "delete_other_in_stock",
+        "source" : "7eab71d444d99bf3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "29551ae6a6f20562",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-in-bills/delete",
+        "source" : "29551ae6a6f20562.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "9988eefa9e39a1b6",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "9988eefa9e39a1b6.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "c4166c588b0d4bbd",
+        "name" : "form_data",
+        "source" : "c4166c588b0d4bbd.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "91329e793b6ce017",
+        "name" : "{\"ids\": \"0mp18HgEGoGSudIBjznk\", \"search_AUTH_APPCODE\": \"otherin\"}",
+        "source" : "91329e793b6ce017.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585190941859,
+        "stop" : 1585190941860,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f6afe13ebfb28db3",
+        "name" : "200",
+        "source" : "f6afe13ebfb28db3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "2bf1b737e21c44b0",
+        "name" : "200",
+        "source" : "2bf1b737e21c44b0.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "9263bda44f79919",
+        "name" : "{}",
+        "source" : "9263bda44f79919.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8b3ec2a6c8d75967",
+      "name" : "log",
+      "source" : "8b3ec2a6c8d75967.txt",
+      "type" : "text/plain",
+      "size" : 755
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "39500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17.0, 'CaseName': 'delete_other_in_stock', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "afb01c03c673dcec.json",
+  "parameterValues" : [ "{'CaseId': 17.0, 'CaseName': 'delete_other_in_stock', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

@@ -55,7 +55,7 @@ def send_request(request_data):
 
     if method == 'post':
         with allure.step("POST请求接口"):
-            allure.attach("请求接口:",str(case_name))
+            allure.attach("请求接口:", str(case_name))
             allure.attach("请求地址:", url)
             allure.attach("请求头", header)
             allure.attach("请求参数类型", parameter_type)

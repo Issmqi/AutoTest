@@ -1,0 +1,170 @@
+{
+  "uid" : "23789f52183074c7",
+  "name" : "test_api[case_data3]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "c5a706d26bf712d74f0688795de7b985",
+  "time" : {
+    "start" : 1585190583000,
+    "stop" : 1585190584414,
+    "duration" : 1414
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x107f579d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x108ec7080>\ncase_data = {'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x107f579d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x107f579d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x108ec7080>\ncase_data = {'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x107f579d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x107f579d8> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585190583041,
+        "stop" : 1585190583042,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a9d95ccf7b9cd40d",
+        "name" : "cancel_approve_sales_order",
+        "source" : "a9d95ccf7b9cd40d.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "302f73eae0c006c0",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit",
+        "source" : "302f73eae0c006c0.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "bcaa5965b23e9881",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "bcaa5965b23e9881.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "a37a28a15810504a",
+        "name" : "parameter",
+        "source" : "a37a28a15810504a.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "5fc940dc782fd23b",
+        "name" : "{\"billId\": \"0sbVwt79AlUx6i2pojJv\"}",
+        "source" : "5fc940dc782fd23b.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585190584412,
+        "stop" : 1585190584414,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1944ccec504c2701",
+        "name" : "200",
+        "source" : "1944ccec504c2701.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3a86fcd6c7a9abb4",
+        "name" : "200",
+        "source" : "3a86fcd6c7a9abb4.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "47af45fd403de019",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "47af45fd403de019.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "113890319bc6a1db",
+        "name" : "{'success': 'fail_global', 'message': '&#21462;&#28040;&#23457;&#25209;&#22833;&#36133;&#65306;Index: 0, Size: 0', 'detailMsg': {}, 'stack': None, 'operate': None}",
+        "source" : "113890319bc6a1db.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2e54944d07b372d9",
+      "name" : "log",
+      "source" : "2e54944d07b372d9.txt",
+      "type" : "text/plain",
+      "size" : 888
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "39424-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'APIName': '取消审批销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "23789f52183074c7.json",
+  "parameterValues" : [ "{'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'APIName': '取消审批销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

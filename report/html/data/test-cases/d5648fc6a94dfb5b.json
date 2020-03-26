@@ -1,0 +1,160 @@
+{
+  "uid" : "d5648fc6a94dfb5b",
+  "name" : "test_api[case_data16]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "2c4863c632f370d268d389ee8f66683a",
+  "time" : {
+    "start" : 1585190630106,
+    "stop" : 1585190630628,
+    "duration" : 522
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585190630141,
+        "stop" : 1585190630143,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b9e56dc65a868412",
+        "name" : "sign_other_in_stock",
+        "source" : "b9e56dc65a868412.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "7c0df8670ce1ed57",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-in-bills/batch-sign",
+        "source" : "7c0df8670ce1ed57.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ee64c9846346e97",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "ee64c9846346e97.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "227ae59393e729cb",
+        "name" : "form_data",
+        "source" : "227ae59393e729cb.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "abbd2a572f45c0fb",
+        "name" : "{\"ids\": \"0bgLsCOYGfJ4jkYG3t89\", \"search_AUTH_APPCODE\": \"otherin\"}",
+        "source" : "abbd2a572f45c0fb.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585190630626,
+        "stop" : 1585190630628,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f42ebf245f5dead0",
+        "name" : "200",
+        "source" : "f42ebf245f5dead0.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "eec520dc3d6d46b5",
+        "name" : "200",
+        "source" : "eec520dc3d6d46b5.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ebc7a32a9b0be901",
+        "name" : "{}",
+        "source" : "ebc7a32a9b0be901.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ea1aa8f608c04b58",
+      "name" : "log",
+      "source" : "ea1aa8f608c04b58.txt",
+      "type" : "text/plain",
+      "size" : 757
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "39424-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 15.0, 'CaseName': 'sign_other_in_stock', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d5648fc6a94dfb5b.json",
+  "parameterValues" : [ "{'CaseId': 15.0, 'CaseName': 'sign_other_in_stock', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"05Tgn4pjsuQF3ZsdgKl9\",\"search_AUTH_APPCODE\":\"otherin\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_other_in_stock', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}

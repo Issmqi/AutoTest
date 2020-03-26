@@ -1,0 +1,186 @@
+{
+  "uid" : "4c1f74d7f0f70d36",
+  "name" : "test_api[case_data14]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "e40412cb810ed8afae4787e45024eff6",
+  "time" : {
+    "start" : 1585208165143,
+    "stop" : 1585208167960,
+    "duration" : 2817
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585208165175,
+        "stop" : 1585208165176,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8729cb55cf5c7a8e",
+        "name" : "delete_purchase_order",
+        "source" : "8729cb55cf5c7a8e.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "dc4bdb42b568b73e",
+        "name" : "http://192.168.41.16/occ-purchase/purchase/orders/delete",
+        "source" : "dc4bdb42b568b73e.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "896cc583ea946a0f",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "896cc583ea946a0f.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "1962783b70acc90e",
+        "name" : "form_data",
+        "source" : "1962783b70acc90e.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "a47153ad143d1e54",
+        "name" : "{\"ids\": \"0LylpeqhFifnj5ORmU5n\", \"search_AUTH_APPCODE\": \"purchasecenterorderout\"}",
+        "source" : "a47153ad143d1e54.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585208167954,
+        "stop" : 1585208167960,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "72fa76f19d47ace8",
+        "name" : "200",
+        "source" : "72fa76f19d47ace8.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d5d323de8100cf1f",
+        "name" : "200",
+        "source" : "d5d323de8100cf1f.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e1c4bdb1d93f4a7b",
+        "name" : "{}",
+        "source" : "e1c4bdb1d93f4a7b.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4368b5c3a436f057",
+      "name" : "log",
+      "source" : "4368b5c3a436f057.txt",
+      "type" : "text/plain",
+      "size" : 768
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "40459-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 13.0, 'CaseName': 'delete_purchase_order', 'APIName': '删除供应商直发外部采购订单-普通仓', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dfb1506457900909",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585192720081,
+        "stop" : 1585192721856,
+        "duration" : 1775
+      }
+    }, {
+      "uid" : "79cb44a12d5a22a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585190927349,
+        "stop" : 1585190931589,
+        "duration" : 4240
+      }
+    }, {
+      "uid" : "43f888691c5e1738",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585190618724,
+        "stop" : 1585190620562,
+        "duration" : 1838
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c1f74d7f0f70d36.json",
+  "parameterValues" : [ "{'CaseId': 13.0, 'CaseName': 'delete_purchase_order', 'APIName': '删除供应商直发外部采购订单-普通仓', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"0iKWS45FRTo2Lmf8zrkb\",\"search_AUTH_APPCODE\":\"purchasecenterorderout\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}
