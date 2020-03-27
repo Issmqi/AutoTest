@@ -60,10 +60,10 @@ def ini_parameter(dependCase, relevanceList, parameter):
 #                 log.info('关联接口响应中找不到关键字%s'%relevance_key)
 #     else:
 #         log.info('关联接口响应为空！')
-# relevanceCase='create_sales_order'
-# relevanceKeys=[{"ids":"id"}]
-# param={"ids": "02R6zxnuQ30MkkRoltEu","search_AUTH_APPCODE ":"saleorder"}
+relevanceCase='create_sales_order'
+relevanceKeys='{"ids":"id"}'
+param={"ids": "02R6zxnuQ30MkkRoltEu","search_AUTH_APPCODE ":"saleorder"}
+
+param_str=json.dumps(param)
 #
-# param_str=json.dumps(param)
-#
-# ini_parameter(relevanceCase,relevanceKeys,param_str)
+ini_parameter(relevanceCase,relevanceKeys,param_str)
