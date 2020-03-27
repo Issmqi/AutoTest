@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 import json
 import setupMain
 from util.log import Log

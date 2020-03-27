@@ -1,4 +1,6 @@
-# -*- coding:utf-8 -*-
+
+# -*- coding: utf-8 -*-
+# !/bin/bash
 from sshtunnel import SSHTunnelForwarder
 import pymysql.cursors
 

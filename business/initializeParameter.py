@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
+
 import setupMain
 # import readrelevanceData
 import allure

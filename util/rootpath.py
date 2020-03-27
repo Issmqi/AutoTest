@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 import sys,os
 # class RootPath:
 def get_rootpath():

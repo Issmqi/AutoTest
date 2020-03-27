@@ -2,7 +2,7 @@
 # _*_ coding:utf-8 _*_
 '''
 
-__author__:'shimengqi'
+__author__: 'shimengqi'
 __description__:'配置日志服务'
 __mtime__:2018/2/22
 '''

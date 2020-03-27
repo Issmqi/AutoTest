@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 import json
 p='{"ids":"02R6zxnuQ30MkkRoltEu","search_AUTH_APPCODE":"saleorder"}'
 

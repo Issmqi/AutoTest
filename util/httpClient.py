@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 import json
 from jsonpath import jsonpath
 from readConfig import ReadConfig

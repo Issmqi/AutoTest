@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 def edit_param(data):
     if isinstance(data,dict):
         for key in data:

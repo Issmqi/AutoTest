@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
 import peewee
 db=peewee.MySQLDatabase(
     host="192.168.41.17",

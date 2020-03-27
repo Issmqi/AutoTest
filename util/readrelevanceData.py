@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# !/bin/bash
+
 from readExcel import ReadExcel
 import apiSend
 
