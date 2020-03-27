@@ -21,6 +21,7 @@ def ini_parameter(dependCase, relevanceList, parameter):
     :return:
     '''
     param_dict = json.loads(parameter)
+    print(relevanceList)
     relevance_dict = json.loads(relevanceList)
     path = setupMain.json_result_path + dependCase + '_result.json'
     try:

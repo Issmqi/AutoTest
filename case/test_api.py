@@ -3,7 +3,7 @@
 import sys, os
 import allure
 import pytest
-
+import setupMain
 path = os.path.dirname(sys.path[0])
 sys.path.append(path)
 from util.readExcel import ReadExcel
@@ -11,8 +11,8 @@ from util import apiSendCheck
 
 # from utils import readExcel
 
-
-case_dict = ReadExcel().get_full_dict()
+data = setupMain.PATH + '/data/testdata.xlsx'
+case_dict = ReadExcel(data).get_full_dict()
 
 
 # print(case_dict)

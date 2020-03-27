@@ -17,14 +17,14 @@ import time
 
 
 class ReadExcel:
-    def __init__(self):
+    def __init__(self,data):
         '''打开工作表'''
         # 从配置文件获取测试用例地址
-        data_address = ReadConfig.get_config("DATABASE", "data_address")
-        data_address = setupMain.PATH + '/data/testdata.xlsx'
+        # data = ReadConfig.get_config("DATABASE", "data_address")
+        # data = setupMain.PATH + '/data/testdata.xlsx'
         # data_address=os.path.abspath('../data/buyerdata1.xlsx')
         # 从excel提取测试用例信息
-        workbook = xlrd.open_workbook(data_address)
+        workbook = xlrd.open_workbook(data)
         self.table = workbook.sheets()[0]
 
     def get_rows(self):
@@ -73,7 +73,7 @@ def main():
     excel_data = ReadExcel()
     print(excel_data.get_rows())
     # print(excel_data.get_full_dict())
-    values = excel_data.get_row_dict(2)
+    values = excel_data.get_row_dict(3)
     print(values)
     a = None
 
