@@ -70,7 +70,8 @@ class ReadExcel:
 
 
 def main():
-    excel_data = ReadExcel()
+    data = setupMain.PATH + '/data/allocation_data.xlsx'
+    excel_data = ReadExcel(data)
     print(excel_data.get_rows())
     # print(excel_data.get_full_dict())
     values = excel_data.get_row_dict(3)

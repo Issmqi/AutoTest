@@ -107,6 +107,8 @@ def get(header, url, param):
     '''
     if not header:
         header=None
+    else:
+        header=json.loads(header)
     if not param:
         param = None
     else:
@@ -121,9 +123,9 @@ def get(header, url, param):
         else:
             return response.status_code, response.json()
     except json.decoder.JSONDecodeError:
-        return response.status_code
+        return response.status_code, {}
     except simplejson.errors.JSONDecodeError:
-        return response.status_code
+        return response.status_code, {}
     except Exception as e:
         log.war('ERROR')
         log.error(e)

@@ -3,11 +3,12 @@
 
 
 import setupMain
-# import readrelevanceData
+
 import allure
 import json
 from jsonpath import jsonpath
 from util.log import Log
+from util.readExcel import ReadExcel
 
 log = Log()
 
@@ -39,31 +40,38 @@ def ini_parameter(dependCase, relevanceList, parameter):
     except FileNotFoundError:
         raise Exception("用例关联文件不存在\n文件路径： %s" % path)
 
-# def ini_requests(dependCase,relevance,parameter):
-#     '''
-#     执行关联的用例，并更新参数
-#     :param dependCase: 关联case_name str
-#     :param relevance: 关联信息 str '{"key":"relevance_key"}'
-#     :param parameter: 请求参数 str
-#     :return: 替换后的请求参数
-#     '''
-#
-#     response=readrelevanceData.read_relevance_data(dependCase)
-#     if response:  #关联接口返回不为空
-#         param_dict=json.loads(parameter)
-#         relevance_dict = json.loads(relevance)
-#         for key in relevance_dict:
-#             relevance_key=relevance_dict[key]
-#             if relevance_key in response:
-#                 param_dict[key]=jsonpath(response,'$..%s'%relevance_key)[0]
-#             else:
-#                 log.info('关联接口响应中找不到关键字%s'%relevance_key)
-#     else:
-#         log.info('关联接口响应为空！')
-relevanceCase='create_sales_order'
-relevanceKeys='{"ids":"id"}'
-param={"ids": "02R6zxnuQ30MkkRoltEu","search_AUTH_APPCODE ":"saleorder"}
+def ini_requests(dependCase,relevance,parameter,case_address):
+    '''
+    执行关联的用例，并更新参数
+    :param dependCase: 关联case_name str
+    :param relevance: 关联信息 str '{"key":"relevance_key"}'
+    :param parameter: 请求参数 str
+    :return: 替换后的请求参数
+    '''
+    from util import readrelevanceData
+    response=readrelevanceData.read_relevance_data(dependCase,case_address)
+    if response:  #关联接口返回不为空
+        param_dict=json.loads(parameter)
+        relevance_dict = json.loads(relevance)
+        for key in relevance_dict:
+            relevance_key=relevance_dict[key]
+            if relevance_key in response:
+                param_dict[key]=jsonpath(response,'$..%s'%relevance_key)[0]
+            else:
+                log.info('关联接口响应中找不到关键字%s'%relevance_key)
+    else:
+        log.info('关联接口响应为空！')
 
-param_str=json.dumps(param)
-#
-ini_parameter(relevanceCase,relevanceKeys,param_str)
+
+if __name__ == '__main__':
+
+    data = setupMain.PATH + '/data/allocation_data.xlsx'
+    # case_dict = ReadExcel(data).get_full_dict()
+    relevanceCase='create_allocation_bill'
+    relevanceKeys='{"ids":"id"}'
+    param='{"ids": "02R6zxnuQ30MkkRoltEu","search_AUTH_APPCODE ":"saleorder"}'
+    #
+    # param_str=json.dumps(param)
+    # #
+    # ini_parameter(relevanceCase,relevanceKeys,param_str)
+    ini_requests(relevanceCase,relevanceKeys,param,data)
