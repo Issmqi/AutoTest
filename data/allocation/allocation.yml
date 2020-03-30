@@ -1,0 +1,14 @@
+test_info:
+    title: allocation api test
+
+testcase:
+    - case_name: create_allocation_bill
+      api_name:
+      header:
+      path:
+      method:
+      parameter_type:
+
+
+
+
