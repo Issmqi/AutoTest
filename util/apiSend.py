@@ -2,6 +2,7 @@
 # !/bin/bash
 
 import allure
+import requests
 from business import initializeCookie
 from util import apiMethod
 from util.log import Log
@@ -10,6 +11,41 @@ from util import writeResult
 
 readConfig = ReadConfig()
 log = Log()
+
+def api_method(method,url, param_type, param, cookie, header):
+    if method=='post':
+        header = eval(header)
+        if not param:
+            param_dict = None
+        else:
+            param_dict = json.loads(param)
+
+        if param_type == 'json':
+            data = json.dumps(param_dict)
+            response = requests.post(url=url, headers=header, data=data, cookies=cookie)
+        elif param_type == 'form_data':
+            response = requests.post(url=url, headers=header, data=param_dict, cookies=cookie)
+        elif param_type == 'parameter':
+            response = requests.post(url=url, headers=header, params=param_dict, cookies=cookie)
+        else:
+            response = None
+            log.error('参数类型不存在')
+
+        times = response.elapsed.total_seconds()
+        log.info('响应时间为%ss' % times)
+        try:
+            if response.status_code != 200:
+                return response.status_code, response.text
+            else:
+                return response.status_code, response.json()
+
+        except json.decoder.JSONDecodeError:
+            return response.status_code, {}
+        except simplejson.errors.JSONDecodeError:
+            return response.status_code, {}
+        except Exception as e:
+            log.war('ERROR')
+            log.error(e)
 
 
 def send_request(request_data):

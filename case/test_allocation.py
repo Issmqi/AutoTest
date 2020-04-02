@@ -4,11 +4,11 @@ import sys, os
 import allure
 import pytest
 import setupMain
-
 path = os.path.dirname(sys.path[0])
 sys.path.append(path)
 from util.readExcel import ReadExcel
 from util import apiSendCheck
+
 
 data = setupMain.PATH + '/data/allocation_data.xlsx'
 case_dict = ReadExcel(data).get_full_dict()

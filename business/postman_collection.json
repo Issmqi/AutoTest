@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "ffe9e50a-e971-41c6-a242-2bb73d95dc48",
+		"name": "编码",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IUAP Copy",
+			"item": [
+				{
+					"name": "编码规则服务",
+					"item": [
+						{
+							"name": "获取编码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"billObjCode\":\"TEST\",\n\t\"pkAssign\":\"\", \n\t\"billVo\":null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{iuap-saas-billcode-service}}/billcoderest/getBillCode",
+									"host": [
+										"{{iuap-saas-billcode-service}}"
+									],
+									"path": [
+										"billcoderest",
+										"getBillCode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取编码-批量",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"billObjCode\":\"TEST\",\n\t\"pkAssign\":\"\", \n\t\"billVo\":null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.41.16:8000/iuap-saas-billcode-service/billcoderest/getBillCode",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"41",
+										"16"
+									],
+									"port": "8000",
+									"path": [
+										"iuap-saas-billcode-service",
+										"billcoderest",
+										"getBillCode"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
