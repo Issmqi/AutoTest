@@ -2,7 +2,7 @@
 # !/bin/bash
 
 
-from util import apiSend
+from util import httpClient
 from util import checkResult
 
 
@@ -12,7 +12,7 @@ def api_send_check(case):
     :param case: 单条用例
     :return:
     """
-    code, data = apiSend.send_request(case)
+    code, data = httpClient.send_request(case)
 
     result = checkResult.check_result(case, code, data)
     if result:

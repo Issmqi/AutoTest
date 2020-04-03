@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d1a0056937bda514",
+      "uid" : "878b9253e6da629d",
       "status" : "passed",
       "time" : {
-        "start" : 1585560760926,
-        "stop" : 1585560762146,
-        "duration" : 1220
+        "start" : 1585883185141,
+        "stop" : 1585883185952,
+        "duration" : 811
       }
     } ]
   },
@@ -28,12 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "54db7f186c1e9f03",
+      "uid" : "529b5d652200aa6c",
       "status" : "passed",
       "time" : {
-        "start" : 1585560762150,
-        "stop" : 1585560763069,
-        "duration" : 919
+        "start" : 1585883185956,
+        "stop" : 1585883186019,
+        "duration" : 63
       }
     } ]
   },
@@ -47,13 +47,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "75cdb977ec62ec42",
+      "uid" : "342cfecdbf080046",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '编辑供应商直发外部采购订单-普通仓', 'CaseId': 7.0, 'CaseName': 'edit_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '编辑供应商直发外部采购订单-普通仓', 'CaseId': 7.0, 'CaseName': 'edit_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560703179,
-        "stop" : 1585560704192,
-        "duration" : 1013
+        "start" : 1585883111947,
+        "stop" : 1585883114071,
+        "duration" : 2124
+      }
+    } ]
+  },
+  "d671a87e48f666776930097ca681e691" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e8f5b92d15d7ee13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585893410516,
+        "stop" : 1585893440617,
+        "duration" : 30101
+      }
+    } ]
+  },
+  "1bf1a609e657ed03ea9bc1a65d5c7dfa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d65805a0ad16073",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585893440622,
+        "stop" : 1585893440884,
+        "duration" : 262
       }
     } ]
   },
@@ -67,13 +105,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1522b33f8b9bf22",
+      "uid" : "e84fe28e9eb037ff",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增普通外部采购订单', 'CaseId': 4.0, 'CaseName': 'create_common_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增普通外部采购订单', 'CaseId': 4.0, 'CaseName': 'create_common_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560665104,
-        "stop" : 1585560675687,
-        "duration" : 10583
+        "start" : 1585883097693,
+        "stop" : 1585883102818,
+        "duration" : 5125
       }
     } ]
   },
@@ -87,13 +125,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8c9580239936f830",
+      "uid" : "d1ad22a9ff6a36d9",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560799940,
-        "stop" : 1585560811668,
-        "duration" : 11728
+        "start" : 1585883210539,
+        "stop" : 1585883214858,
+        "duration" : 4319
       }
     } ]
   },
@@ -107,13 +145,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "919d4837b7e3cbd7",
+      "uid" : "1856bdcf8dd3cc3",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增供应商直发外部采购订单-门店仓', 'CaseId': 6.0, 'CaseName': 'create_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增供应商直发外部采购订单-门店仓', 'CaseId': 6.0, 'CaseName': 'create_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560688447,
-        "stop" : 1585560703171,
-        "duration" : 14724
+        "start" : 1585883107925,
+        "stop" : 1585883111932,
+        "duration" : 4007
       }
     } ]
   },
@@ -127,33 +165,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2320649fdc368024",
+      "uid" : "d1fc4a8a56b98928",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '取消审批外部采购订单', 'CaseId': 11.0, 'CaseName': 'cancel_approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '取消审批外部采购订单', 'CaseId': 11.0, 'CaseName': 'cancel_approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560705940,
-        "stop" : 1585560708682,
-        "duration" : 2742
-      }
-    } ]
-  },
-  "8afb3df15a10230890c2ef517decbe4d" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "86d05eb29028a8dd",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '查询销售订单详情', 'CaseId': 2.0, 'CaseName': 'get_sales_order_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
-      "time" : {
-        "start" : 1585560650979,
-        "stop" : 1585560651385,
-        "duration" : 406
+        "start" : 1585883116098,
+        "stop" : 1585883121031,
+        "duration" : 4933
       }
     } ]
   },
@@ -167,13 +185,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1252b7c1f2cc1f97",
+      "uid" : "d64d898910ddbd8c",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增供应商直发外部采购订单-普通仓库', 'CaseId': 5.0, 'CaseName': 'create_supplier_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增供应商直发外部采购订单-普通仓库', 'CaseId': 5.0, 'CaseName': 'create_supplier_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560675706,
-        "stop" : 1585560688436,
-        "duration" : 12730
+        "start" : 1585883102826,
+        "stop" : 1585883107909,
+        "duration" : 5083
+      }
+    } ]
+  },
+  "8afb3df15a10230890c2ef517decbe4d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60dc219a7fc85eb7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '查询销售订单详情', 'CaseId': 2.0, 'CaseName': 'get_sales_order_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585883082132,
+        "stop" : 1585883082358,
+        "duration" : 226
       }
     } ]
   },
@@ -187,12 +225,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7811b0e840d65a66",
+      "uid" : "e35078d28927c7d5",
       "status" : "passed",
       "time" : {
-        "start" : 1585560608312,
-        "stop" : 1585560618493,
-        "duration" : 10181
+        "start" : 1585882999862,
+        "stop" : 1585883029500,
+        "duration" : 29638
       }
     } ]
   },
@@ -206,12 +244,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4b787d348b7d1cbb",
+      "uid" : "f40a482ccd1f4d7",
       "status" : "passed",
       "time" : {
-        "start" : 1585560621665,
-        "stop" : 1585560650974,
-        "duration" : 29309
+        "start" : 1585883057653,
+        "stop" : 1585883082128,
+        "duration" : 24475
       }
     } ]
   },
@@ -225,13 +263,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "79c5fbf335157c8c",
+      "uid" : "a5ab2a464d956234",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560663269,
-        "stop" : 1585560664777,
-        "duration" : 1508
+        "start" : 1585883095700,
+        "stop" : 1585883097379,
+        "duration" : 1679
+      }
+    } ]
+  },
+  "b4a53ae398b1f500d576572695bb34b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "53f64afa0753c953",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585893441429,
+        "stop" : 1585893441512,
+        "duration" : 83
       }
     } ]
   },
@@ -245,12 +302,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f0ce82662c6c74f",
+      "uid" : "f76fcbb826ca7dc2",
       "status" : "passed",
       "time" : {
-        "start" : 1585560735326,
-        "stop" : 1585560736035,
-        "duration" : 709
+        "start" : 1585883173872,
+        "stop" : 1585883174689,
+        "duration" : 817
       }
     } ]
   },
@@ -264,33 +321,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ad7b775fdb01561b",
+      "uid" : "66bb1ae452a91851",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '提交外部采购订单', 'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '提交外部采购订单', 'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560704398,
-        "stop" : 1585560704703,
-        "duration" : 305
-      }
-    } ]
-  },
-  "14b73c7bbd1de28f8a6927c28e2b51dd" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c04eec1e20bf5ceb",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '提交销售订单', 'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
-      "time" : {
-        "start" : 1585560651462,
-        "stop" : 1585560663253,
-        "duration" : 11791
+        "start" : 1585883114330,
+        "stop" : 1585883114892,
+        "duration" : 562
       }
     } ]
   },
@@ -304,13 +341,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cf1cbb14b8b111e9",
+      "uid" : "93738c95cc8de645",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '查询供应商直发外部采购订单详情-普通仓', 'CaseId': 8.0, 'CaseName': 'get_common_purchase_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '查询供应商直发外部采购订单详情-普通仓', 'CaseId': 8.0, 'CaseName': 'get_common_purchase_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560704201,
-        "stop" : 1585560704389,
-        "duration" : 188
+        "start" : 1585883114079,
+        "stop" : 1585883114322,
+        "duration" : 243
+      }
+    } ]
+  },
+  "14b73c7bbd1de28f8a6927c28e2b51dd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "89f05773adf13c5c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '提交销售订单', 'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585883082425,
+        "stop" : 1585883095693,
+        "duration" : 13268
       }
     } ]
   },
@@ -324,13 +381,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9a925d487f558ef1",
+      "uid" : "989e26aa6b16b60b",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增调拨单', 'CaseId': 25.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增调拨单', 'CaseId': 25.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560775879,
-        "stop" : 1585560788466,
-        "duration" : 12587
+        "start" : 1585883191442,
+        "stop" : 1585883196398,
+        "duration" : 4956
       }
     } ]
   },
@@ -344,31 +401,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "74769d1fa8f9cd52",
+      "uid" : "dc7e96e94ccf9d92",
       "status" : "passed",
       "time" : {
-        "start" : 1585560736661,
-        "stop" : 1585560743728,
-        "duration" : 7067
-      }
-    } ]
-  },
-  "1f83c71420f9aacfa8b39c6a404936d8" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b24401805b4b17f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1585560736040,
-        "stop" : 1585560736654,
-        "duration" : 614
+        "start" : 1585883175566,
+        "stop" : 1585883177445,
+        "duration" : 1879
       }
     } ]
   },
@@ -382,12 +420,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a76a556274769cb0",
+      "uid" : "c67e8f2dfc2b90d4",
       "status" : "passed",
       "time" : {
-        "start" : 1585560757533,
-        "stop" : 1585560760922,
-        "duration" : 3389
+        "start" : 1585883184282,
+        "stop" : 1585883185137,
+        "duration" : 855
+      }
+    } ]
+  },
+  "1f83c71420f9aacfa8b39c6a404936d8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aac79a491e0cc509",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585883174692,
+        "stop" : 1585883175563,
+        "duration" : 871
       }
     } ]
   },
@@ -401,12 +458,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b776209e9007813",
+      "uid" : "80897f02a7fc2456",
       "status" : "passed",
       "time" : {
-        "start" : 1585560619512,
-        "stop" : 1585560620428,
-        "duration" : 916
+        "start" : 1585883044320,
+        "stop" : 1585883049863,
+        "duration" : 5543
       }
     } ]
   },
@@ -420,13 +477,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e93b1d9d402e5184",
+      "uid" : "ef4b4fc777cbb600",
       "status" : "broken",
       "statusDetails" : "json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
       "time" : {
-        "start" : 1585560755407,
-        "stop" : 1585560757368,
-        "duration" : 1961
+        "start" : 1585883183200,
+        "stop" : 1585883184114,
+        "duration" : 914
       }
     } ]
   },
@@ -440,32 +497,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1cafe9ea30305c0e",
+      "uid" : "8f952d041326d599",
       "status" : "passed",
       "time" : {
-        "start" : 1585560618767,
-        "stop" : 1585560619508,
-        "duration" : 741
-      }
-    } ]
-  },
-  "dfd70a8178228186c2190ae387d27f60" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "3b70c9a160641965",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增调拨出库单', 'CaseId': 26.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
-      "time" : {
-        "start" : 1585560788476,
-        "stop" : 1585560799932,
-        "duration" : 11456
+        "start" : 1585883038506,
+        "stop" : 1585883044313,
+        "duration" : 5807
       }
     } ]
   },
@@ -479,13 +516,53 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cc592e5b34a2429c",
+      "uid" : "a184bd01958f2481",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '查询其他出库详情', 'CaseId': 20.0, 'CaseName': 'get_other_out_stock_detail', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '查询其他出库详情', 'CaseId': 20.0, 'CaseName': 'get_other_out_stock_detail', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560757397,
-        "stop" : 1585560757526,
-        "duration" : 129
+        "start" : 1585883184143,
+        "stop" : 1585883184275,
+        "duration" : 132
+      }
+    } ]
+  },
+  "dfd70a8178228186c2190ae387d27f60" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "792735909b12ecd9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增调拨出库单', 'CaseId': 26.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585883196406,
+        "stop" : 1585883210530,
+        "duration" : 14124
+      }
+    } ]
+  },
+  "52701d576b5d5d2f6985cac18724e100" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c3580baeaeadaec",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1585893440986,
+        "stop" : 1585893441335,
+        "duration" : 349
       }
     } ]
   },
@@ -499,13 +576,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b1b4f5ff96bb98d9",
+      "uid" : "e454d8b6d044087",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增其他出库', 'CaseId': 18.0, 'CaseName': 'create_other_out_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增其他出库', 'CaseId': 18.0, 'CaseName': 'create_other_out_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560743733,
-        "stop" : 1585560755396,
-        "duration" : 11663
+        "start" : 1585883177449,
+        "stop" : 1585883183193,
+        "duration" : 5744
       }
     } ]
   },
@@ -519,12 +596,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f88a878720e50fa6",
+      "uid" : "61b0ad41e40a2665",
       "status" : "passed",
       "time" : {
-        "start" : 1585560709316,
-        "stop" : 1585560713632,
-        "duration" : 4316
+        "start" : 1585883121348,
+        "stop" : 1585883164061,
+        "duration" : 42713
       }
     } ]
   },
@@ -538,13 +615,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "889e96eccbde7f20",
+      "uid" : "1e6b00503995225f",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增采购入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增采购入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560713636,
-        "stop" : 1585560724992,
-        "duration" : 11356
+        "start" : 1585883164066,
+        "stop" : 1585883169043,
+        "duration" : 4977
       }
     } ]
   },
@@ -558,12 +635,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e724c71d85099cb1",
+      "uid" : "5d67665d58a2dc44",
       "status" : "passed",
       "time" : {
-        "start" : 1585560618497,
-        "stop" : 1585560618763,
-        "duration" : 266
+        "start" : 1585883029509,
+        "stop" : 1585883038500,
+        "duration" : 8991
       }
     } ]
   },
@@ -577,13 +654,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eaaa63450a1f6f20",
+      "uid" : "5dd6f619ba576740",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增其他入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增其他入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560725001,
-        "stop" : 1585560735313,
-        "duration" : 10312
+        "start" : 1585883169051,
+        "stop" : 1585883173865,
+        "duration" : 4814
+      }
+    } ]
+  },
+  "3c8a3d35b666923948cdeca0fac4b079" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2913428009af8615",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585893440891,
+        "stop" : 1585893440980,
+        "duration" : 89
       }
     } ]
   },
@@ -597,13 +693,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "213c3014102d11f9",
+      "uid" : "e8393277674c6ad6",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '取消提交外部采购订单', 'CaseId': 12.0, 'CaseName': 'cancel_submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '取消提交外部采购订单', 'CaseId': 12.0, 'CaseName': 'cancel_submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560708690,
-        "stop" : 1585560709308,
-        "duration" : 618
+        "start" : 1585883121038,
+        "stop" : 1585883121341,
+        "duration" : 303
       }
     } ]
   },
@@ -617,13 +713,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fb96ddd311eb2309",
+      "uid" : "c401f83fc9a5b23e",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '新增其他入库', 'CaseId': 24.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '新增其他入库', 'CaseId': 24.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560763076,
-        "stop" : 1585560775872,
-        "duration" : 12796
+        "start" : 1585883186025,
+        "stop" : 1585883191435,
+        "duration" : 5410
       }
     } ]
   },
@@ -637,13 +733,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "57443812dfbe8a83",
+      "uid" : "524bd2dddf4fa051",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '审批外部采购订单', 'CaseId': 10.0, 'CaseName': 'approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '审批外部采购订单', 'CaseId': 10.0, 'CaseName': 'approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560704711,
-        "stop" : 1585560705931,
-        "duration" : 1220
+        "start" : 1585883114898,
+        "stop" : 1585883116091,
+        "duration" : 1193
       }
     } ]
   },
@@ -657,12 +753,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6c232c6b35cf59bb",
+      "uid" : "2e70024dbb708525",
       "status" : "passed",
       "time" : {
-        "start" : 1585560620433,
-        "stop" : 1585560621661,
-        "duration" : 1228
+        "start" : 1585883049868,
+        "stop" : 1585883057648,
+        "duration" : 7780
       }
     } ]
   },
@@ -676,13 +772,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a9e2e127a2fe3218",
+      "uid" : "2afdf741562283a0",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '删除销售订单', 'CaseId': 3.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '删除销售订单', 'CaseId': 3.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
       "time" : {
-        "start" : 1585560664801,
-        "stop" : 1585560665085,
-        "duration" : 284
+        "start" : 1585883097385,
+        "stop" : 1585883097686,
+        "duration" : 301
       }
     } ]
   }

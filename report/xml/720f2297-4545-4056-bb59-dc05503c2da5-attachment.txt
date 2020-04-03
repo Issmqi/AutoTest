@@ -1,0 +1,11 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:cancel_other_out_stock
+INFO     request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-stock/stock/other-out-bills/batch-cancel-sign
+INFO     request:log.py:85 请求参数:{"ids": "0fufRy5J7Up8uh5QpEy9", "search_AUTH_APPCODE": "otherin"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为0.758674s
+INFO     request:log.py:85 返回状态码:200
+INFO     request:log.py:85 返回response:
+ {}
+INFO     request:log.py:85 HTTP状态码校验通过！

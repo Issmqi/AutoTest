@@ -1,0 +1,11 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:delete_sales_order
+INFO     request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-b2b-order/b2b/order/delete
+INFO     request:log.py:85 请求参数:{"ids": "0KuFrbIwm34Yb4IZzVoe", "search_AUTH_APPCODE": "saleorder"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为0.258206s
+INFO     request:log.py:85 返回状态码:500
+INFO     request:log.py:85 返回response:
+ {"timestamp":1585882942227,"status":500,"error":"Internal Server Error","message":"订单处于【待处理】才能执行删除","path":"/b2b/order/delete"}
+INFO     request:log.py:85 HTTP返回状态码与预期不一致
