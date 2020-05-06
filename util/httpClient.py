@@ -51,7 +51,7 @@ class HttpClient():
 
         if depend_case:
             relevance = request_data['RelevanceList']
-            parameter = self.ini_parameter(depend_case, relevance, parameter, address)
+            parameter = self.ini_parameter(depend_case, relevance, parameter)
 
         log.info("=" * 100)
         log.info('用例名称:%s' % case_name)
