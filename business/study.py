@@ -1,3 +1,4 @@
+import json
 def add():
     b = '12343'
     a = '991232'
@@ -58,6 +59,7 @@ def nthUglyNumber(n):
     print(res)
     return res[-1]
 
+
 # nthUglyNumber(30)
 
 
@@ -66,16 +68,17 @@ def isUgly(num):
     :type num: int
     :rtype: bool
     """
-    if num <1:
+    if num < 1:
         return False
 
-    while num%2==0:
-        num=num//2
-    while num%3==0:
-        num=num//3
-    while num%5==0:
-        num=num//5
-    return num==1
+    while num % 2 == 0:
+        num = num // 2
+    while num % 3 == 0:
+        num = num // 3
+    while num % 5 == 0:
+        num = num // 5
+    return num == 1
+
 
 # isUgly(27)
 def reverseString(s):
@@ -84,11 +87,11 @@ def reverseString(s):
     :rtype: None Do not return anything, modify s in-place instead.
 
     """
-    l,r=0,len(s)-1
-    while l<r:
-        s[l],s[r]=s[r],s[l]
-        l+=1
-        r-=1
+    l, r = 0, len(s) - 1
+    while l < r:
+        s[l], s[r] = s[r], s[l]
+        l += 1
+        r -= 1
     print(s)
     return s
     # i=len(s)-1
@@ -96,6 +99,8 @@ def reverseString(s):
     #     s.append(s.pop(i))
     #     i-=1
     # return s
+
+
 # reverseString(["h","e","l","l","o"])
 def removeElement(nums, val):
     """
@@ -104,26 +109,30 @@ def removeElement(nums, val):
     :rtype: int
     """
     for i in range(len(nums) - 1, -1, -1):
-    # for i in range(len(nums)):
-        if nums[i]==val:
+        # for i in range(len(nums)):
+        if nums[i] == val:
             nums.pop(i)
     return nums
+
+
 # removeElement([0,1,2,2,3,0,4,2],2)
 def findErrorNums(nums):
     """
     :type nums: List[int]
     :rtype: List[int]
     """
-    ss=sum(range(len(nums)+1))
-    re=sum(nums)-sum(set(nums))
+    ss = sum(range(len(nums) + 1))
+    re = sum(nums) - sum(set(nums))
     S = sum(set(nums))
     return [sum(nums) - S, len(nums) * (len(nums) + 1) // 2 - S]
+
+
 # findErrorNums([3,2,3,4,6,5])
 
-def shortestToChar(S,C):
-    cc=[i for i in range(len(S)) if C==S[i]]
+def shortestToChar(S, C):
+    cc = [i for i in range(len(S)) if C == S[i]]
     print(cc)
-    re=[min(abs(x-i)  for i in cc) for x in range(len(S))]
+    re = [min(abs(x - i) for i in cc) for x in range(len(S))]
     print(re)
     return re
 
@@ -145,13 +154,16 @@ def uniqueOccurrences(arr):
     nums_list = list(num_dict.values())
     return len(nums_list) == len(set(nums_list))
 
+
 def isPalindrome(s):
     s = s.lower()
     ss = []
     for i in s:
         if i.isalnum():
             ss.append(i)
-    return ss==ss[::-1]
+    return ss == ss[::-1]
+
+
 # isPalindrome(' abc ba ')
 def singleNumber(nums):
     """
@@ -165,6 +177,7 @@ def singleNumber(nums):
     # print(a)
     return a
 
+
 # singleNumber([2,1,2])
 def findDuplicates(nums):
     res = []
@@ -174,6 +187,8 @@ def findDuplicates(nums):
             res.append(loc + 1)
         nums[loc] = -nums[loc]
     return res
+
+
 # findDuplicates([4,3,2,7,8,2,3,1])
 
 
@@ -197,18 +212,19 @@ def findDuplicates(nums):
 
 
 def sortArrayByParityII(A):
-    i ,j= 0,1
+    i, j = 0, 1
     while i < len(A) - 1:
         if A[i] % 2 == 0:
             i += 2
         elif A[j] % 2 == 1:
             j += 2
         else:
-            temp=A[i]
-            A[i]=A[j]
-            A[j]=temp
+            temp = A[i]
+            A[i] = A[j]
+            A[j] = temp
     print(A)
     return A
+
 
 # sortArrayByParityII([4,2,5,7])
 def addDigits(num):
@@ -217,12 +233,10 @@ def addDigits(num):
     #     if num == 0:
     #         return 9
     # return num
-    return (num-1)%9+1
-
+    return (num - 1) % 9 + 1
 
 
 def findDuplicate(nums):
-
     """
     :type nums: List[int]
     :rtype: int
@@ -232,7 +246,6 @@ def findDuplicate(nums):
     #     if nums[loc] < 0:
     #         return loc + 1
     #     nums[loc] = -nums[loc]
-
 
     # left = 1
     # right = len(nums)
@@ -248,17 +261,17 @@ def findDuplicate(nums):
     #         right = mid
     # return right
 
-    s=0
-    f=0
+    s = 0
+    f = 0
     while True:
-        s=nums[s]
-        f=nums[nums[f]]
-        if s==f:
-            f=0
+        s = nums[s]
+        f = nums[nums[f]]
+        if s == f:
+            f = 0
 
-            while nums[s]!=nums[f]:
-                f=nums[f]
-                s=nums[s]
+            while nums[s] != nums[f]:
+                f = nums[f]
+                s = nums[s]
             return nums[s]
 
 
@@ -266,17 +279,80 @@ def findDuplicate(nums):
 def plusPne(digits):
     flag = 1
     for i in range(len(digits) - 1, -1, -1):
-        temp = digits[i]  + flag
+        temp = digits[i] + flag
         if temp > 9:
             flag = 1
             digits[i] = temp % 10
         else:
-            flag=0
+            flag = 0
             digits[i] = temp
     if digits[0] == 0:
         digits.insert(0, 1)
     return digits
+
+
 # plusPne([1,2,4])
-a=list(map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
-print(a)
-print(''.join(a))
+
+def cal_num(*args):
+    ax = 0
+    for i in args:
+        ax = ax + i
+    return ax
+
+# 返回函数
+def lazy_sum(*args):
+    def sum():
+        ax=0
+        for i in args:
+            ax=ax+i
+        return ax
+    return sum
+
+def count():
+    fs = []
+    for i in range(1, 4):
+        def f():
+             return i*i
+        fs.append(f)
+    return fs
+
+# f1, f2, f3 = count()
+def createCounter():
+    ax=0
+    def counter():
+        return ax+1
+    return counter
+# createCounter()
+
+def singleton(cls):
+    _instance={}
+    def _singleton(*args,**kwargs):
+        if cls not in _instance:
+            _instance[cls]=cls(*args,**kwargs)
+        return _instance[cls]
+    return singleton
+
+@singleton
+class A():
+    def __init__(self,x=0):
+        self.x=x
+# a=A(2)
+# b=A(3)
+# print(a)
+# print(b)
+desired_cap_android = \
+    {
+    'platformName': 'Android',
+    'platformVersion': '8.0.0',
+    'deviceName': '小米手机',
+    # 'appPackage': 'com.tencent.mm',
+    'appPackage':'com.ximalaya.ting.android',
+    # 'appActivity': '.ui.LauncherUI',
+    'appActivity': 'com.ximalaya.ting.android.host.activity.WelComeActivity',
+    'unicodeKeyboard': True,
+    'resetKeyboard': True,
+    'noReset': True,
+    'recreateChromeDriverSessions': True,
+    'chromeOptions': {'androidProcess': 'com.tencent.mm:tools'}
+    #'newCommandTimeout':'60'  #设置未接受到新命令的超时时间，默认60s，说明：如果60s内没有接收到新命令，appium会自动断开，
+    }

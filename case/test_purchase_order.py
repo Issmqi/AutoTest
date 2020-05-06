@@ -37,5 +37,5 @@ class TestCase:
 if __name__ == '__main__':
     # pytest.main()
     # pytest.main("test_api.py")
-    pytest.main(['test_sales_order.py','-s', '--alluredir', '../report/xml'])
-    os.system('allure generate --clean ../report/xml/ -o ../report/html/')
+    pytest.main(['test_purchase_order.py','-s', '--alluredir', '../report/xml'])
+    os.system('allure generate --clean ../report/xml -o ../report/html')

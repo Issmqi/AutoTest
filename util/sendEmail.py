@@ -29,14 +29,15 @@ class SendEmail:
                 yag=yagmail.SMTP(user=self.mail_user,password=self.mail_pass,host=self.mail_host,port=self.mail_port)
                 yag.send(to=self.receiver,subject=self.subject,contents=self.content,attachments=report_address)
                 log.info("邮件发送成功!")
-            except Exception:
+            except Exception as e:
+                log.error(e)
                 log.info("邮件发送失败！")
         else:
             log.info("不发送邮件")
 def main():
 
     a=SendEmail()
-    a.sendEmail('aaa')
+    a.sendEmail('/Users/xmly/python/AutoTest/report/html/index.html')
 if __name__=='__main__':
     main()
 
