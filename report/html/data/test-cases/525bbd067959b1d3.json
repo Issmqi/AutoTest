@@ -1,0 +1,194 @@
+{
+  "uid" : "525bbd067959b1d3",
+  "name" : "test_api[case_data3]",
+  "fullName" : "case.test_api.TestCase#test_api",
+  "historyId" : "c5a706d26bf712d74f0688795de7b985",
+  "time" : {
+    "start" : 1587723047515,
+    "stop" : 1587723050320,
+    "duration" : 2805
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
+  "statusTrace" : "self = <case.test_api.TestCase object at 0x10d481dd8>\ncase_data = {'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
+    "statusTrace" : "self = <case.test_api.TestCase object at 0x10d481dd8>\ncase_data = {'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"接口测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       assert apiSendCheck.api_send_check(case_data)\nE       AssertionError: assert False\nE        +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\nE        +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check\n\ntest_api.py:31: AssertionError",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1587723047549,
+        "stop" : 1587723047551,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fae4cce5213b4df3",
+        "name" : "cancel_approve_sales_order",
+        "source" : "fae4cce5213b4df3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e624292dff7f9ad1",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit",
+        "source" : "e624292dff7f9ad1.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "a9dd91598bad832e",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "a9dd91598bad832e.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "cb06f39460b948c",
+        "name" : "parameter",
+        "source" : "cb06f39460b948c.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "cff96a591fe85f51",
+        "name" : "{\"billId\": \"0J6IdCaOt4ZwtSxivExD\"}",
+        "source" : "cff96a591fe85f51.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1587723050318,
+        "stop" : 1587723050320,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cf36dc8a6234d184",
+        "name" : "200",
+        "source" : "cf36dc8a6234d184.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "7c8ba53e0aeefe7c",
+        "name" : "200",
+        "source" : "7c8ba53e0aeefe7c.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "2fbe6e210b004489",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "2fbe6e210b004489.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e18876b5c6202d3c",
+        "name" : "{'success': 'success', 'message': '&#21462;&#28040;&#23457;&#25209;&#25104;&#21151;', 'detailMsg': {'data': [{'id': '0J6IdCaOt4ZwtSxivExD', 'dr': 0, 'ts': 1587722866683, 'creator': 'smq', 'creationTime': 1587722825000, 'modifier': 'smq', 'modifiedTime': 1587722866683, 'persistStatus': 'upd', 'promptMessage': None, 'state': 1, 'approver': 'smq', 'approveTime': 1587722866683, 'approveOpinion': None, 'sycnNCStatus': None, 'sycnOutStatus': None, 'saleOrgId': 'e53fc87e-1a16-4a2b-978c-63bfd14fd88b', 'saleOrgCode': '1101', 'saleOrgName': '上海证大喜马拉雅网络科技有限公司', 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'receiveCustomerId': '1878731f-0aca-4e9b-8b27-5944910f1509', 'receiveCustomerCode': '10002304', 'receiveCustomerName': '山东春和景明文化传播有限公司', 'contractId': None, 'contractCode': None, 'contractName': None, 'settleFinancialOrgId': None, 'settleFinancialOrgCode': None, 'settleFinancialOrgName': None, 'sameFinancialOrg': False, 'orderTypeId': '0yDZwkYyas4KNNKM4RNF', 'orderTypeCode': '30-Cxx-02', 'orderTypeName': '先货后款', 'billTypeId': 'SaleOrder', 'billTypeCode': 'SaleOrder', 'billTypeName': '销售订单', 'costTypeId': None, 'costTypeCode': None, 'costTypeName': None, 'saleModel': '01', 'orderCode': 'SOO20200424000004', 'orderDate': 1585128003000, 'orderStatusId': '8255c4d2-cb34-49e1-aa20-633b5d1d729e', 'orderStatusCode': '02', 'orderStatusName': '已提交', 'customerId': '1878731f-0aca-4e9b-8b27-5944910f1509', 'customerCode': '10002304', 'customerName': '山东春和景明文化传播有限公司', 'marketAreaId': None, 'marketAreaCode': None, 'marketAreaName': None, 'salesManagerId': '8e73d0b7-5d0e-4c9d-bcdb-1db337b0b971', 'salesManagerCode': '3527', 'salesManagerName': '诸佳艺', 'salesDeptId': '1d5f2aff-5455-4e40-8818-d0e2bbc7e37a', 'salesDeptCode': '01010101', 'salesDeptName': '区域招商', 'transportModeId': None, 'transportModeCode': None, 'transportModeName': None, 'settleModeId': None, 'settleModeCode': None, 'settleModeName': None, 'deliveryDate': 1585128003000, 'totalNum': 10.0, 'currencyId': '7cbc1420-737d-4206-97e3-140ebdbe841f', 'currencyCode': 'CNY', 'currencyName': '人民币', 'currencyPriceScale': None, 'currencyAmountScale': None, 'totalDealAmount': 27890.0, 'totalAmount': 27890.0, 'promAmount': None, 'offsetAmount': 0.0, 'totalWeight': 0.0, 'totalNetWeight': 0.0, 'totalVolume': 0.0, 'orderSource': '02', 'isClose': 0, 'closer': None, 'closeTime': None, 'isDeClose': 0, 'deCloser': None, 'deCloseTime': None, 'closeReason': None, 'remark': None, 'rejecter': None, 'rejectTime': None, 'rejectReason': None, 'srcOrderCode': None, 'srcOrderId': None, 'srcReqOrderCode': 'REQ20200424000004', 'srcReqOrderId': '0dNQZfhH2qRW6uTooZVA', 'orderReceiveAddress': {'id': '0g8hhzi5rCjqGink8sJq', 'dr': 0, 'ts': 1587722850000, 'creator': 'smq', 'creationTime': 1587722825000, 'modifier': 'smq', 'modifiedTime': 1587722850000, 'persistStatus': 'nrm', 'promptMessage': None, 'orderId': '0J6IdCaOt4ZwtSxivExD', 'receiveAddressId': '8fe72429-8c25-4a92-b508-ded3abcc37d2', 'receiver': '周佳', 'receiverTel': '13518639999', 'receiverPhone': '13518639999', 'country': '中国', 'countryId': 'COUNTRY-01', 'receiverProvince': '山东省', 'receiverProvinceId': '37', 'receiverCity': '淄博市', 'receiverCityId': '370300000000', 'receiverCounty': '张店区', 'receiverCountyId': '370303000000', 'receiverTown': '', 'receiverTownId': '', 'receiverAddress': '山东淄博张店联通路东方之珠', 'receiverZipcode': None}, 'orderInvoice': {'id': '0SpQnhYhsgGlMKiQhmNr', 'dr': 0, 'ts': 1587722850000, 'creator': 'smq', 'creationTime': 1587722825000, 'modifier': 'smq', 'modifiedTime': 1587722850000, 'persistStatus': 'nrm', 'promptMessage': None, 'orderId': '0J6IdCaOt4ZwtSxivExD', 'invoiceId': '5df5c54a-bef3-4fab-9ff8-2d9dad5d9b5f', 'invoiceType': '增值税发票', 'invoiceContent': None, 'invoiceTitle': '山东春和景明文化传播有限公司', 'invoiceTaxId': None, 'invoiceBank': '中国农业银行股份有限公司淄博东方分理处', 'invoiceAccount': None, 'invoiceSubBank': None}, 'orderReceiveAddressStr': None, 'orderInvoiceStr': None, 'orderItems': [{'id': '07xh4X0mv9IvcveVvWdl', 'dr': 0, 'ts': 1587722825000, 'creator': 'smq', 'creationTime': 1587722825000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'orderId': '0J6IdCaOt4ZwtSxivExD', 'orderCode': 'SOO20200424000004', 'orderBillType': 'SaleOrder', 'customerId': '1878731f-0aca-4e9b-8b27-5944910f1509', 'customerName': None, 'rowNum': '10', 'productId': '996cc839-60e8-4500-82c6-9a7c7b95646d', 'goodsCategoryId': None, 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'goodsImg': '/group1/M00/00/00/rBFAIV0wmbyASJn2AAE4-1jmRp4811.jpg', 'productLineId': '13c512df-ad18-48e5-b75d-166a534cc410', 'rowWeight': 0.0, 'weight': None, 'rowNetWeight': 0.0, 'netWeight': None, 'weightUnitId': None, 'weightUnitCode': None, 'weightUnitName': None, 'rowVolume': 0.0, 'volume': None, 'volumeUnitId': None, 'volumeUnitCode': None, 'volumeUnitName': None, 'orderNum': 10.0, 'orderNumUnitId': 'UNIT-12', 'orderNumUnitCode': 'EA', 'orderNumUnitName': '个', 'mainNum': 10.0, 'mainNumUnitId': 'UNIT-12', 'mainNumUnitCode': 'EA', 'mainNumUnitName': '个', 'conversionRate': 1.0, 'basePrice': 2789.0, 'supplierPrice': None, 'salePrice': 2789.0, 'promPrice': 2789.0, 'dealPrice': 2789.0, 'amount': 27890.0, 'promAmount': None, 'offsetAmount': None, 'dealAmount': 27890.0, 'currencyId': '7cbc1420-737d-4206-97e3-140ebdbe841f', 'currencyCode': 'CNY', 'currencyName': '人民币', 'currencySign': None, 'currencyAmountScale': None, 'currencyPriceScale': None, 'isGift': 0, 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'promotinId': None, 'promotinCode': None, 'promotinName': None, 'planDeliveryDate': 1585128077000, 'deliveryInvOrgId': 'ebcd635d-237e-4a15-819c-3983ac49436f', 'deliveryInvOrgCode': '1302', 'deliveryInvOrgName': '上海喜日电子科技有限公司', 'deliveryWarehouseId': None, 'deliveryWarehouseCode': None, 'deliveryWarehouseName': None, 'isClose': 0, 'isDeClose': 0, 'remark': None, 'deliveryNum': 0.0, 'stockInNum': 0.0, 'stockOutNum': 0.0, 'returnNum': 0.0, 'refundNum': 0.0, 'signNum': 0.0, 'replenishNum': 0.0, 'coordinateNum': 0.0, 'srcOrderCode': None, 'srcOrderId': None, 'srcOrderItemId': None, 'srcOrderTrantypeId': None, 'srcOrderBilltypeId': None, 'srcReqOrderCode': 'REQ20200424000004', 'srcReqOrderId': '0dNQZfhH2qRW6uTooZVA', 'srcReqOrderItemId': None, 'totalReturnAmount': None, 'returnReasonId': None, 'returnReasonCode': None, 'returnReasonName': None, 'returnTypeId': None, 'returnTypeCode': None, 'returnTypeName': None, 'orderPromRels': [], 'orderAttachments': [], 'version': 1, 'originalGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'settleFinancialOrgId': 'e53fc87e-1a16-4a2b-978c-63bfd14fd88b', 'settleFinancialOrgCode': '1101', 'settleFinancialOrgName': '上海证大喜马拉雅网络科技有限公司', 'projectId': None, 'projectCode': None, 'projectName': None, 'baseGoodsOptId': None, 'baseGoodsOptValue': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'batchCodeId': None, 'batchCodeCode': None, 'batchCodeName': None, 'goodsSupplement': 0, 'srcContractId': None, 'srcContractCode': None, 'srcContractType': None, 'srcQuoteId': None, 'goodsSupplementPrice': None, 'offsetDetailsDtoList': [], 'existingNum': None, 'availableNum': None, 'closeReason': None, 'orderCorrelationMoney': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'bomSplit': None}], 'orderItemBoms': [{'id': '0IohN1IyPeJ2Pg5rCd39', 'dr': 0, 'ts': 1587722825000, 'creator': 'smq', 'creationTime': 1587722825000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'orderId': '0J6IdCaOt4ZwtSxivExD', 'orderItemId': '07xh4X0mv9IvcveVvWdl', 'parentRowNum': '10', 'parentGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'parentGoodsCode': '301020000049', 'parentGoodsName': '小雅AI音箱旗舰版_石墨绿', 'rowNum': '10', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsImg': '/group1/M00/00/00/rBFAIV0wmbyASJn2AAE4-1jmRp4811.jpg', 'isGift': 0, 'productLineId': '13c512df-ad18-48e5-b75d-166a534cc410', 'rowWeight': 0.0, 'weight': None, 'rowNetWeight': 0.0, 'netWeight': None, 'weightUnitId': None, 'weightUnitCode': None, 'weightUnitName': None, 'rowVolume': 0.0, 'volume': None, 'volumeUnitId': None, 'volumeUnitCode': None, 'volumeUnitName': None, 'orderNum': 10.0, 'orderNumUnitId': 'UNIT-12', 'orderNumUnitCode': 'EA', 'orderNumUnitName': '个', 'mainNum': 10.0, 'mainNumUnitId': 'UNIT-12', 'mainNumUnitCode': 'EA', 'mainNumUnitName': '个', 'conversionRate': 1.0, 'basePrice': None, 'salePrice': 2789.0, 'amount': 27890.0, 'dealPrice': 2789.0, 'dealAmount': 27890.0, 'currency': None, 'planDeliveryDate': 1585128076000, 'deliveryInvOrgId': 'ebcd635d-237e-4a15-819c-3983ac49436f', 'deliveryWarehouseId': None, 'baseGoodsOptId': None, 'baseGoodsOptVals': None, 'baseGoodsOptValue': None, 'version': 1, 'originalGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'childGoodsQty': 1.0, 'projectId': None, 'supplierId': None, 'srcOrderCode': None, 'srcOrderId': None, 'srcOrderItemId': None, 'srcOrderItemBomId': None, 'srcReqOrderCode': 'REQ20200424000004', 'goodsSupplement': 0, 'srcReqOrderId': '0dNQZfhH2qRW6uTooZVA', 'srcReqOrderItemId': None, 'srcReqOrderItemBomId': None, 'existingNum': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'deliveryInvOrgCode': None, 'deliveryInvOrgName': None, 'deliveryWarehouseCode': None, 'deliveryWarehouseName': None, 'goodsSupplementPrice': None, 'costPrice': None, 'supplierPrice': None, 'supplierCode': None, 'supplierName': None, 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'deliveryNum': None, 'stockInNum': None, 'stockOutNum': None, 'returnNum': None, 'refundNum': None, 'signNum': None, 'replenishNum': None, 'coordinateNum': None, 'isClose': 0, 'closeReason': None, 'isDeClose': 0, 'isOutClose': None, 'offsetAmount': None, 'settleFinancialOrgId': 'e53fc87e-1a16-4a2b-978c-63bfd14fd88b', 'settleFinancialOrgCode': '1101', 'settleFinancialOrgName': '上海证大喜马拉雅网络科技有限公司', 'remark': None}], 'orderPromRels': [], 'orderAttachments': [], 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'logisticsBillCode': None, 'originalOrderCode': None, 'totalReturnAmount': None, 'returnReasonId': None, 'returnReasonCode': None, 'returnReasonName': None, 'accountPeriodId': 'a1ee592c-4412-42dc-8cee-94d2ac8aa355', 'accountPeriodCode': '001', 'accountPeriodName': '001', 'superiorCustomerId': None, 'superiorCustomerCode': None, 'superiorCustomerName': None, 'totalGoodsSuppleAmount': 0.0, 'orderCorrelationMoney': None, 'flushSelected': None, 'contractTypeId': None, 'ext01Id': None, 'ext01Code': None, 'ext01Name': None, 'ext02Id': None, 'ext02Code': None, 'ext02Name': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'goodsOutStyleId': None, 'goodsOutStyleCode': None, 'goodsOutStyleName': None, 'isBomCalcPrice': None, 'underPaymentModeId': None, 'underPaymentModeCode': None, 'underPaymentModeName': None}]}}",
+        "source" : "e18876b5c6202d3c.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4f40223d591add49",
+      "name" : "log",
+      "source" : "4f40223d591add49.txt",
+      "type" : "text/plain",
+      "size" : 12607
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'APIName': '取消审批销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "601fb650af7b8f4d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10b19f8c8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10b19f8c8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585883095700,
+        "stop" : 1585883097379,
+        "duration" : 1679
+      }
+    }, {
+      "uid" : "b42dba99bc89f949",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d01a9d8>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d01a9d8> = apiSendCheck.api_send_check",
+      "time" : {
+        "start" : 1585560663269,
+        "stop" : 1585560664777,
+        "duration" : 1508
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "525bbd067959b1d3.json",
+  "parameterValues" : [ "{'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'APIName': '取消审批销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/cancelApproveWithoutBpmToSubmit', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}
