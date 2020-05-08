@@ -1,0 +1,2 @@
+delete from stock_transfer_bill where id in ('allocation-add','allocation-add-and-submit1','allocation-add-and-submit2','allocation-add-and-approve1','allocation-add-and-approve2');
+delete from stock_transfer_bill_item where TRANSFER_BILL_ID in ('allocation-add','allocation-add-and-submit1','allocation-add-and-submit2','allocation-add-and-approve1','allocation-add-and-approve2');
