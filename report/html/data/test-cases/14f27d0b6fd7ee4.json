@@ -1,0 +1,67 @@
+{
+  "uid" : "14f27d0b6fd7ee4",
+  "name" : "test_api[case_data5]",
+  "fullName" : "case.test_purchase_order.TestCase#test_api",
+  "historyId" : "db863787e9d10716b6896a22a3cf47b9",
+  "time" : {
+    "start" : 1587723326844,
+    "stop" : 1587723326868,
+    "duration" : 24
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+  "statusTrace" : "self = <case.test_purchase_order.TestCase object at 0x10d57d208>\ncase_data = {'APIName': '提交外部采购订单', 'CaseId': 6.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"采购订单模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_purchase_order.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <util.httpClient.HttpClient object at 0x10d3a81d0>\nrequest_data = {'APIName': '提交外部采购订单', 'CaseId': 6.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...}\n\n    def send_requests(self, request_data):\n        '''\n    \n        :param request_data: 单条用例数据\n        :return:\n        '''\n    \n        host = ReadConfig().get_config(\"HTTP\", \"host\")\n        case_name = request_data['CaseName']\n        user = request_data['User']\n        header = request_data['Headers']\n        parameter_type = request_data['ParameterType']\n        method = request_data['Method']\n        path = request_data['Path']\n        parameter = request_data['Params']\n        depend_case = request_data['DependCase']\n    \n        url = host + path\n        if user == 'Manager':\n            cookie = initializeCookie.get_manager_cookie()\n        elif user == 'Customer_01':\n            cookie = initializeCookie.get_customer_01_cookie()\n        elif user == 'Customer_02':\n            cookie = initializeCookie.get_customer_02_cookie()\n        else:\n            cookie = None\n    \n        if depend_case:\n            relevance = request_data['RelevanceList']\n>           parameter = self.ini_parameter(depend_case, relevance, parameter, address)\nE           TypeError: ini_parameter() takes 4 positional arguments but 5 were given\n\n../util/httpClient.py:54: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "采购订单模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_purchase_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_purchase_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 6.0, 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "14f27d0b6fd7ee4.json",
+  "parameterValues" : [ "{'CaseId': 6.0, 'CaseName': 'submit_purchase_order', 'APIName': '提交外部采购订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-purchase/purchase/orders/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': '200', 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_common_purchase_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

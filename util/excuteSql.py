@@ -126,6 +126,7 @@ if __name__ == '__main__':
     #       "'Allocation','Allocation','1001ZZ100000000DPAP4','1001ZZ100000000DPAP6','2')"
     # sql="delete from stock_transfer_bill where id ='allocation-add-and-approve'"
     # e.excute_sql(sql)
-    # # path=setupMain.PATH + '/data/allocation_sql'
-    path=setupMain.PATH + '/data/allocation/allocation_setup_sql'
+    # path=setupMain.PATH + '/data/allocation_sql'
+    # path=setupMain.PATH + '/data/allocation/allocation_setup_sql'
+    path = setupMain.PATH + '/data/allocation/allocation_teardown_sql'
     e.execute_scripts_from_file(path)

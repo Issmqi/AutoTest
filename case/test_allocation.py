@@ -36,7 +36,8 @@ class TestCase:
         pass
 
     def teardown_class(self):
-        execute_sql.execute_scripts_from_file(allocation_teardown_sql)
+        # execute_sql.execute_scripts_from_file(allocation_teardown_sql)
+        pass
 
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
     @allure.story("调拨模块测试")

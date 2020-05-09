@@ -1,0 +1,247 @@
+{
+  "uid" : "a82538521ff3e149",
+  "name" : "test_api[case_data18]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "a0999cd388c373f43737985b1731e26d",
+  "time" : {
+    "start" : 1589011013413,
+    "stop" : 1589011033613,
+    "duration" : 20200
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589010641656,
+      "stop" : 1589010646071,
+      "duration" : 4415
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589011013501,
+        "stop" : 1589011013507,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "63f0a170b6e9b1fc",
+        "name" : "post",
+        "source" : "63f0a170b6e9b1fc.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "7d51a78af89c2810",
+        "name" : "create_transfer-in-bills",
+        "source" : "7d51a78af89c2810.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e97cbe1294fad984",
+        "name" : "http://192.168.41.16/occ-stock/stock/transfer-in-bills",
+        "source" : "e97cbe1294fad984.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "f31383f8e9ac72f9",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "f31383f8e9ac72f9.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "c828b59799c3ba02",
+        "name" : "json",
+        "source" : "c828b59799c3ba02.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "e072b29ca1d161aa",
+        "name" : "{\"id\":null,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgCode\":\"1210\",\"stockOrgName\":\"西安喜马拉雅网络科技有限公司\",\"billCode\":null,\"billDate\":1588953600000,\"billType\":\"AllocationOut\",\"billTranTypeId\":\"AllocationOut\",\"billTranTypeCode\":null,\"billTranTypeName\":null,\"storageId\":\"1001ZZ100000000DPAP4\",\"storageCode\":\"test030201\",\"storageName\":\"测试仓库030201\",\"ifSlotManage\":null,\"storekeeperId\":null,\"storekeeperCode\":null,\"storekeeperName\":null,\"planSendDate\":\"\",\"planArriveDate\":\"\",\"currencyId\":null,\"currencyCode\":null,\"currencyName\":null,\"totalShouldOutNum\":\"5.00\",\"totalFactOutNum\":\"5.00\",\"billStatusId\":null,\"billStatusName\":\"自由\",\"billStatusCode\":\"01\",\"stockBillBelong\":\"0DKeeV9TPwv3UZiad8EH\",\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"bizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"bizPersonCode\":\"007\",\"bizPersonName\":\"师孟奇\",\"deparmentId\":\"ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9\",\"deparmentCode\":\"01010102\",\"deparmentName\":\"城市经理\",\"logisticsId\":null,\"logisticsCode\":null,\"logisticsName\":null,\"siger\":null,\"signTime\":\"\",\"cancelReason\":null,\"remark\":\"自动化测试新增调拨入库单\",\"realLogisticsCompanyId\":null,\"realLogisticsCompanyCode\":null,\"realLogisticsCompanyName\":null,\"logisticsBillCode\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"stockOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgInCode\":\"1210\",\"stockOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"inIfSlotManage\":null,\"transferBillOutItems\":[{\"transferOutBill\":null,\"rowNum\":10,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":null,\"goodsAssistUnitName\":null,\"goodsConversionRate\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"totalShouldOutNum\":null,\"factOutNum\":\"5.000000\",\"unitPrice\":\"\",\"amountMoney\":\"0.00\",\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":\"\",\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"DBO20200508000034\",\"firstBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200508000034\",\"srcBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelection\":null,\"goodsSelectionDescription\":null,\"id\":null,\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"new\",\"promptMessage\":null,\"transferOutBillId\":null,\"goodsDisplayName\":null,\"enableBatchNumberManage\":null,\"productId\":null,\"productCode\":null,\"productLineId\":null,\"isOptional\":null,\"shouldOutNum\":5,\"isMotherPiece\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"ext01\":null,\"ext02\":null,\"ext03\":\"Allocation\",\"ext04\":\"Allocation\",\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"outStorageId\":null,\"outStorageCode\":null,\"outStorageName\":null,\"outIfSlotManage\":null,\"inStorageId\":null,\"inStorageCode\":null,\"inStorageName\":null,\"inIfSlotManage\":null}],\"transferOutBillItemBoms\":[{\"transferOutBill\":null,\"rowNum\":\"10\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":null,\"goodsAssistUnitName\":null,\"goodsConversionRate\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"totalShouldOutNum\":null,\"factOutNum\":\"5.000000\",\"unitPrice\":\"\",\"amountMoney\":\"0.00\",\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":\"\",\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"0DKeeV9TPwv3UZiad8EH\",\"firstBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200508000034\",\"srcBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"goodsNum\":null,\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"id\":null,\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"new\",\"promptMessage\":null,\"goodsDisplayName\":null,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"shouldOutNum\":5,\"itemId\":null,\"billId\":null,\"parentGoodsdisplayName\":null,\"firstBillBomCode\":\"0CrhvlIZ5uIVEXmYN9Hq\",\"srcBillBomCode\":\"0CrhvlIZ5uIVEXmYN9Hq\",\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}],\"srcSystem\":null,\"srcSystemId\":null,\"srcSystemCode\":null,\"srcSystemName\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"sycnOutStatus\":null,\"sycnNCStatus\":null}",
+        "source" : "e072b29ca1d161aa.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589011033583,
+        "stop" : 1589011033590,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3eb148c4e61cf4b8",
+        "name" : "post",
+        "source" : "3eb148c4e61cf4b8.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "54ddbac4e87dbbe9",
+        "name" : "delete_transfer-in-bills",
+        "source" : "54ddbac4e87dbbe9.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "248fa541655b88c3",
+        "name" : "http://192.168.41.16/occ-stock/stock/other-out-bills/delete",
+        "source" : "248fa541655b88c3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "825c09c5f35f9ff8",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "825c09c5f35f9ff8.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "6fd8ea8ca96296fd",
+        "name" : "form_data",
+        "source" : "6fd8ea8ca96296fd.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "f160022d44fefdf0",
+        "name" : "{\"ids\": \"0I3UMT2UBleMo7dzuUZI\", \"search_AUTH_APPCODE\": \"transferOutBill\"}",
+        "source" : "f160022d44fefdf0.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1589011033610,
+        "stop" : 1589011033612,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "894051eac1202ce8",
+        "name" : "200",
+        "source" : "894051eac1202ce8.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d1d0ee8996beae40",
+        "name" : "200",
+        "source" : "d1d0ee8996beae40.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "101232ad94548fbb",
+        "name" : "{}",
+        "source" : "101232ad94548fbb.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3117a1f9840b4ed8",
+      "name" : "log",
+      "source" : "3117a1f9840b4ed8.txt",
+      "type" : "text/plain",
+      "size" : 10353
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 16,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589011033615,
+      "stop" : 1589011035614,
+      "duration" : 1999
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "44454-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 19.0, 'CaseName': 'delete_transfer-in-bills', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-out-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-out2\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a82538521ff3e149.json",
+  "parameterValues" : [ "{'CaseId': 19.0, 'CaseName': 'delete_transfer-in-bills', 'APIName': '删除其他入库', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/other-out-bills/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-out2\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}" ]
+}

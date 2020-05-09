@@ -1,2 +1,11 @@
-delete from stock_transfer_bill where id in ('allocation-add','allocation-add-and-submit1','allocation-add-and-submit2','allocation-add-and-approve1','allocation-add-and-approve2');
-delete from stock_transfer_bill_item where TRANSFER_BILL_ID in ('allocation-add','allocation-add-and-submit1','allocation-add-and-submit2','allocation-add-and-approve1','allocation-add-and-approve2');
+delete from stock_transfer_bill where id in ('allocation-create1','allocation-create2','allocation-create-and-submit1','allocation-create-and-submit2','allocation-create-and-approve1','allocation-create-and-approve2');
+delete from stock_transfer_bill_item where id in ('allocation-create1-item','allocation-create2-item','allocation-create-and-submit1-item','allocation-create-and-submit2-item','allocation-create-and-approve1-item','allocation-create-and-approve2-item');
+delete from stock_transfer_bill_item_bom where id in ('allocation-create1-bom','allocation-create2-bom','allocation-create-and-submit1-bom','allocation-create-and-submit2-bom','allocation-create-and-approve1-bom','allocation-create-and-approve2-bom');
+
+delete from `occ_dev_930`.`stock_transfer_out_bill` where id in ('create-transfer-out1','create-transfer-out2','create-and-sign-transfer-out1');
+delete from `occ_dev_930`.`stock_transfer_bill_out_item` where id in ('create-transfer-out1-item','create-transfer-out2-item','create-and-sign-transfer-out1-item');
+delete from `occ_dev_930`.`stock_transfer_out_bill_bom` where id in ('create-transfer-out1-bom','create-transfer-out2-bom','create-and-sign-transfer-out1-bom');
+
+delete from stock_transfer_bill where id in ('allocation-create1','allocation-create2','allocation-create-and-submit1','allocation-create-and-submit2','allocation-create-and-approve1','allocation-create-and-approve2');
+delete from stock_transfer_bill_item where TRANSFER_BILL_ID in ('allocation-create1','allocation-create2','allocation-create-and-submit1','allocation-create-and-submit2','allocation-create-and-approve1','allocation-create-and-approve2');
+delete from stock_transfer_bill_item_bom where BILL_ID in ('allocation-create1','allocation-create2','allocation-create-and-submit1','allocation-create-and-submit2','allocation-create-and-approve1','allocation-create-and-approve2');

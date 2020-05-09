@@ -1,0 +1,251 @@
+{
+  "uid" : "72b7c52f9240f9d0",
+  "name" : "test_api[case_data16]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "3cb768ad8c0c9f46c07211f54c489bbe",
+  "time" : {
+    "start" : 1589010993257,
+    "stop" : 1589011013341,
+    "duration" : 20084
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10fe229e8>\ncase_data = {'APIName': '其他入库签字', 'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:51: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589010641656,
+      "stop" : 1589010646071,
+      "duration" : 4415
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10fe229e8>\ncase_data = {'APIName': '其他入库签字', 'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:51: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589010993308,
+        "stop" : 1589010993310,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b35c7178eb0a74bd",
+        "name" : "post",
+        "source" : "b35c7178eb0a74bd.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "2cc355529d332151",
+        "name" : "create_transfer-in-bills",
+        "source" : "2cc355529d332151.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "99ddb90c2de5e4a",
+        "name" : "http://192.168.41.16/occ-stock/stock/transfer-in-bills",
+        "source" : "99ddb90c2de5e4a.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3fbc4774ba2cbb55",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "3fbc4774ba2cbb55.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "4318c6bad1085e9b",
+        "name" : "json",
+        "source" : "4318c6bad1085e9b.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "9c5826e2327930ae",
+        "name" : "{\"id\":null,\"stockOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgCode\":\"1210\",\"stockOrgName\":\"西安喜马拉雅网络科技有限公司\",\"billCode\":null,\"billDate\":1588953600000,\"billType\":\"AllocationOut\",\"billTranTypeId\":\"AllocationOut\",\"billTranTypeCode\":null,\"billTranTypeName\":null,\"storageId\":\"1001ZZ100000000DPAP4\",\"storageCode\":\"test030201\",\"storageName\":\"测试仓库030201\",\"ifSlotManage\":null,\"storekeeperId\":null,\"storekeeperCode\":null,\"storekeeperName\":null,\"planSendDate\":\"\",\"planArriveDate\":\"\",\"currencyId\":null,\"currencyCode\":null,\"currencyName\":null,\"totalShouldOutNum\":\"5.00\",\"totalFactOutNum\":\"5.00\",\"billStatusId\":null,\"billStatusName\":\"自由\",\"billStatusCode\":\"01\",\"stockBillBelong\":\"0DKeeV9TPwv3UZiad8EH\",\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"bizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"bizPersonCode\":\"007\",\"bizPersonName\":\"师孟奇\",\"deparmentId\":\"ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9\",\"deparmentCode\":\"01010102\",\"deparmentName\":\"城市经理\",\"logisticsId\":null,\"logisticsCode\":null,\"logisticsName\":null,\"siger\":null,\"signTime\":\"\",\"cancelReason\":null,\"remark\":\"自动化测试新增调拨入库单\",\"realLogisticsCompanyId\":null,\"realLogisticsCompanyCode\":null,\"realLogisticsCompanyName\":null,\"logisticsBillCode\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"stockOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgInCode\":\"1210\",\"stockOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"inIfSlotManage\":null,\"transferBillOutItems\":[{\"transferOutBill\":null,\"rowNum\":10,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":null,\"goodsAssistUnitName\":null,\"goodsConversionRate\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"totalShouldOutNum\":null,\"factOutNum\":\"5.000000\",\"unitPrice\":\"\",\"amountMoney\":\"0.00\",\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":\"\",\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"DBO20200508000034\",\"firstBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200508000034\",\"srcBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelection\":null,\"goodsSelectionDescription\":null,\"id\":null,\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"new\",\"promptMessage\":null,\"transferOutBillId\":null,\"goodsDisplayName\":null,\"enableBatchNumberManage\":null,\"productId\":null,\"productCode\":null,\"productLineId\":null,\"isOptional\":null,\"shouldOutNum\":5,\"isMotherPiece\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"ext01\":null,\"ext02\":null,\"ext03\":\"Allocation\",\"ext04\":\"Allocation\",\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"outStorageId\":null,\"outStorageCode\":null,\"outStorageName\":null,\"outIfSlotManage\":null,\"inStorageId\":null,\"inStorageCode\":null,\"inStorageName\":null,\"inIfSlotManage\":null}],\"transferOutBillItemBoms\":[{\"transferOutBill\":null,\"rowNum\":\"10\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":null,\"goodsAssistUnitName\":null,\"goodsConversionRate\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"totalShouldOutNum\":null,\"factOutNum\":\"5.000000\",\"unitPrice\":\"\",\"amountMoney\":\"0.00\",\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":\"\",\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"0DKeeV9TPwv3UZiad8EH\",\"firstBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200508000034\",\"srcBillBcode\":\"0Tr6HVsgvmzwBQYy2d6i\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"goodsNum\":null,\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"id\":null,\"dr\":0,\"ts\":null,\"creator\":null,\"creationTime\":null,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"new\",\"promptMessage\":null,\"goodsDisplayName\":null,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"shouldOutNum\":5,\"itemId\":null,\"billId\":null,\"parentGoodsdisplayName\":null,\"firstBillBomCode\":\"0CrhvlIZ5uIVEXmYN9Hq\",\"srcBillBomCode\":\"0CrhvlIZ5uIVEXmYN9Hq\",\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}],\"srcSystem\":null,\"srcSystemId\":null,\"srcSystemCode\":null,\"srcSystemName\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"sycnOutStatus\":null,\"sycnNCStatus\":null}",
+        "source" : "9c5826e2327930ae.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589011013266,
+        "stop" : 1589011013269,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2076cef2c39f2940",
+        "name" : "post",
+        "source" : "2076cef2c39f2940.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "62e608750e9fbfbc",
+        "name" : "sign_transfer-in-bills",
+        "source" : "62e608750e9fbfbc.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "5390c3af1ca15a67",
+        "name" : "http://192.168.41.16/occ-stock/stock/transfer-in-bills/batch-sign",
+        "source" : "5390c3af1ca15a67.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d306dc1341f8833c",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "d306dc1341f8833c.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "f0d30eb725aa9626",
+        "name" : "form_data",
+        "source" : "f0d30eb725aa9626.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "2977afdc3cbc7b81",
+        "name" : "{\"ids\": \"0IsldncOM0BOscr9rJWX\", \"search_AUTH_APPCODE\": \"transferOutBill\"}",
+        "source" : "2977afdc3cbc7b81.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1589011013338,
+        "stop" : 1589011013340,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c542d59e53011050",
+        "name" : "200",
+        "source" : "c542d59e53011050.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "bc6cd3624daa686e",
+        "name" : "500",
+        "source" : "bc6cd3624daa686e.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "4f5299e7391efe4f",
+        "name" : "{\"timestamp\":1589010813632,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"当前转库出库单实入总数量小于等于0，不可签字\",\"path\":\"/stock/transfer-in-bills/batch-sign\"}",
+        "source" : "4f5299e7391efe4f.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "eaa712a569564f9c",
+      "name" : "log",
+      "source" : "eaa712a569564f9c.txt",
+      "type" : "text/plain",
+      "size" : 10512
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 16,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589011033615,
+      "stop" : 1589011035614,
+      "duration" : 1999
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "44454-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "72b7c52f9240f9d0.json",
+  "parameterValues" : [ "{'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}" ]
+}

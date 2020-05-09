@@ -1,0 +1,11 @@
+INFO     request:log.py:85 ====================================================================================================
+INFO     request:log.py:85 用例名称:cancel_transfer-out-bills
+INFO     request:log.py:85 请求头:{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}
+INFO     request:log.py:85 请求地址:http://192.168.41.16/occ-stock/stock/transfer-out-bills/batch-cancel-sign
+INFO     request:log.py:85 请求参数:{"ids":"create-and-sign-transfer-out1","search_AUTH_APPCODE":"transferOutBill"}
+INFO     request:log.py:85 测试用户：Manager
+INFO     request:log.py:85 响应时间为0.061787s
+INFO     request:log.py:85 返回状态码:404
+INFO     request:log.py:85 返回response:
+ {"timestamp":1589008935503,"status":404,"error":"Not Found","message":"No message available","path":"/stock/transfer-out-bills/batch-cancel-sign"}
+INFO     request:log.py:85 HTTP返回状态码与预期不一致
