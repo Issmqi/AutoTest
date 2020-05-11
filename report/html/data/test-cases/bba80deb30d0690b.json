@@ -1,0 +1,196 @@
+{
+  "uid" : "bba80deb30d0690b",
+  "name" : "test_api[case_data6]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "d9a97e5ca364b9635cffbf9e133f0195",
+  "time" : {
+    "start" : 1588935162464,
+    "stop" : 1588935162652,
+    "duration" : 188
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1588935058029,
+      "stop" : 1588935058598,
+      "duration" : 569
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1588935162493,
+        "stop" : 1588935162495,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b5bf9bff6ca8d32f",
+        "name" : "post",
+        "source" : "b5bf9bff6ca8d32f.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "24346c62e9134711",
+        "name" : "delete_allocation_bill",
+        "source" : "24346c62e9134711.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ed88c3393125e608",
+        "name" : "http://192.168.41.16/occ-stock/stock/allocation-bill/delete",
+        "source" : "ed88c3393125e608.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ee4cad31696005bc",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "ee4cad31696005bc.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "db18d367b1a336c7",
+        "name" : "form_data",
+        "source" : "db18d367b1a336c7.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "bd30a2d805c1085e",
+        "name" : "{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}",
+        "source" : "bd30a2d805c1085e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1588935162650,
+        "stop" : 1588935162652,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c3b7b63631917ba7",
+        "name" : "200",
+        "source" : "c3b7b63631917ba7.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "ab630f89b57696d3",
+        "name" : "200",
+        "source" : "ab630f89b57696d3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "dbea2697e5c4f808",
+        "name" : "{}",
+        "source" : "dbea2697e5c4f808.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "95e0c7d201e60776",
+      "name" : "log",
+      "source" : "95e0c7d201e60776.txt",
+      "type" : "text/plain",
+      "size" : 797
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1588935162653,
+      "stop" : 1588935163063,
+      "duration" : 410
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "43515-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'APIName': '删除调拨订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bba80deb30d0690b.json",
+  "parameterValues" : [ "{'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'APIName': '删除调拨订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}" ]
+}

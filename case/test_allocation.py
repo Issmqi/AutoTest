@@ -36,7 +36,7 @@ class TestCase:
         pass
 
     def teardown_class(self):
-        # execute_sql.execute_scripts_from_file(allocation_teardown_sql)
+        execute_sql.execute_scripts_from_file(allocation_teardown_sql)
         pass
 
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
@@ -44,7 +44,7 @@ class TestCase:
     @pytest.mark.flaky(reruns=3, reruns_delay=3)
     def test_api(self, case_data):
         '''
-        :param case_data: 单条测试用例数据
+        :param case_data: 测试用例
         :return:
         '''
         code, response = h.send_requests(case_data)

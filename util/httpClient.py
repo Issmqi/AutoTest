@@ -51,7 +51,8 @@ class HttpClient():
 
         if depend_case:
             relevance = request_data['RelevanceList']
-            parameter = self.ini_parameter(depend_case, relevance, parameter)
+            # parameter = self.ini_parameter(depend_case, relevance, parameter)
+            parameter = self.init_request(depend_case, relevance, parameter)
 
         log.info("=" * 100)
         log.info('用例名称:%s' % case_name)
@@ -141,6 +142,33 @@ class HttpClient():
             log.war('ERROR')
             log.error(e)
 
+    def init_request(self, dependCase, relevance, parameter):
+        '''
+        请求前执行依赖接口，处理依赖参数
+        :param dependCase:dict 关联接口casename
+        :param relevance:dict 关联键值对
+        :param parameter: str 接口请求参数
+        :return: parameter: str
+        '''
+        relevance_response = self.read_relevance_data(dependCase)  # 执行依赖接口
+        if not relevance_response:
+            return parameter
+        if not relevance:
+            return parameter
+
+        else:
+            param_dict = json.loads(parameter)
+            relevance_dict = json.loads(relevance)
+            for key in relevance_dict:
+                relevance_key = relevance_dict[key]
+                try:
+                    param_dict[key] = jsonpath(relevance_response, 'relevance_key')[0]
+                    log.info('替换后参数是:%s' % param_dict)
+                except Exception as e:
+                    log.info('关联接口响应中找不到关键字%s' % relevance_key)
+                    log.error(e)
+            return json.dumps(param_dict)
+
     def ini_parameter(self, dependCase, relevance, parameter):
         '''
         初始化有依赖关系的参数
@@ -155,11 +183,18 @@ class HttpClient():
             relevance_dict = json.loads(relevance)
             for key in relevance_dict:
                 relevance_key = relevance_dict[key]
-                if relevance_key in relevance_response:
+                try:
                     param_dict[key] = jsonpath(relevance_response, '$..%s' % relevance_key)[0]
-                else:
+                    log.info('替换后参数是:%s' % param_dict)
+                except Exception as e:
                     log.info('关联接口响应中找不到关键字%s' % relevance_key)
-            print('替换后参数是', param_dict)
+                    log.error(e)
+                # if relevance_key in relevance_response:
+                #     param_dict[key] = jsonpath(relevance_response, '$..%s' % relevance_key)[0]
+                #     log.info('替换后参数是:%s'%param_dict)
+                # else:
+                #     log.info('关联接口响应中找不到关键字%s' % relevance_key)
+            # print('替换后参数是', param_dict)
             return json.dumps(param_dict)
         else:
             log.info('关联接口响应为空！')
@@ -183,107 +218,21 @@ class HttpClient():
                 response = result[1]
                 break
         if isinstance(response, dict):
-            print('关联接口返回结果', response)
+            log.info('关联接口返回结果%s' % response)
             return response
         else:
             log.info('关联接口未返回dict响应')
             return None
 
 
-def send_request(request_data):
-    '''
-
-    :param request_data: 单条用例数据
-    :return:
-    '''
-
-    host = ReadConfig().get_config("HTTP", "host")
-    case_name = request_data['CaseName']
-    user = request_data['User']
-    header = request_data['Headers']
-    parameter_type = request_data['ParameterType']
-    method = request_data['Method']
-    path = request_data['Path']
-    parameter = request_data['Params']
-    depend_case = request_data['DependCase']
-    is_depend = request_data['IsDepend']
-
-    url = host + path
-    if user == 'Manager':
-        cookie = initializeCookie.get_manager_cookie()
-    elif user == 'Customer_01':
-        cookie = initializeCookie.get_customer_01_cookie()
-    elif user == 'Customer_02':
-        cookie = initializeCookie.get_customer_02_cookie()
-    else:
-        cookie = None
-
-    if depend_case:
-        from business import initializeParameter
-        relevance = request_data['RelevanceList']
-        parameter = initializeParameter.ini_parameter(depend_case, relevance, parameter)
-        # parameter = initializeParameter.ini_requests(depend_case, relevance, parameter_type)
-
-    log.info("=" * 100)
-    log.info('用例名称:%s' % case_name)
-    log.info('请求头:%s' % header)
-    log.info('请求地址:%s' % url)
-    log.info('请求参数:%s' % parameter)
-    log.info('测试用户：%s' % user)
-
-    if method == 'post':
-        with allure.step("POST请求接口"):
-            allure.attach("请求接口:", str(case_name))
-            allure.attach("请求地址:", url)
-            allure.attach("请求头", header)
-            allure.attach("请求参数类型", parameter_type)
-            allure.attach("请求参数", parameter)
-        result = apiMethod.post(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
-
-    elif method == 'put':
-        with allure.step("PUT请求接口"):
-            allure.attach("请求接口：", case_name)
-            allure.attach("请求地址", url)
-            allure.attach("请求头", header)
-            allure.attach("请求参数类型", parameter_type)
-            allure.attach("请求参数", parameter)
-        result = apiMethod.put(url=url, param_type=parameter_type, param=parameter, cookie=cookie, header=header)
-
-    elif method == 'get':
-        with allure.step("GET请求接口"):
-            allure.attach("请求接口：", case_name)
-            allure.attach("请求地址", url)
-            allure.attach("请求头", header)
-            allure.attach("请求参数类型", parameter_type)
-            allure.attach("请求参数", parameter)
-        result = apiMethod.get(url=url, header=header, param=parameter)
-
-    else:
-        log.war('请求类型不存在！')
-        result = {"code": False, "data": False}
-
-    log.info("返回状态码:%s" % str(result[0]))
-    log.info("返回response:\n %s" % result[1])
-    # log.info("请求接口结果：\n %s" % str(result))
-
-    if is_depend == 'Yes':
-        writeResult.write_result(case_name, result)
-
-    return result
-
-
-#
-
-
 if __name__ == '__main__':
-    address = setupMain.PATH + '/data/allocation_data.xlsx'
-    data = {'CaseId': 2.0, 'CaseName': 'get_allocation_bill_detail', 'APIName': '查询调拨订单详情', 'Headers': '',
-            'Path': '/occ-stock/stock/allocation-bill/findByParentid', 'Method': 'get', 'ParameterType': 'parameter',
-            'Params': '{"id":"040pnM4EHJ4dzuEqtgxG","search_AUTH_APPCODE":"allocation"}', 'CheckTpye': 'check_json',
-            'ExpectedCode': 200.0,
-            'ExpectedData': '{"id":"0cVwUbuRXnzAhyFKRyaq","dr":0,"ts":1585301477000,"creator":"smq","creationTime":1585301477000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":null,"state":0,"approver":null,"approveTime":null,"approveOpinion":null,"sycnNCStatus":null,"sycnOutStatus":null,"pkOrgId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","pkOrgCode":"1210","pkOrgName":"西安喜马拉雅网络科技有限公司","pkOrgInId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","pkOrgInCode":"1210","pkOrgInName":"西安喜马拉雅网络科技有限公司","code":"DBO20200327000005","billDate":1585238400000,"billType":"Allocation","billTranTypeId":"Allocation","billTranTypeCode":"Allocation","billTranTypeName":"调拨单","outStorageId":"1001ZZ100000000DPAP4","outStorageCode":"test030201","outStorageName":"测试仓库030201","outIfSlotManage":null,"inStorageId":"1001ZZ100000000DPAP6","inStorageCode":"test030202","inStorageName":"test030202","inIfSlotManage":null,"outBizPersonId":"0mWG6nOSCxjsi1zoKEYs","outBizPersonCode":"007","outBizPersonName":"师孟奇","inBizPersonId":"0wsjdHVUBFlca3pyH155","inBizPersonCode":"2539","inBizPersonName":"唐林","outDeptId":"ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9","outDeptCode":"01010102","outDeptName":"城市经理","inDeptId":"02f265b0-aca6-4364-bd1b-50de07ef9482","inDeptCode":"02","inDeptName":"中台&业务支撑","planSendDate":null,"planArriveDate":null,"currencyId":"CURRENCY-01","currencyCode":"RMB","currencyName":"人民币","totalFactOutNum":null,"totalFactInNum":null,"billStatusId":null,"billStatusCode":null,"billStatusName":null,"transferStatusId":"0s21f51f-4f42-4100-dkd0-3254fbq33e6k","transferStatusCode":"1","transferStatusName":"待处理","stockBillBelong":null,"customerId":null,"customerName":null,"customerCode":null,"isClose":0,"closer":null,"closeDate":null,"closeReason":null,"remark":"自动化测试新增调拨单","transferBillItems":[{"id":"0nDo9IaykpX0aSOxITRr","dr":0,"ts":1585301487000,"creator":"smq","creationTime":1585301487000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":null,"rowNum":10,"transferBillId":"0cVwUbuRXnzAhyFKRyaq","goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsFullName":null,"goodsBasicUnitName":"个","goodsAssistUnitName":"个","goodsConversionRate":1.000000,"enableBatchNumberManage":null,"productId":null,"productLineId":null,"isOptional":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","transferNum":5.00000000,"onwayNum":null,"totalOutNum":null,"totalInNum":null,"unitPrice":null,"amountMoney":0E-8,"remark":null,"batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"isClose":0,"sourceId":null,"sourceLineNum":null,"sourceType":null,"ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"goodsVersion":"1","goodsSelection":null,"isMotherPiece":null,"customerId":null,"customerCode":null,"customerName":null,"supplierId":null,"supplierCode":null,"supplierName":null,"projectId":null,"projectCode":null,"projectName":null,"batchCodeId":null,"batchCodeCode":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"enableBatchNoManage":null,"enableInvStatusManage":null,"originalGoodsId":null,"goodsSelectionDescription":null,"outStorageId":"1001ZZ100000000DPAP4","outStorageCode":"test030201","outStorageName":"测试仓库030201","outIfSlotManage":null,"inStorageId":"1001ZZ100000000DPAP6","inStorageCode":"test030202","inStorageName":"test030202","inIfSlotManage":null,"outPositionId":null,"outPositionCode":null,"outPositionName":null}],"transferBillItemBoms":[{"id":"06NAx8X65U6lDo4qq2oJ","dr":0,"ts":1585301487000,"creator":"smq","creationTime":1585301487000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":null,"rowNum":"10","goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsFullName":null,"goodsBasicUnitName":"个","goodsAssistUnitName":"个","goodsConversionRate":1.000000,"enableBatchNumberManage":null,"productId":null,"productLineId":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","transferNum":5.00000000,"onwayNum":null,"totalOutNum":null,"totalInNum":null,"unitPrice":null,"amountMoney":0E-8,"remark":null,"batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"isClose":0,"sourceId":null,"sourceLineNum":null,"sourceType":null,"ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"goodsVersion":"1","goodsSelection":null,"customerId":null,"customerCode":null,"customerName":null,"supplierId":null,"supplierCode":null,"supplierName":null,"projectId":null,"projectCode":null,"projectName":null,"batchCodeId":null,"batchCodeCode":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"originalGoodsId":null,"goodsSelectionDescription":null,"itemId":"0nDo9IaykpX0aSOxITRr","billId":"0cVwUbuRXnzAhyFKRyaq","parentGoodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","parentGoodsCode":"301020000049","parentGoodsName":"小雅AI音箱旗舰版_石墨绿","parentGoodsdisplayName":null,"parentRowNum":"10","childGoodsQty":null,"firstBillBomCode":null,"srcBillBomCode":null,"outStorageId":"1001ZZ100000000DPAP4","outStorageCode":"test030201","outStorageName":"测试仓库030201","outIfSlotManage":null,"inStorageId":"1001ZZ100000000DPAP6","inStorageCode":"test030202","inStorageName":"test030202","inIfSlotManage":null,"outPositionId":null,"outPositionCode":null,"outPositionName":null}],"ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"isDistribution":null,"isReturned":null}',
-            'User': 'Manager', 'DependCase': 'create_allocation_bill', 'RelevanceList': '{"id":"id"}', 'IsDepend': ''}
-
+    address = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
+    # data={'CaseId': 8.0, 'CaseName': 'create_transfer-out-bills', 'APIName': '新增调拨出库单', 'Headers': "{'Content-Type':'application/json','charset': 'UTF-8'}", 'Path': '/occ-stock/stock/transfer-out-bills', 'Method': 'post', 'ParameterType': 'json', 'Params': '{"id":null,"stockOrgId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","stockOrgCode":"1210","stockOrgName":"西安喜马拉雅网络科技有限公司","billCode":null,"billDate":1588953600000,"billType":"AllocationOut","billTranTypeId":"AllocationOut","billTranTypeCode":null,"billTranTypeName":null,"storageId":"1001ZZ100000000DPAP4","storageCode":"test030201","storageName":"测试仓库030201","ifSlotManage":null,"storekeeperId":null,"storekeeperCode":null,"storekeeperName":null,"planSendDate":"","planArriveDate":"","currencyId":null,"currencyCode":null,"currencyName":null,"totalShouldOutNum":"5.00","totalFactOutNum":"5.00","billStatusId":null,"billStatusName":"自由","billStatusCode":"01","stockBillBelong":"0DKeeV9TPwv3UZiad8EH","customerId":null,"customerCode":null,"customerName":null,"bizPersonId":"0mWG6nOSCxjsi1zoKEYs","bizPersonCode":"007","bizPersonName":"师孟奇","deparmentId":"ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9","deparmentCode":"01010102","deparmentName":"城市经理","logisticsId":null,"logisticsCode":null,"logisticsName":null,"siger":null,"signTime":"","cancelReason":null,"remark":"自动化测试新增调拨出库单","realLogisticsCompanyId":null,"realLogisticsCompanyCode":null,"realLogisticsCompanyName":null,"logisticsBillCode":null,"inStorageId":"1001ZZ100000000DPAP6","inStorageCode":"test030202","inStorageName":"test030202","dr":0,"ts":null,"creator":null,"creationTime":null,"modifier":null,"modifiedTime":null,"persistStatus":"upd","promptMessage":null,"stockOrgInId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","stockOrgInCode":"1210","stockOrgInName":"西安喜马拉雅网络科技有限公司","inIfSlotManage":null,"transferBillOutItems":[{"transferOutBill":null,"rowNum":10,"goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsFullName":null,"goodsBasicUnitName":null,"goodsAssistUnitName":null,"goodsConversionRate":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","totalShouldOutNum":null,"factOutNum":"5.000000","unitPrice":"","amountMoney":"0.00","batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"stockOutPersonId":null,"stockOutPersonCode":null,"stockOutPersonName":null,"stockOutDate":"","receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"firstBillCode":"DBO20200508000034","firstBillBcode":"0Tr6HVsgvmzwBQYy2d6i","firstBillType":"Allocation","srcBillCode":"DBO20200508000034","srcBillBcode":"0Tr6HVsgvmzwBQYy2d6i","srcBillType":"Allocation","remark":null,"goodsVersion":"1","batchCodeId":null,"batchCodeCode":null,"batchCodeName":null,"supplierId":null,"supplierName":null,"supplierCode":null,"projectId":null,"projectCode":null,"projectName":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"customerId":null,"customerCode":null,"customerName":null,"originalGoodsId":null,"goodsSelection":null,"goodsSelectionDescription":null,"id":null,"dr":0,"ts":null,"creator":null,"creationTime":null,"modifier":null,"modifiedTime":null,"persistStatus":"new","promptMessage":null,"transferOutBillId":null,"goodsDisplayName":null,"enableBatchNumberManage":null,"productId":null,"productCode":null,"productLineId":null,"isOptional":null,"shouldOutNum":5,"isMotherPiece":null,"enableBatchNoManage":null,"enableInvStatusManage":null,"ext01":null,"ext02":null,"ext03":"Allocation","ext04":"Allocation","ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"outStorageId":null,"outStorageCode":null,"outStorageName":null,"outIfSlotManage":null,"inStorageId":null,"inStorageCode":null,"inStorageName":null,"inIfSlotManage":null}],"transferOutBillItemBoms":[{"transferOutBill":null,"rowNum":"10","goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsFullName":null,"goodsBasicUnitName":null,"goodsAssistUnitName":null,"goodsConversionRate":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","totalShouldOutNum":null,"factOutNum":"5.000000","unitPrice":"","amountMoney":"0.00","batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"stockOutPersonId":null,"stockOutPersonCode":null,"stockOutPersonName":null,"stockOutDate":"","receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"firstBillCode":"0DKeeV9TPwv3UZiad8EH","firstBillBcode":"0Tr6HVsgvmzwBQYy2d6i","firstBillType":"Allocation","srcBillCode":"DBO20200508000034","srcBillBcode":"0Tr6HVsgvmzwBQYy2d6i","srcBillType":"Allocation","remark":null,"goodsVersion":"1","goodsSelection":null,"goodsNum":null,"parentGoodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","parentGoodsCode":"301020000049","parentGoodsName":"小雅AI音箱旗舰版_石墨绿","parentRowNum":"10","childGoodsQty":null,"batchCodeId":null,"batchCodeCode":null,"batchCodeName":null,"supplierId":null,"supplierName":null,"supplierCode":null,"projectId":null,"projectCode":null,"projectName":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"customerId":null,"customerCode":null,"customerName":null,"originalGoodsId":null,"goodsSelectionDescription":null,"id":null,"dr":0,"ts":null,"creator":null,"creationTime":null,"modifier":null,"modifiedTime":null,"persistStatus":"new","promptMessage":null,"goodsDisplayName":null,"enableBatchNumberManage":null,"productId":null,"productLineId":null,"shouldOutNum":5,"itemId":null,"billId":null,"parentGoodsdisplayName":null,"firstBillBomCode":"0CrhvlIZ5uIVEXmYN9Hq","srcBillBomCode":"0CrhvlIZ5uIVEXmYN9Hq","ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null}],"srcSystem":null,"srcSystemId":null,"srcSystemCode":null,"srcSystemName":null,"ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"sycnOutStatus":null,"sycnNCStatus":null}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{"id":"0TszFCIVqcbJkmpWHQhq","dr":0,"ts":1589002318000,"creator":"smq","creationTime":1589002318000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":"","stockOrgId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","stockOrgCode":"1210","stockOrgName":"西安喜马拉雅网络科技有限公司","stockOrgInId":"abd7cf79-511d-4307-9bbd-d288b18d0ef9","stockOrgInCode":"1210","stockOrgInName":"西安喜马拉雅网络科技有限公司","billCode":"TDN2020050900003","billDate":1588953600000,"billType":"AllocationOut","billTranTypeId":"AllocationOut","billTranTypeCode":"AllocationOut","billTranTypeName":"调拨出库","storageId":"1001ZZ100000000DPAP4","storageCode":"test030201","storageName":"测试仓库030201","ifSlotManage":null,"inStorageId":"1001ZZ100000000DPAP6","inStorageCode":"test030202","inStorageName":"test030202","inIfSlotManage":null,"storekeeperId":null,"storekeeperCode":null,"storekeeperName":null,"planSendDate":null,"planArriveDate":null,"currencyId":null,"currencyCode":null,"currencyName":null,"totalShouldOutNum":5.00000000,"totalFactOutNum":5.00000000,"billStatusId":"099aj5df-4y42-4700-d8d6-3714fdb43e68","billStatusCode":"01","billStatusName":"自由","stockBillBelong":"0DKeeV9TPwv3UZiad8EH","customerId":null,"customerCode":null,"customerName":null,"bizPersonId":"0mWG6nOSCxjsi1zoKEYs","bizPersonCode":"007","bizPersonName":"师孟奇","deparmentId":"ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9","deparmentCode":"01010102","deparmentName":"城市经理","logisticsId":null,"logisticsCode":null,"logisticsName":null,"realLogisticsCompanyId":null,"realLogisticsCompanyCode":null,"realLogisticsCompanyName":null,"logisticsBillCode":null,"siger":null,"signTime":null,"cancelReason":null,"remark":"自动化测试新增调拨出库单","transferBillOutItems":[{"id":"0RVbhbtQZhT5PZkp19zW","dr":0,"ts":1589002336000,"creator":"smq","creationTime":1589002336000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":null,"transferOutBillId":"0TszFCIVqcbJkmpWHQhq","rowNum":10,"goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsDisplayName":"小雅AI音箱旗舰版_石墨绿","goodsBasicUnitName":"个","goodsAssistUnitName":"个","goodsConversionRate":1.000000,"enableBatchNumberManage":null,"productId":null,"productCode":null,"productLineId":null,"isOptional":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","shouldOutNum":5.00000000,"factOutNum":5.00000000,"unitPrice":null,"amountMoney":0E-8,"batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"stockOutPersonId":null,"stockOutPersonCode":null,"stockOutPersonName":null,"stockOutDate":null,"receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"firstBillCode":"DBO20200508000034","firstBillBcode":"0Tr6HVsgvmzwBQYy2d6i","firstBillType":"Allocation","srcBillCode":"DBO20200508000034","srcBillBcode":"0Tr6HVsgvmzwBQYy2d6i","srcBillType":"Allocation","remark":null,"goodsVersion":"1","goodsSelection":null,"isMotherPiece":null,"customerId":null,"customerCode":null,"customerName":null,"supplierId":null,"supplierCode":null,"supplierName":null,"projectId":null,"projectCode":null,"projectName":null,"batchCodeId":null,"batchCodeCode":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"enableBatchNoManage":null,"enableInvStatusManage":null,"originalGoodsId":null,"goodsSelectionDescription":null,"ext01":null,"ext02":null,"ext03":"Allocation","ext04":"Allocation","ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"outStorageId":null,"outStorageCode":null,"outStorageName":null,"outIfSlotManage":null,"inStorageId":null,"inStorageCode":null,"inStorageName":null,"inIfSlotManage":null}],"transferOutBillItemBoms":[{"id":"0K1xchlRSFmYGxaooi2J","dr":0,"ts":1589002336000,"creator":"smq","creationTime":1589002336000,"modifier":null,"modifiedTime":null,"persistStatus":"nrm","promptMessage":null,"rowNum":"10","goodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","goodsCode":"301020000049","goodsName":"小雅AI音箱旗舰版_石墨绿","goodsDisplayName":"小雅AI音箱旗舰版_石墨绿","goodsBasicUnitName":"个","goodsAssistUnitName":"个","goodsConversionRate":1.000000,"enableBatchNumberManage":null,"productId":null,"productLineId":null,"unitId":"UNIT-12","unitCode":"EA","unitName":"个","shouldOutNum":5.00000000,"factOutNum":5.00000000,"unitPrice":null,"amountMoney":0E-8,"batchNumId":null,"batchNumCode":null,"batchNumName":null,"goodsPositionId":null,"goodsPositionCode":null,"goodsPositionName":null,"stockOutPersonId":null,"stockOutPersonCode":null,"stockOutPersonName":null,"stockOutDate":null,"receiverAddress":null,"provinceId":null,"provinceCode":null,"provinceName":null,"cityId":null,"cityCode":null,"cityName":null,"countyId":null,"countyCode":null,"countyName":null,"townId":null,"townCode":null,"townName":null,"detailAddr":null,"receiver":null,"receiverPhone":null,"receiverPhoneSpare":null,"firstBillCode":"0DKeeV9TPwv3UZiad8EH","firstBillBcode":"0Tr6HVsgvmzwBQYy2d6i","firstBillType":"Allocation","srcBillCode":"DBO20200508000034","srcBillBcode":"0Tr6HVsgvmzwBQYy2d6i","srcBillType":"Allocation","remark":null,"goodsVersion":"1","goodsSelection":null,"customerId":null,"customerCode":null,"customerName":null,"supplierId":null,"supplierCode":null,"supplierName":null,"projectId":null,"projectCode":null,"projectName":null,"batchCodeId":null,"batchCodeCode":null,"stockStateId":null,"stockStateCode":null,"stockStateName":null,"originalGoodsId":null,"goodsSelectionDescription":null,"itemId":"0RVbhbtQZhT5PZkp19zW","billId":null,"parentGoodsId":"03e77ae0-469d-4d8a-ba34-733c2ada3749","parentGoodsCode":"301020000049","parentGoodsName":"小雅AI音箱旗舰版_石墨绿","parentGoodsdisplayName":null,"parentRowNum":"10","childGoodsQty":null,"firstBillBomCode":"0CrhvlIZ5uIVEXmYN9Hq","srcBillBomCode":"0CrhvlIZ5uIVEXmYN9Hq","ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null}],"srcSystem":null,"srcSystemId":null,"srcSystemCode":null,"srcSystemName":null,"ext01":null,"ext02":null,"ext03":null,"ext04":null,"ext05":null,"ext06":null,"ext07":null,"ext08":null,"ext09":null,"ext10":null,"ext11":null,"ext12":null,"ext13":null,"ext14":null,"ext15":null,"sycnOutStatus":null,"sycnNCStatus":null}', 'User': 'Manager', 'DependCase': 'approve_allocation_bill', 'RelevanceList': '', 'Sql': '', 'IsDepend': 'Yes'}
+    #
     full_dict = ReadExcel(address).get_full_dict()
     h = HttpClient(full_dict)
-    h.send_requests(data)
+    # h.send_requests(data)
+    depend_Case='create_allocation_bill'
+    relevance="{'billId':'id'}"
+    parameter='{"billId": "allocation-create1"}'
+    h.init_request(depend_Case,relevance,parameter)

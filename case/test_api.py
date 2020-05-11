@@ -25,7 +25,7 @@ class TestCase:
     # @pytest.mark.flaky(reruns=3, reruns_delay=3)
     def test_api(self, case_data):
         '''
-        :param case_data: 单条测试用例数据
+        :param case_data: 测试用例
         :return:
         '''
         assert apiSendCheck.api_send_check(case_data)
