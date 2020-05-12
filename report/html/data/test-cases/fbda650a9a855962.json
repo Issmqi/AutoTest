@@ -1,0 +1,166 @@
+{
+  "uid" : "fbda650a9a855962",
+  "name" : "test_api[case_data3]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "70e7f1bfde0393bc7f91278041f9facd",
+  "time" : {
+    "start" : 1585560619512,
+    "stop" : 1585560620428,
+    "duration" : 916
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1585560619582,
+        "stop" : 1585560619584,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d3c332cf5f97fb58",
+        "name" : "submit_allocation_bill",
+        "source" : "d3c332cf5f97fb58.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "6771f78fd0b36ba5",
+        "name" : "http://192.168.41.16/occ-stock/stock/allocation-bill/submitWithoutBpm",
+        "source" : "6771f78fd0b36ba5.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "967054b9e328c7b8",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "967054b9e328c7b8.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "6cba955320760372",
+        "name" : "parameter",
+        "source" : "6cba955320760372.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "cda62a8b2304321d",
+        "name" : "{\"billId\": \"0EDdjTltO4pKtP6kpgGN\"}",
+        "source" : "cda62a8b2304321d.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585560620426,
+        "stop" : 1585560620428,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "68f125a1d00b751f",
+        "name" : "200",
+        "source" : "68f125a1d00b751f.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e35888ab67856920",
+        "name" : "200",
+        "source" : "e35888ab67856920.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "7639d7d23f6afd39",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "7639d7d23f6afd39.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "5c4437005f985528",
+        "name" : "{'success': 'success', 'message': None, 'detailMsg': {'data': None}}",
+        "source" : "5c4437005f985528.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "864b7ab410083c24",
+      "name" : "log",
+      "source" : "864b7ab410083c24.txt",
+      "type" : "text/plain",
+      "size" : 782
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "45513-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 4.0, 'CaseName': 'submit_allocation_bill', 'APIName': '提交调拨订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0cVwUbuRXnzAhyFKRyaq\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_allocation_bill', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fbda650a9a855962.json",
+  "parameterValues" : [ "{'CaseId': 4.0, 'CaseName': 'submit_allocation_bill', 'APIName': '提交调拨订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0cVwUbuRXnzAhyFKRyaq\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_allocation_bill', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

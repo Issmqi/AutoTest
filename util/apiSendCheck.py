@@ -12,7 +12,7 @@ def api_send_check(case):
     :param case: 单条用例
     :return:
     """
-    code, data = httpClient.send_request(case)
+    code, data = httpClient().send_requests(case)
 
     result = checkResult.check_result(case, code, data)
     if result:

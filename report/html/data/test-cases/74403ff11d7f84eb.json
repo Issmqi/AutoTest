@@ -1,0 +1,97 @@
+{
+  "uid" : "74403ff11d7f84eb",
+  "name" : "test_api[case_data16]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "3cb768ad8c0c9f46c07211f54c489bbe",
+  "time" : {
+    "start" : 1589020827970,
+    "stop" : 1589020827985,
+    "duration" : 15
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10631c278>\ncase_data = {'APIName': '其他入库签字', 'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_allocation.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/httpClient.py:44: in send_requests\n    cookie = initializeCookie.get_manager_cookie()\n../business/initializeCookie.py:42: in get_manager_cookie\n    return login(manager_user, manager_pwd)\n../business/initializeCookie.py:28: in login\n    status = jsonpath(re.json(), '$.status')[0]\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:898: in json\n    return complexjson.loads(self.text, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/simplejson/__init__.py:525: in loads\n    return _default_decoder.decode(s)\n../venv/bin/python/lib/python3.6/site-packages/simplejson/decoder.py:370: in decode\n    obj, end = self.raw_decode(s)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <simplejson.decoder.JSONDecoder object at 0x105a8d3c8>\ns = '<!DOCTYPE html>\\n<html>\\n<head>\\n<title>Error</title>\\n<style>\\n    body {\\n        width: 35em;\\n        margin: 0 a...://nginx.org/r/error_log\">error log</a> for details.</p>\\n<p><em>Faithfully yours, nginx.</em></p>\\n</body>\\n</html>\\n'\nidx = 0, _w = <built-in method match of _sre.SRE_Pattern object at 0x1058f67b0>\n_PY3 = True\n\n    def raw_decode(self, s, idx=0, _w=WHITESPACE.match, _PY3=PY3):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` or ``unicode``\n        beginning with a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n        Optionally, ``idx`` can be used to specify an offset in ``s`` where\n        the JSON document begins.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        if idx < 0:\n            # Ensure that raw_decode bails on negative indexes, the regex\n            # would otherwise mask this behavior. #98\n            raise JSONDecodeError('Expecting value', s, idx)\n        if _PY3 and not isinstance(s, str):\n            raise TypeError(\"Input string must be text, not bytes\")\n        # strip UTF-8 bom\n        if len(s) > idx:\n            ord0 = ord(s[idx])\n            if ord0 == 0xfeff:\n                idx += 1\n            elif ord0 == 0xef and s[idx:idx + 3] == '\\xef\\xbb\\xbf':\n                idx += 3\n>       return self.scan_once(s, idx=_w(s, idx).end())\nE       simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\n../venv/bin/python/lib/python3.6/site-packages/simplejson/decoder.py:400: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589020587728,
+      "stop" : 1589020590603,
+      "duration" : 2875
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589020828325,
+      "stop" : 1589020828326,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "45166-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-in1\",\"search_AUTH_APPCODE\":\"transferInBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74403ff11d7f84eb.json",
+  "parameterValues" : [ "{'CaseId': 17.0, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-transfer-in1\",\"search_AUTH_APPCODE\":\"transferInBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': '{\"ids\":\"id\"}', 'Sql': '', 'IsDepend': ''}" ]
+}

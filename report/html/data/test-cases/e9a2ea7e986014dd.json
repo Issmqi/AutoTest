@@ -1,0 +1,172 @@
+{
+  "uid" : "e9a2ea7e986014dd",
+  "name" : "test_api[case_data2]",
+  "fullName" : "case.test_sales_order.TestCase#test_api",
+  "historyId" : "3c8a3d35b666923948cdeca0fac4b079",
+  "time" : {
+    "start" : 1585893440891,
+    "stop" : 1585893440980,
+    "duration" : 89
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1585893440946,
+        "stop" : 1585893440948,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ec2992b5587fd3d4",
+        "name" : "post",
+        "source" : "ec2992b5587fd3d4.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "e90d564d5e8a7e53",
+        "name" : "submit_sales_order",
+        "source" : "e90d564d5e8a7e53.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "26763ab5f028a4c3",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/submitWithoutBpm",
+        "source" : "26763ab5f028a4c3.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "31322819763468da",
+        "name" : "{'Content-Type':'application/json','charset': 'UTF-8'}",
+        "source" : "31322819763468da.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "d1fa0e6eeae7d800",
+        "name" : "parameter",
+        "source" : "d1fa0e6eeae7d800.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "2b16475f0a55756b",
+        "name" : "{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}",
+        "source" : "2b16475f0a55756b.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1585893440977,
+        "stop" : 1585893440980,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6a221ea3fe228185",
+        "name" : "200",
+        "source" : "6a221ea3fe228185.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "8d81b8aaba31b837",
+        "name" : "200",
+        "source" : "8d81b8aaba31b837.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "51f6702f0eb2a087",
+        "name" : "{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}",
+        "source" : "51f6702f0eb2a087.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "eb991aea3cf90cae",
+        "name" : "{'success': 'success', 'message': None, 'detailMsg': {'data': None}}",
+        "source" : "eb991aea3cf90cae.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "cae468e781d2938b",
+      "name" : "log",
+      "source" : "cae468e781d2938b.txt",
+      "type" : "text/plain",
+      "size" : 824
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 11,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "销售订单模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_sales_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53915-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_sales_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 3.0, 'CaseName': 'submit_sales_order', 'APIName': '提交销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9a2ea7e986014dd.json",
+  "parameterValues" : [ "{'CaseId': 3.0, 'CaseName': 'submit_sales_order', 'APIName': '提交销售订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/submitWithoutBpm', 'Method': 'post', 'ParameterType': 'parameter', 'Params': '{\"billId\":\"0S9WknJXMVYbEHf3qGGc\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"success\":\"success\",\"message\":null,\"detailMsg\":{\"data\":null}}', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"billId\":\"id\"}', 'IsDepend': ''}" ]
+}

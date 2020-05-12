@@ -1,0 +1,166 @@
+{
+  "uid" : "f5d3af495cc4805b",
+  "name" : "test_api[case_data4]",
+  "fullName" : "case.test_sales_order.TestCase#test_api",
+  "historyId" : "b4a53ae398b1f500d576572695bb34b2",
+  "time" : {
+    "start" : 1585893441429,
+    "stop" : 1585893441512,
+    "duration" : 83
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1585893441486,
+        "stop" : 1585893441487,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b92ae7a09e754f8a",
+        "name" : "post",
+        "source" : "b92ae7a09e754f8a.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "96415620390ee8ab",
+        "name" : "delete_sales_order",
+        "source" : "96415620390ee8ab.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "3bb8126096d60b54",
+        "name" : "http://192.168.41.16/occ-b2b-order/b2b/order/delete",
+        "source" : "3bb8126096d60b54.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d9ed4bcdc5eb2a9a",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "d9ed4bcdc5eb2a9a.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "9c77156519f7c8b6",
+        "name" : "form_data",
+        "source" : "9c77156519f7c8b6.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "dbb417a7b244945e",
+        "name" : "{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}",
+        "source" : "dbb417a7b244945e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1585893441510,
+        "stop" : 1585893441512,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ff2a67f321082a15",
+        "name" : "200",
+        "source" : "ff2a67f321082a15.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "eb710c0e767f0187",
+        "name" : "200",
+        "source" : "eb710c0e767f0187.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "f95c3b035f452639",
+        "name" : "{}",
+        "source" : "f95c3b035f452639.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "bfc5bc82f63fba77",
+      "name" : "log",
+      "source" : "bfc5bc82f63fba77.txt",
+      "type" : "text/plain",
+      "size" : 799
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "销售订单模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_sales_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53915-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_sales_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 5.0, 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5d3af495cc4805b.json",
+  "parameterValues" : [ "{'CaseId': 5.0, 'CaseName': 'delete_sales_order', 'APIName': '删除销售订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-b2b-order/b2b/order/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"02R6zxnuQ30MkkRoltEu\",\"search_AUTH_APPCODE\":\"saleorder\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_sales_order', 'RelevanceList': '{\"ids\":\"id\"}', 'IsDepend': ''}" ]
+}
