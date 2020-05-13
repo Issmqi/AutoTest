@@ -11,10 +11,15 @@ sys.path.append(path)
 from util import httpClient
 from util import checkResult
 from util.readExcel import ReadExcel
-from util import apiSendCheck
+import json
 
-data = setupMain.PATH + '/data/purchase_order_data.xlsx'
-case_dict = ReadExcel(data).get_full_dict()
+# data1 = setupMain.PATH + '/data/purchase/purchase_order_data.xlsx'
+# case_dict = ReadExcel(data1).get_full_dict()
+# print(case_dict)
+with open(setupMain.PATH + '/data/purchase/purchase_case.json', "r", encoding='utf-8') as f:
+    case_dict = json.load(f)
+
+print(case_dict)
 h = httpClient.HttpClient(case_dict)
 
 
@@ -37,5 +42,5 @@ class TestCase:
 if __name__ == '__main__':
     # pytest.main()
     # pytest.main("test_api.py")
-    pytest.main(['test_purchase_order.py','-s', '--alluredir', '../report/xml'])
+    pytest.main(['test_purchase_order.py', '-s', '--alluredir', '../report/xml'])
     os.system('allure generate --clean ../report/xml -o ../report/html')

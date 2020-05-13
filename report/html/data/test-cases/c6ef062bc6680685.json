@@ -1,0 +1,200 @@
+{
+  "uid" : "c6ef062bc6680685",
+  "name" : "test_api[case_data6]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "d9a97e5ca364b9635cffbf9e133f0195",
+  "time" : {
+    "start" : 1588920930232,
+    "stop" : 1588920930535,
+    "duration" : 303
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10aa9d438>\ncase_data = {'APIName': '删除调拨订单', 'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:51: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1588920749463,
+      "stop" : 1588920751577,
+      "duration" : 2114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10aa9d438>\ncase_data = {'APIName': '删除调拨订单', 'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:51: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1588920930267,
+        "stop" : 1588920930270,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7f96f12a9bad9f48",
+        "name" : "post",
+        "source" : "7f96f12a9bad9f48.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "22c965fb66e6093e",
+        "name" : "delete_allocation_bill",
+        "source" : "22c965fb66e6093e.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "cc1b86bce34cc42e",
+        "name" : "http://192.168.41.16/occ-stock/stock/allocation-bill/delete",
+        "source" : "cc1b86bce34cc42e.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "e598fdbc762ee21f",
+        "name" : "{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}",
+        "source" : "e598fdbc762ee21f.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "7c8acf8a91869c0b",
+        "name" : "form_data",
+        "source" : "7c8acf8a91869c0b.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "738db6b5e1807784",
+        "name" : "{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}",
+        "source" : "738db6b5e1807784.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1588920930533,
+        "stop" : 1588920930535,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6c1235b733797986",
+        "name" : "200",
+        "source" : "6c1235b733797986.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "433f8aef0556d547",
+        "name" : "500",
+        "source" : "433f8aef0556d547.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "f32cff6be14365a",
+        "name" : "{\"timestamp\":1588920732101,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"单据DBO2020111100test1不是待处理状态，不可删除！\",\"path\":\"/stock/allocation-bill/delete\"}",
+        "source" : "f32cff6be14365a.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b79f50859768086c",
+      "name" : "log",
+      "source" : "b79f50859768086c.txt",
+      "type" : "text/plain",
+      "size" : 991
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1588920930540,
+      "stop" : 1588920931316,
+      "duration" : 776
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "42452-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'APIName': '删除调拨订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6ef062bc6680685.json",
+  "parameterValues" : [ "{'CaseId': 7.0, 'CaseName': 'delete_allocation_bill', 'APIName': '删除调拨订单', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"allocation-add\",\"search_AUTH_APPCODE\":\"allocation\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}" ]
+}

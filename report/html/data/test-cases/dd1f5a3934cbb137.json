@@ -1,0 +1,407 @@
+{
+  "uid" : "dd1f5a3934cbb137",
+  "name" : "test_api[case_data2]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "874637692197b8e2f4c01ee174132376",
+  "time" : {
+    "start" : 1589352234632,
+    "stop" : 1589352238138,
+    "duration" : 3506
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: a bytes-like object is required, not 'dict'",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x1095a1d30>\ncase_data = {'APIName': '编辑调拨订单', 'CaseId': 3.0, 'CaseName': 'update_allocation_bill', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n>       result = checkResult.check_result(case_data, code, response)\n\ntest_allocation.py:51: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/checkResult.py:84: in check_result\n    allure.attach(res_data,'实际data')\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py:164: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n../venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py:215: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py:117: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <allure_commons.logger.AllureFileLogger object at 0x1092d1588>\nbody = {'approveOpinion': None, 'approveTime': None, 'approver': None, 'billDate': 1589212800000, ...}\nfile_name = '21e60a18-a79c-4618-9922-ae2ad9fb3041-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'dict'\n\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py:62: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589352225502,
+      "stop" : 1589352228093,
+      "duration" : 2591
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: a bytes-like object is required, not 'dict'",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x1095a1d30>\ncase_data = {'APIName': '编辑调拨订单', 'CaseId': 3.0, 'CaseName': 'update_allocation_bill', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n>       result = checkResult.check_result(case_data, code, response)\n\ntest_allocation.py:51: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/checkResult.py:84: in check_result\n    allure.attach(res_data,'实际data')\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py:164: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n../venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py:215: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py:117: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <allure_commons.logger.AllureFileLogger object at 0x1092d1588>\nbody = {'approveOpinion': None, 'approveTime': None, 'approver': None, 'billDate': 1589212800000, ...}\nfile_name = '21e60a18-a79c-4618-9922-ae2ad9fb3041-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'dict'\n\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py:62: TypeError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589352234682,
+        "stop" : 1589352234687,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "66d78aa68d074f3f",
+        "name" : "请求类型",
+        "source" : "66d78aa68d074f3f.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "8e18ceaefddaed07",
+        "name" : "用例名称:",
+        "source" : "8e18ceaefddaed07.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "e84f24805d586758",
+        "name" : "请求地址:",
+        "source" : "e84f24805d586758.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "37710a0b8316ee11",
+        "name" : "请求头",
+        "source" : "37710a0b8316ee11.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "2f57c424050ab4e0",
+        "name" : "请求参数类型",
+        "source" : "2f57c424050ab4e0.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "81d5fef1e5b1c095",
+        "name" : "请求参数",
+        "source" : "81d5fef1e5b1c095.attach",
+        "type" : "text/plain",
+        "size" : 5416
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589352237637,
+        "stop" : 1589352237640,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24dba42191ce1a0c",
+        "name" : "请求类型",
+        "source" : "24dba42191ce1a0c.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "cd764e6717bac112",
+        "name" : "用例名称:",
+        "source" : "cd764e6717bac112.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "37f8311360431c7d",
+        "name" : "请求地址:",
+        "source" : "37f8311360431c7d.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "abe3960f53b1693e",
+        "name" : "请求头",
+        "source" : "abe3960f53b1693e.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "35916d8fb39ada08",
+        "name" : "请求参数类型",
+        "source" : "35916d8fb39ada08.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "61fbd88f53f96529",
+        "name" : "请求参数",
+        "source" : "61fbd88f53f96529.attach",
+        "type" : "text/plain",
+        "size" : 7844
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1589352238136,
+        "stop" : 1589352238138,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: a bytes-like object is required, not 'dict'\n",
+      "statusTrace" : "  File \"/Users/xmly/python/AutoTest/util/checkResult.py\", line 84, in check_result\n    allure.attach(res_data,'实际data')\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py\", line 164, in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py\", line 215, in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py\", line 117, in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py\", line 62, in report_attached_data\n    attached_file.write(body)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cc1540205dde339d",
+        "name" : "预期code",
+        "source" : "cc1540205dde339d.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "331e9c20eb4a2f81",
+        "name" : "实际code是",
+        "source" : "331e9c20eb4a2f81.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "c3f40a64c7243ec8",
+        "name" : "预期data",
+        "source" : "c3f40a64c7243ec8.attach",
+        "type" : "text/plain",
+        "size" : 6651
+      }, {
+        "uid" : "17e05a9d6ed2ffd6",
+        "name" : "实际data",
+        "source" : "17e05a9d6ed2ffd6.attach",
+        "type" : "application/octet-stream",
+        "size" : 0
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "905e2b38c19d7032",
+      "name" : "log",
+      "source" : "905e2b38c19d7032.txt",
+      "type" : "text/plain",
+      "size" : 43818
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 17,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589352338515,
+      "stop" : 1589352339091,
+      "duration" : 576
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "49478-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 3.0, 'CaseName': 'update_allocation_bill', 'APIName': '编辑调拨订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill', 'Method': 'put', 'ParameterType': 'json', 'Params': '{\"id\":\"0kxUvN0mm3QI7AhjYqSM\",\"pkOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgCode\":\"1210\",\"pkOrgName\":\"西安喜马拉雅网络科技有限公司\",\"pkOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgInCode\":\"1210\",\"pkOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"code\":\"DBO20200512000019\",\"billDate\":1589212800000,\"billType\":\"Allocation\",\"billTranTypeId\":\"Allocation\",\"billTranTypeCode\":\"Allocation\",\"billTranTypeName\":\"调拨单\",\"outBizPersonId\":null,\"outBizPersonCode\":null,\"outBizPersonName\":null,\"inBizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"inBizPersonCode\":\"007\",\"inBizPersonName\":\"师孟奇\",\"outDeptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"outDeptCode\":\"01010102\",\"outDeptName\":\"城市经理\",\"inDeptId\":null,\"inDeptCode\":null,\"inDeptName\":null,\"planSendDate\":\"\",\"planArriveDate\":\"\",\"currencyId\":\"CURRENCY-01\",\"currencyCode\":\"RMB\",\"currencyName\":\"人民币\",\"totalFactInNum\":null,\"totalFactOutNum\":null,\"billStatusId\":null,\"billStatusCode\":null,\"billStatusName\":null,\"transferStatusId\":\"0s21f51f-4f42-4100-dkd0-3254fbq33e6k\",\"transferStatusCode\":\"1\",\"transferStatusName\":\"待处理\",\"state\":0,\"stockBillBelong\":null,\"customerId\":null,\"customerName\":null,\"customerCode\":null,\"isClose\":0,\"closer\":null,\"closeDate\":null,\"closeReason\":null,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"remark\":\"自动化测试编辑调拨单\",\"isDistribution\":null,\"isReturned\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"receiverAddress\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"dr\":0,\"ts\":1589273772000,\"creator\":\"smq\",\"creationTime\":1589273772000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"outIfSlotManage\":null,\"inIfSlotManage\":null,\"transferBillItems\":[{\"id\":\"0Wfar8LVlCZOkFv2gos9\",\"rowNum\":10,\"dr\":0,\"TransferBillId\":null,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1,\"enableBatchNumberManage\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"isOptional\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":\"25\",\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceNum\":null,\"goodsVersion\":\"1\",\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelection\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"ifSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null,\"ts\":1589273775000,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"transferBillId\":\"0kxUvN0mm3QI7AhjYqSM\",\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"isMotherPiece\":null}],\"transferBillItemBoms\":[{\"id\":\"0rYlYTDrAqKnyukQYYWh\",\"rowNum\":\"10\",\"TransferBillId\":null,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1,\"enableBatchNumberManage\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceNum\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"goodsNum\":null,\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null,\"dr\":0,\"ts\":1589273775000,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"itemId\":\"0Wfar8LVlCZOkFv2gos9\",\"billId\":\"0kxUvN0mm3QI7AhjYqSM\",\"parentGoodsdisplayName\":null,\"firstBillBomCode\":null,\"srcBillBomCode\":null}],\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"id\":\"0kxUvN0mm3QI7AhjYqSM\",\"dr\":0,\"ts\":1589273890361,\"creator\":\"smq\",\"creationTime\":1589273772000,\"modifier\":\"smq\",\"modifiedTime\":1589273890361,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"state\":0,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"pkOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgCode\":\"1210\",\"pkOrgName\":\"西安喜马拉雅网络科技有限公司\",\"pkOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgInCode\":\"1210\",\"pkOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"code\":\"DBO20200512000019\",\"billDate\":1589212800000,\"billType\":\"Allocation\",\"billTranTypeId\":\"Allocation\",\"billTranTypeCode\":\"Allocation\",\"billTranTypeName\":\"调拨单\",\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outBizPersonId\":null,\"outBizPersonCode\":null,\"outBizPersonName\":null,\"inBizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"inBizPersonCode\":\"007\",\"inBizPersonName\":\"师孟奇\",\"outDeptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"outDeptCode\":\"01010102\",\"outDeptName\":\"城市经理\",\"inDeptId\":null,\"inDeptCode\":null,\"inDeptName\":null,\"planSendDate\":null,\"planArriveDate\":null,\"currencyId\":\"CURRENCY-01\",\"currencyCode\":\"RMB\",\"currencyName\":\"人民币\",\"totalFactOutNum\":null,\"totalFactInNum\":null,\"billStatusId\":null,\"billStatusCode\":null,\"billStatusName\":null,\"transferStatusId\":\"0s21f51f-4f42-4100-dkd0-3254fbq33e6k\",\"transferStatusCode\":\"1\",\"transferStatusName\":\"待处理\",\"stockBillBelong\":null,\"customerId\":null,\"customerName\":null,\"customerCode\":null,\"isClose\":0,\"closer\":null,\"closeDate\":null,\"closeReason\":null,\"remark\":\"自动化测试编辑调拨单\",\"transferBillItems\":[{\"id\":\"0Wfar8LVlCZOkFv2gos9\",\"dr\":0,\"ts\":1589273890362,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":\"smq\",\"modifiedTime\":1589273890362,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":10,\"transferBillId\":\"0kxUvN0mm3QI7AhjYqSM\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"isOptional\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"isMotherPiece\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null}],\"transferBillItemBoms\":[{\"id\":\"0rYlYTDrAqKnyukQYYWh\",\"dr\":0,\"ts\":1589273890362,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":\"smq\",\"modifiedTime\":1589273890362,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":\"10\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"itemId\":\"0Wfar8LVlCZOkFv2gos9\",\"billId\":\"0kxUvN0mm3QI7AhjYqSM\",\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentGoodsdisplayName\":null,\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"firstBillBomCode\":null,\"srcBillBomCode\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null}],\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"isDistribution\":null,\"isReturned\":null}', 'User': 'Manager', 'DependCase': 'create_allocation_bill', 'RelevanceList': '{\"id\":\"$..id\"}', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "67ec81ec15fcc513",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'float'",
+      "time" : {
+        "start" : 1589351902396,
+        "stop" : 1589351908422,
+        "duration" : 6026
+      }
+    }, {
+      "uid" : "24d6c3f03359605d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'int'",
+      "time" : {
+        "start" : 1589351480770,
+        "stop" : 1589351484579,
+        "duration" : 3809
+      }
+    }, {
+      "uid" : "a074753384b4bea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589266476147,
+        "stop" : 1589266481620,
+        "duration" : 5473
+      }
+    }, {
+      "uid" : "ada560903e1210b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589168979414,
+        "stop" : 1589168982865,
+        "duration" : 3451
+      }
+    }, {
+      "uid" : "ae214ae252e8aecf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589020633696,
+        "stop" : 1589020653043,
+        "duration" : 19347
+      }
+    }, {
+      "uid" : "42a6dedee57e0160",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1589015760259,
+        "stop" : 1589015791997,
+        "duration" : 31738
+      }
+    }, {
+      "uid" : "9df355a01f283c2f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1589010696296,
+        "stop" : 1589010723616,
+        "duration" : 27320
+      }
+    }, {
+      "uid" : "cc30cc6c4f2826ff",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1589008869703,
+        "stop" : 1589008901870,
+        "duration" : 32167
+      }
+    }, {
+      "uid" : "299c1843d3ccde29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588935097295,
+        "stop" : 1588935112601,
+        "duration" : 15306
+      }
+    }, {
+      "uid" : "8409a7023042952b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588920802074,
+        "stop" : 1588920833408,
+        "duration" : 31334
+      }
+    }, {
+      "uid" : "139bcd85c0499aa8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588916183655,
+        "stop" : 1588916206019,
+        "duration" : 22364
+      }
+    }, {
+      "uid" : "43c3b7075f7dbd32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588910193329,
+        "stop" : 1588910217629,
+        "duration" : 24300
+      }
+    }, {
+      "uid" : "3437e2cef0a3d7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588908461120,
+        "stop" : 1588908484510,
+        "duration" : 23390
+      }
+    }, {
+      "uid" : "6db51300c9faa0d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588830930482,
+        "stop" : 1588830951780,
+        "duration" : 21298
+      }
+    }, {
+      "uid" : "423b20adb167cd76",
+      "status" : "broken",
+      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "time" : {
+        "start" : 1587722996276,
+        "stop" : 1587722996305,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "db8feecbb35ec6b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585883038506,
+        "stop" : 1585883044313,
+        "duration" : 5807
+      }
+    }, {
+      "uid" : "d65cfbc109cf8b5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585560618767,
+        "stop" : 1585560619508,
+        "duration" : 741
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dd1f5a3934cbb137.json",
+  "parameterValues" : [ "{'CaseId': 3.0, 'CaseName': 'update_allocation_bill', 'APIName': '编辑调拨订单', 'Headers': \"{'Content-Type':'application/json','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/allocation-bill', 'Method': 'put', 'ParameterType': 'json', 'Params': '{\"id\":\"0kxUvN0mm3QI7AhjYqSM\",\"pkOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgCode\":\"1210\",\"pkOrgName\":\"西安喜马拉雅网络科技有限公司\",\"pkOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgInCode\":\"1210\",\"pkOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"code\":\"DBO20200512000019\",\"billDate\":1589212800000,\"billType\":\"Allocation\",\"billTranTypeId\":\"Allocation\",\"billTranTypeCode\":\"Allocation\",\"billTranTypeName\":\"调拨单\",\"outBizPersonId\":null,\"outBizPersonCode\":null,\"outBizPersonName\":null,\"inBizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"inBizPersonCode\":\"007\",\"inBizPersonName\":\"师孟奇\",\"outDeptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"outDeptCode\":\"01010102\",\"outDeptName\":\"城市经理\",\"inDeptId\":null,\"inDeptCode\":null,\"inDeptName\":null,\"planSendDate\":\"\",\"planArriveDate\":\"\",\"currencyId\":\"CURRENCY-01\",\"currencyCode\":\"RMB\",\"currencyName\":\"人民币\",\"totalFactInNum\":null,\"totalFactOutNum\":null,\"billStatusId\":null,\"billStatusCode\":null,\"billStatusName\":null,\"transferStatusId\":\"0s21f51f-4f42-4100-dkd0-3254fbq33e6k\",\"transferStatusCode\":\"1\",\"transferStatusName\":\"待处理\",\"state\":0,\"stockBillBelong\":null,\"customerId\":null,\"customerName\":null,\"customerCode\":null,\"isClose\":0,\"closer\":null,\"closeDate\":null,\"closeReason\":null,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"remark\":\"自动化测试编辑调拨单\",\"isDistribution\":null,\"isReturned\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"receiverAddress\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"dr\":0,\"ts\":1589273772000,\"creator\":\"smq\",\"creationTime\":1589273772000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"outIfSlotManage\":null,\"inIfSlotManage\":null,\"transferBillItems\":[{\"id\":\"0Wfar8LVlCZOkFv2gos9\",\"rowNum\":10,\"dr\":0,\"TransferBillId\":null,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1,\"enableBatchNumberManage\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"isOptional\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":\"25\",\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceNum\":null,\"goodsVersion\":\"1\",\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelection\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"ifSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null,\"ts\":1589273775000,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"transferBillId\":\"0kxUvN0mm3QI7AhjYqSM\",\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"isMotherPiece\":null}],\"transferBillItemBoms\":[{\"id\":\"0rYlYTDrAqKnyukQYYWh\",\"rowNum\":\"10\",\"TransferBillId\":null,\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1,\"enableBatchNumberManage\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceNum\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"goodsNum\":null,\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"batchCodeName\":null,\"supplierId\":null,\"supplierName\":null,\"supplierCode\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null,\"dr\":0,\"ts\":1589273775000,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"upd\",\"promptMessage\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"itemId\":\"0Wfar8LVlCZOkFv2gos9\",\"billId\":\"0kxUvN0mm3QI7AhjYqSM\",\"parentGoodsdisplayName\":null,\"firstBillBomCode\":null,\"srcBillBomCode\":null}],\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"id\":\"0kxUvN0mm3QI7AhjYqSM\",\"dr\":0,\"ts\":1589273890361,\"creator\":\"smq\",\"creationTime\":1589273772000,\"modifier\":\"smq\",\"modifiedTime\":1589273890361,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"state\":0,\"approver\":null,\"approveTime\":null,\"approveOpinion\":null,\"sycnNCStatus\":null,\"sycnOutStatus\":null,\"pkOrgId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgCode\":\"1210\",\"pkOrgName\":\"西安喜马拉雅网络科技有限公司\",\"pkOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"pkOrgInCode\":\"1210\",\"pkOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"code\":\"DBO20200512000019\",\"billDate\":1589212800000,\"billType\":\"Allocation\",\"billTranTypeId\":\"Allocation\",\"billTranTypeCode\":\"Allocation\",\"billTranTypeName\":\"调拨单\",\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outBizPersonId\":null,\"outBizPersonCode\":null,\"outBizPersonName\":null,\"inBizPersonId\":\"0mWG6nOSCxjsi1zoKEYs\",\"inBizPersonCode\":\"007\",\"inBizPersonName\":\"师孟奇\",\"outDeptId\":\"0K1ovYvAl1Pk00oCRPjV\",\"outDeptCode\":\"01010102\",\"outDeptName\":\"城市经理\",\"inDeptId\":null,\"inDeptCode\":null,\"inDeptName\":null,\"planSendDate\":null,\"planArriveDate\":null,\"currencyId\":\"CURRENCY-01\",\"currencyCode\":\"RMB\",\"currencyName\":\"人民币\",\"totalFactOutNum\":null,\"totalFactInNum\":null,\"billStatusId\":null,\"billStatusCode\":null,\"billStatusName\":null,\"transferStatusId\":\"0s21f51f-4f42-4100-dkd0-3254fbq33e6k\",\"transferStatusCode\":\"1\",\"transferStatusName\":\"待处理\",\"stockBillBelong\":null,\"customerId\":null,\"customerName\":null,\"customerCode\":null,\"isClose\":0,\"closer\":null,\"closeDate\":null,\"closeReason\":null,\"remark\":\"自动化测试编辑调拨单\",\"transferBillItems\":[{\"id\":\"0Wfar8LVlCZOkFv2gos9\",\"dr\":0,\"ts\":1589273890362,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":\"smq\",\"modifiedTime\":1589273890362,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":10,\"transferBillId\":\"0kxUvN0mm3QI7AhjYqSM\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"isOptional\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"isMotherPiece\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null}],\"transferBillItemBoms\":[{\"id\":\"0rYlYTDrAqKnyukQYYWh\",\"dr\":0,\"ts\":1589273890362,\"creator\":\"smq\",\"creationTime\":1589273775000,\"modifier\":\"smq\",\"modifiedTime\":1589273890362,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":\"10\",\"goodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"goodsCode\":\"301020000049\",\"goodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"goodsFullName\":null,\"goodsBasicUnitName\":\"个\",\"goodsAssistUnitName\":\"个\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"UNIT-12\",\"unitCode\":\"EA\",\"unitName\":\"个\",\"transferNum\":25,\"onwayNum\":null,\"totalOutNum\":null,\"totalInNum\":null,\"unitPrice\":null,\"amountMoney\":0,\"remark\":null,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"isClose\":0,\"sourceId\":null,\"sourceLineNum\":null,\"sourceType\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"itemId\":\"0Wfar8LVlCZOkFv2gos9\",\"billId\":\"0kxUvN0mm3QI7AhjYqSM\",\"parentGoodsId\":\"03e77ae0-469d-4d8a-ba34-733c2ada3749\",\"parentGoodsCode\":\"301020000049\",\"parentGoodsName\":\"小雅AI音箱旗舰版_石墨绿\",\"parentGoodsdisplayName\":null,\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"firstBillBomCode\":null,\"srcBillBomCode\":null,\"outStorageId\":\"1001ZZ100000000DPAP4\",\"outStorageCode\":\"test030201\",\"outStorageName\":\"测试仓库030201\",\"outIfSlotManage\":null,\"inStorageId\":\"1001ZZ100000000DPAP6\",\"inStorageCode\":\"test030202\",\"inStorageName\":\"test030202\",\"inIfSlotManage\":null,\"outPositionId\":null,\"outPositionCode\":null,\"outPositionName\":null}],\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"isDistribution\":null,\"isReturned\":null}', 'User': 'Manager', 'DependCase': 'create_allocation_bill', 'RelevanceList': '{\"id\":\"$..id\"}', 'Sql': '', 'IsDepend': ''}" ]
+}

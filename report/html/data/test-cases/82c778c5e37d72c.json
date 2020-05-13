@@ -1,0 +1,394 @@
+{
+  "uid" : "82c778c5e37d72c",
+  "name" : "test_api[case_data8]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "eefd906d21114be63c81ef46335e3f92",
+  "time" : {
+    "start" : 1589351514791,
+    "stop" : 1589351525638,
+    "duration" : 10847
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: a bytes-like object is required, not 'int'",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10e418438>\ncase_data = {'APIName': '查询调拨出库订单详情', 'CaseId': 9.0, 'CaseName': 'get_transfer-out-bills', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n>       result = checkResult.check_result(case_data, code, response)\n\ntest_allocation.py:51: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/checkResult.py:81: in check_result\n    allure.attach(int(case['ExpectedCode']),'预期code')\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py:164: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n../venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py:215: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py:117: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <allure_commons.logger.AllureFileLogger object at 0x10da5a588>\nbody = 200, file_name = 'ca58c759-2f21-446c-ae5a-bfa63ca68e92-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'int'\n\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py:62: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589351472646,
+      "stop" : 1589351473826,
+      "duration" : 1180
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: a bytes-like object is required, not 'int'",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10e418438>\ncase_data = {'APIName': '查询调拨出库订单详情', 'CaseId': 9.0, 'CaseName': 'get_transfer-out-bills', 'CheckTpye': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n>       result = checkResult.check_result(case_data, code, response)\n\ntest_allocation.py:51: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/checkResult.py:81: in check_result\n    allure.attach(int(case['ExpectedCode']),'预期code')\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py:164: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n../venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py:215: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py:117: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n../venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <allure_commons.logger.AllureFileLogger object at 0x10da5a588>\nbody = 200, file_name = 'ca58c759-2f21-446c-ae5a-bfa63ca68e92-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'int'\n\n../venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py:62: TypeError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351514941,
+        "stop" : 1589351514945,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9461aebb1424dc6c",
+        "name" : "请求类型",
+        "source" : "9461aebb1424dc6c.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "c79adc82f4bf050e",
+        "name" : "用例名称:",
+        "source" : "c79adc82f4bf050e.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "8d6a581c743c7888",
+        "name" : "请求地址:",
+        "source" : "8d6a581c743c7888.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "56ff7cbc6ce0d3e1",
+        "name" : "请求头",
+        "source" : "56ff7cbc6ce0d3e1.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "ecf94c2569b30a76",
+        "name" : "请求参数类型",
+        "source" : "ecf94c2569b30a76.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "58fe4a82bcd25cb6",
+        "name" : "请求参数",
+        "source" : "58fe4a82bcd25cb6.attach",
+        "type" : "text/plain",
+        "size" : 5416
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351518071,
+        "stop" : 1589351518074,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cfbe96fff0b9aaed",
+        "name" : "请求类型",
+        "source" : "cfbe96fff0b9aaed.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "8d5ff7768786c05b",
+        "name" : "用例名称:",
+        "source" : "8d5ff7768786c05b.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "a073fa323ba7dbe0",
+        "name" : "请求地址:",
+        "source" : "a073fa323ba7dbe0.attach",
+        "type" : "text/plain",
+        "size" : 69
+      }, {
+        "uid" : "b76c2acafd48368",
+        "name" : "请求头",
+        "source" : "b76c2acafd48368.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "baa8d4b3992610db",
+        "name" : "请求参数类型",
+        "source" : "baa8d4b3992610db.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "b6a65c7699af3432",
+        "name" : "请求参数",
+        "source" : "b6a65c7699af3432.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351518577,
+        "stop" : 1589351518584,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "79962ca3395f8a78",
+        "name" : "请求类型",
+        "source" : "79962ca3395f8a78.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "773896159630f185",
+        "name" : "用例名称:",
+        "source" : "773896159630f185.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "b46a30d9f5e1bff1",
+        "name" : "请求地址:",
+        "source" : "b46a30d9f5e1bff1.attach",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "14cd74aae99e96e2",
+        "name" : "请求头",
+        "source" : "14cd74aae99e96e2.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "4f2f9800b128d23a",
+        "name" : "请求参数类型",
+        "source" : "4f2f9800b128d23a.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "3f6f05e62b69e04d",
+        "name" : "请求参数",
+        "source" : "3f6f05e62b69e04d.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351519781,
+        "stop" : 1589351519786,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "12dd965e58281864",
+        "name" : "请求类型",
+        "source" : "12dd965e58281864.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "cee88078a3bfd727",
+        "name" : "用例名称:",
+        "source" : "cee88078a3bfd727.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "65b3504b0c8c89e8",
+        "name" : "请求地址:",
+        "source" : "65b3504b0c8c89e8.attach",
+        "type" : "text/plain",
+        "size" : 55
+      }, {
+        "uid" : "cfcff07cb37231c6",
+        "name" : "请求头",
+        "source" : "cfcff07cb37231c6.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "d3947490139fa810",
+        "name" : "请求参数类型",
+        "source" : "d3947490139fa810.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "a968b7dc728ec51b",
+        "name" : "请求参数",
+        "source" : "a968b7dc728ec51b.attach",
+        "type" : "text/plain",
+        "size" : 7509
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351525119,
+        "stop" : 1589351525125,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ef9f30bfae4d26ec",
+        "name" : "请求类型",
+        "source" : "ef9f30bfae4d26ec.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "b1a00cbd46e7477",
+        "name" : "用例名称:",
+        "source" : "b1a00cbd46e7477.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "94b349e623828340",
+        "name" : "请求地址:",
+        "source" : "94b349e623828340.attach",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "38e599e64d4573da",
+        "name" : "请求头",
+        "source" : "38e599e64d4573da.attach",
+        "type" : "application/octet-stream",
+        "size" : 0
+      }, {
+        "uid" : "426a9d7484b17e57",
+        "name" : "请求参数类型",
+        "source" : "426a9d7484b17e57.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "5b37aaf2d28527",
+        "name" : "请求参数",
+        "source" : "5b37aaf2d28527.attach",
+        "type" : "text/plain",
+        "size" : 72
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1589351525637,
+        "stop" : 1589351525637,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: a bytes-like object is required, not 'int'\n",
+      "statusTrace" : "  File \"/Users/xmly/python/AutoTest/util/checkResult.py\", line 81, in check_result\n    allure.attach(int(case['ExpectedCode']),'预期code')\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/_allure.py\", line 164, in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_pytest/listener.py\", line 215, in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/reporter.py\", line 117, in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/pluggy/callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"/Users/xmly/python/AutoTest/venv/bin/python/lib/python3.6/site-packages/allure_commons/logger.py\", line 62, in report_attached_data\n    attached_file.write(body)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2247aa01bb0f9bb2",
+        "name" : "预期code",
+        "source" : "2247aa01bb0f9bb2.attach",
+        "type" : "application/octet-stream",
+        "size" : 0
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "19b3dc2fce1d8c08",
+      "name" : "log",
+      "source" : "19b3dc2fce1d8c08.txt",
+      "type" : "text/plain",
+      "size" : 89722
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 32,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589351594933,
+      "stop" : 1589351596571,
+      "duration" : 1638
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "49122-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 9.0, 'CaseName': 'get_transfer-out-bills', 'APIName': '查询调拨出库订单详情', 'Headers': '', 'Path': '/occ-stock/stock/transfer-out-bills/findByParentid', 'Method': 'get', 'ParameterType': 'parameter', 'Params': '{\"id\":\"create-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"id\":\"09hvzd0ZYcNlm2Acrklt\",\"dr\":0,\"ts\":1587882709000,\"creator\":\"tmq\",\"creationTime\":1587882670000,\"modifier\":\"tmq\",\"modifiedTime\":1587882709000,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"stockOrgId\":\"e53fc87e-1a16-4a2b-978c-63bfd14fd88b\",\"stockOrgCode\":\"1101\",\"stockOrgName\":\"上海证大喜马拉雅网络科技有限公司\",\"stockOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgInCode\":\"1210\",\"stockOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"billCode\":\"TDN2020042600004\",\"billDate\":1587830400000,\"billType\":\"AllocationOut\",\"billTranTypeId\":\"AllocationOut\",\"billTranTypeCode\":\"AllocationOut\",\"billTranTypeName\":\"调拨出库\",\"storageId\":\"28332dbd-b2d2-4b1f-bc71-3c3c665c658f\",\"storageCode\":\"110102\",\"storageName\":\"知识卡仓\",\"ifSlotManage\":null,\"inStorageId\":\"0iBm0HSL0DzMt3O1Ivs9\",\"inStorageCode\":\"121007\",\"inStorageName\":\"高新咖啡店\",\"inIfSlotManage\":null,\"storekeeperId\":null,\"storekeeperCode\":null,\"storekeeperName\":null,\"planSendDate\":null,\"planArriveDate\":null,\"currencyId\":null,\"currencyCode\":null,\"currencyName\":null,\"totalShouldOutNum\":1.00000000,\"totalFactOutNum\":1.00000000,\"billStatusId\":\"099aj5df-4y42-4k00-d8d0-3714fdb43e6k\",\"billStatusCode\":\"02\",\"billStatusName\":\"已签字\",\"stockBillBelong\":\"0NfjSVvc0jVxlBNvSScj\",\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"bizPersonId\":null,\"bizPersonCode\":null,\"bizPersonName\":null,\"deparmentId\":\"0WQbT14w7gylOnPhY2eT\",\"deparmentCode\":\"FCDEPT01\",\"deparmentName\":\"形态转换部门01\",\"logisticsId\":null,\"logisticsCode\":null,\"logisticsName\":null,\"realLogisticsCompanyId\":null,\"realLogisticsCompanyCode\":null,\"realLogisticsCompanyName\":null,\"logisticsBillCode\":null,\"siger\":\"tmq\",\"signTime\":1587882709000,\"cancelReason\":null,\"remark\":null,\"transferBillOutItems\":[{\"id\":\"0XGKeUIfxCyfIAyiaaJ3\",\"dr\":0,\"ts\":1587882693000,\"creator\":\"tmq\",\"creationTime\":1587882693000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"transferOutBillId\":\"09hvzd0ZYcNlm2Acrklt\",\"rowNum\":10,\"goodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"goodsCode\":\"344030000001\",\"goodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsDisplayName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsBasicUnitName\":\"张\",\"goodsAssistUnitName\":\"张\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productCode\":null,\"productLineId\":null,\"isOptional\":null,\"unitId\":\"cc7d062c-53ad-4ab2-9fe6-63ef173f0a00\",\"unitCode\":\"003\",\"unitName\":\"张\",\"shouldOutNum\":1.00000000,\"factOutNum\":1.00000000,\"unitPrice\":20.00000000,\"amountMoney\":20.00000000,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"DBO20200426000005\",\"firstBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200426000005\",\"srcBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"isMotherPiece\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"ext01\":\"1.00000000\",\"ext02\":null,\"ext03\":\"COO7-Cxx-03\",\"ext04\":\"COO7-Cxx-03\",\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"outStorageId\":null,\"outStorageCode\":null,\"outStorageName\":null,\"outIfSlotManage\":null,\"inStorageId\":null,\"inStorageCode\":null,\"inStorageName\":null,\"inIfSlotManage\":null}],\"transferOutBillItemBoms\":[{\"id\":\"0P2eVkhQHqVyzLrCQZvI\",\"dr\":0,\"ts\":1587882693000,\"creator\":\"tmq\",\"creationTime\":1587882693000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":\"10\",\"goodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"goodsCode\":\"344030000001\",\"goodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsDisplayName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsBasicUnitName\":\"张\",\"goodsAssistUnitName\":\"张\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"cc7d062c-53ad-4ab2-9fe6-63ef173f0a00\",\"unitCode\":\"003\",\"unitName\":\"张\",\"shouldOutNum\":1.00000000,\"factOutNum\":1.00000000,\"unitPrice\":20.00000000,\"amountMoney\":20.00000000,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"0NfjSVvc0jVxlBNvSScj\",\"firstBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200426000005\",\"srcBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"itemId\":\"0XGKeUIfxCyfIAyiaaJ3\",\"billId\":null,\"parentGoodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"parentGoodsCode\":\"344030000001\",\"parentGoodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"parentGoodsdisplayName\":null,\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"firstBillBomCode\":\"0T4TSD2BkEYNkAawoFlN\",\"srcBillBomCode\":\"0T4TSD2BkEYNkAawoFlN\",\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}],\"srcSystem\":null,\"srcSystemId\":null,\"srcSystemCode\":null,\"srcSystemName\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"sycnOutStatus\":null,\"sycnNCStatus\":null}', 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': '{\"id\":\"$..id\"}', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "82c778c5e37d72c.json",
+  "parameterValues" : [ "{'CaseId': 9.0, 'CaseName': 'get_transfer-out-bills', 'APIName': '查询调拨出库订单详情', 'Headers': '', 'Path': '/occ-stock/stock/transfer-out-bills/findByParentid', 'Method': 'get', 'ParameterType': 'parameter', 'Params': '{\"id\":\"create-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'check_json', 'ExpectedCode': 200.0, 'ExpectedData': '{\"id\":\"09hvzd0ZYcNlm2Acrklt\",\"dr\":0,\"ts\":1587882709000,\"creator\":\"tmq\",\"creationTime\":1587882670000,\"modifier\":\"tmq\",\"modifiedTime\":1587882709000,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"stockOrgId\":\"e53fc87e-1a16-4a2b-978c-63bfd14fd88b\",\"stockOrgCode\":\"1101\",\"stockOrgName\":\"上海证大喜马拉雅网络科技有限公司\",\"stockOrgInId\":\"abd7cf79-511d-4307-9bbd-d288b18d0ef9\",\"stockOrgInCode\":\"1210\",\"stockOrgInName\":\"西安喜马拉雅网络科技有限公司\",\"billCode\":\"TDN2020042600004\",\"billDate\":1587830400000,\"billType\":\"AllocationOut\",\"billTranTypeId\":\"AllocationOut\",\"billTranTypeCode\":\"AllocationOut\",\"billTranTypeName\":\"调拨出库\",\"storageId\":\"28332dbd-b2d2-4b1f-bc71-3c3c665c658f\",\"storageCode\":\"110102\",\"storageName\":\"知识卡仓\",\"ifSlotManage\":null,\"inStorageId\":\"0iBm0HSL0DzMt3O1Ivs9\",\"inStorageCode\":\"121007\",\"inStorageName\":\"高新咖啡店\",\"inIfSlotManage\":null,\"storekeeperId\":null,\"storekeeperCode\":null,\"storekeeperName\":null,\"planSendDate\":null,\"planArriveDate\":null,\"currencyId\":null,\"currencyCode\":null,\"currencyName\":null,\"totalShouldOutNum\":1.00000000,\"totalFactOutNum\":1.00000000,\"billStatusId\":\"099aj5df-4y42-4k00-d8d0-3714fdb43e6k\",\"billStatusCode\":\"02\",\"billStatusName\":\"已签字\",\"stockBillBelong\":\"0NfjSVvc0jVxlBNvSScj\",\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"bizPersonId\":null,\"bizPersonCode\":null,\"bizPersonName\":null,\"deparmentId\":\"0WQbT14w7gylOnPhY2eT\",\"deparmentCode\":\"FCDEPT01\",\"deparmentName\":\"形态转换部门01\",\"logisticsId\":null,\"logisticsCode\":null,\"logisticsName\":null,\"realLogisticsCompanyId\":null,\"realLogisticsCompanyCode\":null,\"realLogisticsCompanyName\":null,\"logisticsBillCode\":null,\"siger\":\"tmq\",\"signTime\":1587882709000,\"cancelReason\":null,\"remark\":null,\"transferBillOutItems\":[{\"id\":\"0XGKeUIfxCyfIAyiaaJ3\",\"dr\":0,\"ts\":1587882693000,\"creator\":\"tmq\",\"creationTime\":1587882693000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"transferOutBillId\":\"09hvzd0ZYcNlm2Acrklt\",\"rowNum\":10,\"goodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"goodsCode\":\"344030000001\",\"goodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsDisplayName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsBasicUnitName\":\"张\",\"goodsAssistUnitName\":\"张\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productCode\":null,\"productLineId\":null,\"isOptional\":null,\"unitId\":\"cc7d062c-53ad-4ab2-9fe6-63ef173f0a00\",\"unitCode\":\"003\",\"unitName\":\"张\",\"shouldOutNum\":1.00000000,\"factOutNum\":1.00000000,\"unitPrice\":20.00000000,\"amountMoney\":20.00000000,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"DBO20200426000005\",\"firstBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200426000005\",\"srcBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"isMotherPiece\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"enableBatchNoManage\":null,\"enableInvStatusManage\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"ext01\":\"1.00000000\",\"ext02\":null,\"ext03\":\"COO7-Cxx-03\",\"ext04\":\"COO7-Cxx-03\",\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"outStorageId\":null,\"outStorageCode\":null,\"outStorageName\":null,\"outIfSlotManage\":null,\"inStorageId\":null,\"inStorageCode\":null,\"inStorageName\":null,\"inIfSlotManage\":null}],\"transferOutBillItemBoms\":[{\"id\":\"0P2eVkhQHqVyzLrCQZvI\",\"dr\":0,\"ts\":1587882693000,\"creator\":\"tmq\",\"creationTime\":1587882693000,\"modifier\":null,\"modifiedTime\":null,\"persistStatus\":\"nrm\",\"promptMessage\":null,\"rowNum\":\"10\",\"goodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"goodsCode\":\"344030000001\",\"goodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsDisplayName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"goodsBasicUnitName\":\"张\",\"goodsAssistUnitName\":\"张\",\"goodsConversionRate\":1.000000,\"enableBatchNumberManage\":null,\"productId\":null,\"productLineId\":null,\"unitId\":\"cc7d062c-53ad-4ab2-9fe6-63ef173f0a00\",\"unitCode\":\"003\",\"unitName\":\"张\",\"shouldOutNum\":1.00000000,\"factOutNum\":1.00000000,\"unitPrice\":20.00000000,\"amountMoney\":20.00000000,\"batchNumId\":null,\"batchNumCode\":null,\"batchNumName\":null,\"goodsPositionId\":null,\"goodsPositionCode\":null,\"goodsPositionName\":null,\"stockOutPersonId\":null,\"stockOutPersonCode\":null,\"stockOutPersonName\":null,\"stockOutDate\":null,\"receiverAddress\":null,\"provinceId\":null,\"provinceCode\":null,\"provinceName\":null,\"cityId\":null,\"cityCode\":null,\"cityName\":null,\"countyId\":null,\"countyCode\":null,\"countyName\":null,\"townId\":null,\"townCode\":null,\"townName\":null,\"detailAddr\":null,\"receiver\":null,\"receiverPhone\":null,\"receiverPhoneSpare\":null,\"firstBillCode\":\"0NfjSVvc0jVxlBNvSScj\",\"firstBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"firstBillType\":\"Allocation\",\"srcBillCode\":\"DBO20200426000005\",\"srcBillBcode\":\"0pVyy865O7Ogtc0YnSjh\",\"srcBillType\":\"Allocation\",\"remark\":null,\"goodsVersion\":\"1\",\"goodsSelection\":null,\"customerId\":null,\"customerCode\":null,\"customerName\":null,\"supplierId\":null,\"supplierCode\":null,\"supplierName\":null,\"projectId\":null,\"projectCode\":null,\"projectName\":null,\"batchCodeId\":null,\"batchCodeCode\":null,\"stockStateId\":null,\"stockStateCode\":null,\"stockStateName\":null,\"originalGoodsId\":null,\"goodsSelectionDescription\":null,\"itemId\":\"0XGKeUIfxCyfIAyiaaJ3\",\"billId\":null,\"parentGoodsId\":\"1b6fd0b2-c2c7-490a-9a6e-4404028bb50e\",\"parentGoodsCode\":\"344030000001\",\"parentGoodsName\":\"喜马拉雅财经创业知识通兑卡（9选1）\",\"parentGoodsdisplayName\":null,\"parentRowNum\":\"10\",\"childGoodsQty\":null,\"firstBillBomCode\":\"0T4TSD2BkEYNkAawoFlN\",\"srcBillBomCode\":\"0T4TSD2BkEYNkAawoFlN\",\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null}],\"srcSystem\":null,\"srcSystemId\":null,\"srcSystemCode\":null,\"srcSystemName\":null,\"ext01\":null,\"ext02\":null,\"ext03\":null,\"ext04\":null,\"ext05\":null,\"ext06\":null,\"ext07\":null,\"ext08\":null,\"ext09\":null,\"ext10\":null,\"ext11\":null,\"ext12\":null,\"ext13\":null,\"ext14\":null,\"ext15\":null,\"sycnOutStatus\":null,\"sycnNCStatus\":null}', 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': '{\"id\":\"$..id\"}', 'Sql': '', 'IsDepend': ''}" ]
+}

@@ -9,7 +9,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "222d391548a8335c",
+      "uid" : "2f64ef5574aab5b7",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "19409661f507692d",
+      "uid" : "6d325afb252b716c",
       "status" : "passed",
       "time" : {
-        "start" : 1589266552085,
-        "stop" : 1589266560453,
-        "duration" : 8368
+        "start" : 1589352304868,
+        "stop" : 1589352315488,
+        "duration" : 10620
       }
     } ]
   },
@@ -48,7 +48,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1ff1791bc4edeea4",
+      "uid" : "3e9ab631b3d90a3e",
       "status" : "broken",
       "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
       "time" : {
@@ -60,21 +60,21 @@
   },
   "eefd906d21114be63c81ef46335e3f92" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "875c9e4ef0b534c5",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
+      "uid" : "ef3990df9331c076",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1589266506514,
-        "stop" : 1589266517831,
-        "duration" : 11317
+        "start" : 1589352263300,
+        "stop" : 1589352279919,
+        "duration" : 16619
       }
     } ]
   },
@@ -88,13 +88,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "24bbb7808ddbbd55",
+      "uid" : "88a6b39f0c9a9ba7",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1589266552005,
-        "stop" : 1589266552077,
-        "duration" : 72
+        "start" : 1589352304706,
+        "stop" : 1589352304861,
+        "duration" : 155
       }
     } ]
   },
@@ -108,13 +108,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "df2db232f4841d2d",
+      "uid" : "8a361e26278e8f3f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1589266560459,
-        "stop" : 1589266565432,
-        "duration" : 4973
+        "start" : 1589352315494,
+        "stop" : 1589352320367,
+        "duration" : 4873
       }
     } ]
   },
@@ -128,7 +128,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cb7f1c1950df226a",
+      "uid" : "758ef76722d085b0",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '查询销售订单详情', 'CaseId': 2.0, 'CaseName': 'get_sales_order_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -148,7 +148,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "90c96aebdfb0ab9d",
+      "uid" : "4c8b100a69c16cac",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批销售订单', 'CaseId': 1.0, 'CaseName': 'cancel_approve_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -168,12 +168,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d690d61089ad4cf5",
+      "uid" : "4baa11c140da7512",
       "status" : "passed",
       "time" : {
-        "start" : 1588744794852,
-        "stop" : 1588744811977,
-        "duration" : 17125
+        "start" : 1589362940323,
+        "stop" : 1589362944499,
+        "duration" : 4176
       }
     } ]
   },
@@ -187,7 +187,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c257d84eeeb7edb0",
+      "uid" : "5661f6229011e706",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '查询供应商直发外部采购订单详情-普通仓', 'CaseId': 8.0, 'CaseName': 'get_common_purchase_details', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -207,7 +207,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a32b27a01c729ccb",
+      "uid" : "295ea3c0405de6",
       "status" : "passed",
       "time" : {
         "start" : 1587723199619,
@@ -226,12 +226,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5bb45cc9247475b7",
+      "uid" : "8df24886099f369d",
       "status" : "passed",
       "time" : {
-        "start" : 1588744811984,
-        "stop" : 1588744833038,
-        "duration" : 21054
+        "start" : 1589362944504,
+        "stop" : 1589362953491,
+        "duration" : 8987
       }
     } ]
   },
@@ -245,7 +245,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "27bf2aa2769855c7",
+      "uid" : "6954ea10b7e259a1",
       "status" : "passed",
       "time" : {
         "start" : 1587723230095,
@@ -264,7 +264,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "871949df2c7ca10",
+      "uid" : "377efd14e2c8842a",
       "status" : "broken",
       "statusDetails" : "json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
       "time" : {
@@ -277,38 +277,40 @@
   "70e7f1bfde0393bc7f91278041f9facd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "447fdfcf2e2f7ede",
-      "status" : "passed",
+      "uid" : "bab952a794491057",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1589266481629,
-        "stop" : 1589266485565,
-        "duration" : 3936
+        "start" : 1589352238213,
+        "stop" : 1589352241663,
+        "duration" : 3450
       }
     } ]
   },
   "874637692197b8e2f4c01ee174132376" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ea56534641f8da63",
-      "status" : "passed",
+      "uid" : "dd1f5a3934cbb137",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1589266476147,
-        "stop" : 1589266481620,
-        "duration" : 5473
+        "start" : 1589352234632,
+        "stop" : 1589352238138,
+        "duration" : 3506
       }
     } ]
   },
@@ -322,13 +324,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3da2b94a5f087744",
+      "uid" : "de8c9acd8d70854f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1589266576715,
-        "stop" : 1589266576789,
-        "duration" : 74
+        "start" : 1589352333774,
+        "stop" : 1589352333826,
+        "duration" : 52
       }
     } ]
   },
@@ -342,7 +344,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "45f062f30334ad3b",
+      "uid" : "b3e07ea981bda585",
       "status" : "passed",
       "time" : {
         "start" : 1587723140129,
@@ -361,32 +363,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d4f2fbaa4320f696",
+      "uid" : "37c414c0b6b17327",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1589266573096,
-        "stop" : 1589266576704,
-        "duration" : 3608
+        "start" : 1589352330183,
+        "stop" : 1589352333764,
+        "duration" : 3581
       }
     } ]
   },
   "0d4f2a23729318e532b3252ea5deec8b" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "81cc1e040c3b1b83",
-      "status" : "passed",
+      "uid" : "20fc69b7e9c7d3c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1588744833043,
-        "stop" : 1588744836576,
-        "duration" : 3533
+        "start" : 1589362953497,
+        "stop" : 1589362957217,
+        "duration" : 3720
       }
     } ]
   },
@@ -400,7 +403,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "57eb679efbaac430",
+      "uid" : "f3fdeac0f36ae808",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增采购入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -413,25 +416,6 @@
   "08f331e8eef594f2e48098759d27794d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9c66a503c046abf4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1589266473174,
-        "stop" : 1589266476142,
-        "duration" : 2968
-      }
-    } ]
-  },
-  "3c8a3d35b666923948cdeca0fac4b079" : {
-    "statistic" : {
-      "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
@@ -439,13 +423,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ec363857ecbd408a",
+      "uid" : "b0ea389f4168d8f2",
       "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1587723346802,
-        "stop" : 1587723346826,
-        "duration" : 24
+        "start" : 1589352231325,
+        "stop" : 1589352234555,
+        "duration" : 3230
       }
     } ]
   },
@@ -459,13 +443,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4de4a758cb318dbb",
+      "uid" : "387147301a97fcd1",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增其他入库', 'CaseId': 14.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723171721,
         "stop" : 1587723196315,
         "duration" : 24594
+      }
+    } ]
+  },
+  "3c8a3d35b666923948cdeca0fac4b079" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a1d0e760710ed2d2",
+      "status" : "broken",
+      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "time" : {
+        "start" : 1587723346802,
+        "stop" : 1587723346826,
+        "duration" : 24
       }
     } ]
   },
@@ -479,7 +483,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e2fe0500ccb74ca9",
+      "uid" : "aab029cd7db77cd1",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消提交外部采购订单', 'CaseId': 12.0, 'CaseName': 'cancel_submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -491,21 +495,21 @@
   },
   "e57ccee0e893c8116fbfbb8906156826" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f31640c1f0dc175f",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
+      "uid" : "5f82129f89f475b5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1589266517844,
-        "stop" : 1589266538913,
-        "duration" : 21069
+        "start" : 1589352279990,
+        "stop" : 1589352291356,
+        "duration" : 11366
       }
     } ]
   },
@@ -519,13 +523,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d48f4c9d36d1019d",
+      "uid" : "366193a646e8f71d",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增其他入库', 'CaseId': 24.0, 'CaseName': 'create_other_in_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723232831,
         "stop" : 1587723245700,
         "duration" : 12869
+      }
+    } ]
+  },
+  "7157f87a035cd2cb659adce2420a26bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7f547bae739577ca",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1589352241834,
+        "stop" : 1589352245659,
+        "duration" : 3825
       }
     } ]
   },
@@ -539,32 +563,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eca058b9e88e91f2",
+      "uid" : "88835a8e1cb5c113",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '审批外部采购订单', 'CaseId': 10.0, 'CaseName': 'approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723136446,
         "stop" : 1587723138026,
         "duration" : 1580
-      }
-    } ]
-  },
-  "7157f87a035cd2cb659adce2420a26bf" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "10c28658b99e2126",
-      "status" : "passed",
-      "time" : {
-        "start" : 1589266485571,
-        "stop" : 1589266488878,
-        "duration" : 3307
       }
     } ]
   },
@@ -578,12 +583,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4e82842c9dd0da64",
+      "uid" : "75b8831008239f17",
       "status" : "passed",
       "time" : {
-        "start" : 1588744774559,
-        "stop" : 1588744794845,
-        "duration" : 20286
+        "start" : 1589362937058,
+        "stop" : 1589362940318,
+        "duration" : 3260
       }
     } ]
   },
@@ -597,7 +602,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b86628787d8a916",
+      "uid" : "462a24058d7b0a50",
       "status" : "passed",
       "time" : {
         "start" : 1587723231058,
@@ -616,7 +621,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ab23fa7734e1a01e",
+      "uid" : "c9e209556aa93e33",
       "status" : "passed",
       "time" : {
         "start" : 1587723232701,
@@ -635,7 +640,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "16c29f1fb8d124e",
+      "uid" : "9cf103321b76290a",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '编辑供应商直发外部采购订单-普通仓', 'CaseId': 7.0, 'CaseName': 'edit_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -648,6 +653,25 @@
   "528fe13acb1dc12c3a4cfea0d7f42c54" : {
     "statistic" : {
       "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7a0937df5df6070",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589362977396,
+        "stop" : 1589362985978,
+        "duration" : 8582
+      }
+    } ]
+  },
+  "5b9ef69850f70752ece1c80cb47c1ef0" : {
+    "statistic" : {
+      "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
@@ -655,33 +679,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1ae39e97aebfce16",
+      "uid" : "175f72a624b83853",
       "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1588744836858,
-        "stop" : 1588744836886,
-        "duration" : 28
-      }
-    } ]
-  },
-  "5b9ef69850f70752ece1c80cb47c1ef0" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "aced4668bc2d3989",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
-      "time" : {
-        "start" : 1589266494735,
-        "stop" : 1589266506433,
-        "duration" : 11698
+        "start" : 1589352251768,
+        "stop" : 1589352263234,
+        "duration" : 11466
       }
     } ]
   },
@@ -695,7 +699,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "60cb3af4f4b57a24",
+      "uid" : "27d1383b9fd8c3b",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增普通外部采购订单', 'CaseId': 4.0, 'CaseName': 'create_common_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -715,7 +719,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "84bd262178a008df",
+      "uid" : "e36b16da69be6b2",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增形态转换单', 'CaseId': 27.0, 'CaseName': 'create_form_changes', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -735,7 +739,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e4bd56c3596257dc",
+      "uid" : "89f97b6a24b1e847",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增供应商直发外部采购订单-门店仓', 'CaseId': 6.0, 'CaseName': 'create_supplier_purchase_order_store', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -748,20 +752,19 @@
   "db863787e9d10716b6896a22a3cf47b9" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c673383ae3ea5b59",
-      "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "uid" : "36391d0b820cae5d",
+      "status" : "passed",
       "time" : {
-        "start" : 1588744836684,
-        "stop" : 1588744836719,
-        "duration" : 35
+        "start" : 1589362964288,
+        "stop" : 1589362967840,
+        "duration" : 3552
       }
     } ]
   },
@@ -775,7 +778,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f8502c435635eae1",
+      "uid" : "f8a18ed007d2aa07",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '取消审批外部采购订单', 'CaseId': 11.0, 'CaseName': 'cancel_approve_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -795,31 +798,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dc27eb942f1e36a3",
+      "uid" : "3fb9333b62f72901",
       "status" : "passed",
       "time" : {
-        "start" : 1589266576805,
-        "stop" : 1589266579638,
-        "duration" : 2833
-      }
-    } ]
-  },
-  "da7f6cbdaaa95c02493e010a5af909f0" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "31c3d0b350b1256e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1589266470684,
-        "stop" : 1589266473166,
-        "duration" : 2482
+        "start" : 1589352333837,
+        "stop" : 1589352338513,
+        "duration" : 4676
       }
     } ]
   },
@@ -833,13 +817,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "83a7d56021bff4cc",
+      "uid" : "977bb726852582b7",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增供应商直发外部采购订单-普通仓库', 'CaseId': 5.0, 'CaseName': 'create_supplier_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723074969,
         "stop" : 1587723104908,
         "duration" : 29939
+      }
+    } ]
+  },
+  "da7f6cbdaaa95c02493e010a5af909f0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8978114565412787",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1589352228095,
+        "stop" : 1589352231187,
+        "duration" : 3092
       }
     } ]
   },
@@ -853,7 +857,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bc1b75f9a982a09b",
+      "uid" : "49e54a5c5033c0d1",
       "status" : "passed",
       "time" : {
         "start" : 1587722996457,
@@ -864,26 +868,6 @@
   },
   "c041c789ba9f1fd5d14930edc4e68454" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "8921ef362564ff4f",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
-      "time" : {
-        "start" : 1589266565441,
-        "stop" : 1589266569470,
-        "duration" : 4029
-      }
-    } ]
-  },
-  "b4a53ae398b1f500d576572695bb34b2" : {
-    "statistic" : {
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
@@ -892,13 +876,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a29a5bbfe9d5287d",
+      "uid" : "57c8f586250a545e",
       "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1587723346908,
-        "stop" : 1587723346931,
-        "duration" : 23
+        "start" : 1589352320377,
+        "stop" : 1589352324080,
+        "duration" : 3703
+      }
+    } ]
+  },
+  "9757738eeae4be95930c78a2418a1463" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f96dcc5197762edf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589362985992,
+        "stop" : 1589362995928,
+        "duration" : 9936
       }
     } ]
   },
@@ -912,13 +915,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b6fb5026255413b",
+      "uid" : "b021f4bf844d3fde",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '提交外部采购订单', 'CaseId': 9.0, 'CaseName': 'submit_purchase_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723135932,
         "stop" : 1587723136438,
         "duration" : 506
+      }
+    } ]
+  },
+  "b4a53ae398b1f500d576572695bb34b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8da281e4de2a9c4e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "time" : {
+        "start" : 1587723346908,
+        "stop" : 1587723346931,
+        "duration" : 23
       }
     } ]
   },
@@ -932,32 +955,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5453eb9a8653c815",
+      "uid" : "1f09786e1b9b48e3",
       "status" : "passed",
       "time" : {
         "start" : 1587723196331,
         "stop" : 1587723197639,
         "duration" : 1308
-      }
-    } ]
-  },
-  "9757738eeae4be95930c78a2418a1463" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "cab4af4332f75d8",
-      "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
-      "time" : {
-        "start" : 1588744836903,
-        "stop" : 1588744836930,
-        "duration" : 27
       }
     } ]
   },
@@ -971,7 +974,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f7d64c1e26bfb039",
+      "uid" : "e7ffd323040bafff",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '提交销售订单', 'CaseId': 1.0, 'CaseName': 'submit_sales_order', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -991,7 +994,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8e434a20a874af1",
+      "uid" : "98100aabc08607",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增调拨单', 'CaseId': 25.0, 'CaseName': 'create_allocation', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -1003,20 +1006,21 @@
   },
   "d9a97e5ca364b9635cffbf9e133f0195" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b7c5030b008d547",
-      "status" : "passed",
+      "uid" : "d8b4c522fd274b75",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1589266494681,
-        "stop" : 1589266494730,
-        "duration" : 49
+        "start" : 1589352251543,
+        "stop" : 1589352251757,
+        "duration" : 214
       }
     } ]
   },
@@ -1030,7 +1034,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2c0ed871bea695a5",
+      "uid" : "a28986f5fe0f8cde",
       "status" : "passed",
       "time" : {
         "start" : 1587723197647,
@@ -1042,20 +1046,19 @@
   "9865de6e9bf24d5af35d2c962184109d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "be79d18efa9af6ae",
-      "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "uid" : "583fd3b931a7d94d",
+      "status" : "passed",
       "time" : {
-        "start" : 1588744836581,
-        "stop" : 1588744836610,
-        "duration" : 29
+        "start" : 1589362957285,
+        "stop" : 1589362964283,
+        "duration" : 6998
       }
     } ]
   },
@@ -1069,7 +1072,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a77cc802c44683f2",
+      "uid" : "e5dec67240a0774f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增调拨出库单', 'CaseId': 26.0, 'CaseName': 'create_ransfer_out', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -1089,7 +1092,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5044fc3227cff62a",
+      "uid" : "c2b6a42d896e5999",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '查询其他出库详情', 'CaseId': 20.0, 'CaseName': 'get_other_out_stock_detail', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -1109,7 +1112,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d33cc4ed3ae91b6b",
+      "uid" : "a3318ce09b5ca81a",
       "status" : "broken",
       "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
       "time" : {
@@ -1129,7 +1132,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ebf161a1a2c7055f",
+      "uid" : "68aa9d61329649ba",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '新增其他出库', 'CaseId': 18.0, 'CaseName': 'create_other_out_stock', 'CheckTpye': 'check_json', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
@@ -1142,19 +1145,20 @@
   "ff0a6c3798e6cc541c8d59b55a5f821e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2f777aa0bf16df2a",
-      "status" : "passed",
+      "uid" : "d1372a31cc6b83cb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1589266488884,
-        "stop" : 1589266494675,
-        "duration" : 5791
+        "start" : 1589352245760,
+        "stop" : 1589352251466,
+        "duration" : 5706
       }
     } ]
   },
@@ -1168,58 +1172,37 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9cd93538b902b121",
+      "uid" : "7ac934b0ee2d4055",
       "status" : "passed",
       "time" : {
-        "start" : 1589266538943,
-        "stop" : 1589266551999,
-        "duration" : 13056
-      }
-    } ]
-  },
-  "52d50199bd1fa2f3192d8302831b9f60" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "180ab69fbc8e91b2",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
-      "time" : {
-        "start" : 1589266569479,
-        "stop" : 1589266573086,
-        "duration" : 3607
-      }
-    } ]
-  },
-  "6ab9a4e9af892368171c432a4740a516" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "56ff25044c3baff",
-      "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
-      "time" : {
-        "start" : 1588744836812,
-        "stop" : 1588744836841,
-        "duration" : 29
+        "start" : 1589352291432,
+        "stop" : 1589352304701,
+        "duration" : 13269
       }
     } ]
   },
   "5d414cf1ffe9e475d11c02879e9f9685" : {
     "statistic" : {
       "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93354751b7aa47c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589362967845,
+        "stop" : 1589362972676,
+        "duration" : 4831
+      }
+    } ]
+  },
+  "52d50199bd1fa2f3192d8302831b9f60" : {
+    "statistic" : {
+      "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
@@ -1227,13 +1210,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d133814adec9816f",
+      "uid" : "47b9138fd97a84c9",
       "status" : "broken",
-      "statusDetails" : "TypeError: ini_parameter() takes 4 positional arguments but 5 were given",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
       "time" : {
-        "start" : 1588744836735,
-        "stop" : 1588744836797,
-        "duration" : 62
+        "start" : 1589352324146,
+        "stop" : 1589352330097,
+        "duration" : 5951
       }
     } ]
   },
@@ -1247,13 +1230,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f4d6f1ec033b1494",
+      "uid" : "3bdeb0b142a0a371",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False\n +  where False = <function api_send_check at 0x10d211a60>({'APIName': '删除销售订单', 'CaseId': 3.0, 'CaseName': 'delete_sales_order', 'CheckTpye': 'only_check_status', ...})\n +    where <function api_send_check at 0x10d211a60> = apiSendCheck.api_send_check",
       "time" : {
         "start" : 1587723050327,
         "stop" : 1587723050751,
         "duration" : 424
+      }
+    } ]
+  },
+  "6ab9a4e9af892368171c432a4740a516" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "502034e056b15021",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589362972681,
+        "stop" : 1589362977386,
+        "duration" : 4705
       }
     } ]
   }

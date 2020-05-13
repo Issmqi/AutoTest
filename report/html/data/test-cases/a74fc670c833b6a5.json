@@ -1,0 +1,200 @@
+{
+  "uid" : "a74fc670c833b6a5",
+  "name" : "test_api[case_data11]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "c86f1cd083506fa28f857c2db526a4f8",
+  "time" : {
+    "start" : 1589351563434,
+    "stop" : 1589351563592,
+    "duration" : 158
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10e6a7d30>\ncase_data = {'APIName': '其他出库取消签字', 'CaseId': 12.0, 'CaseName': 'cancel_transfer-out-bills', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:52: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589351472646,
+      "stop" : 1589351473826,
+      "duration" : 1180
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10e6a7d30>\ncase_data = {'APIName': '其他出库取消签字', 'CaseId': 12.0, 'CaseName': 'cancel_transfer-out-bills', 'CheckTpye': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:52: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589351563528,
+        "stop" : 1589351563531,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fe90255dea7d36ee",
+        "name" : "请求类型",
+        "source" : "fe90255dea7d36ee.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "e8220b2da77abf79",
+        "name" : "用例名称:",
+        "source" : "e8220b2da77abf79.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "5c0f41fd5e26bdf8",
+        "name" : "请求地址:",
+        "source" : "5c0f41fd5e26bdf8.attach",
+        "type" : "text/plain",
+        "size" : 69
+      }, {
+        "uid" : "751aa03bb22d392a",
+        "name" : "请求头",
+        "source" : "751aa03bb22d392a.attach",
+        "type" : "text/plain",
+        "size" : 71
+      }, {
+        "uid" : "7c2b7ed54184d85e",
+        "name" : "请求参数类型",
+        "source" : "7c2b7ed54184d85e.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "e5910158715174ab",
+        "name" : "请求参数",
+        "source" : "e5910158715174ab.attach",
+        "type" : "text/plain",
+        "size" : 79
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1589351563590,
+        "stop" : 1589351563592,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "db288a54eb7a93f0",
+        "name" : "200",
+        "source" : "db288a54eb7a93f0.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "d30fdfad4ceb5697",
+        "name" : "500",
+        "source" : "d30fdfad4ceb5697.attach",
+        "type" : "text/plain",
+        "size" : 13
+      }, {
+        "uid" : "4731928a23ad0309",
+        "name" : "{\"timestamp\":1589351359082,\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"已生成下游调拨入库，不能取消签字\",\"path\":\"/stock/transfer-out-bills/batch-un-sign\"}",
+        "source" : "4731928a23ad0309.attach",
+        "type" : "text/plain",
+        "size" : 13
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "a927d2d631d46751",
+      "name" : "log",
+      "source" : "a927d2d631d46751.txt",
+      "type" : "text/plain",
+      "size" : 973
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589351594933,
+      "stop" : 1589351596571,
+      "duration" : 1638
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "49122-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 12.0, 'CaseName': 'cancel_transfer-out-bills', 'APIName': '其他出库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-out-bills/batch-un-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-and-sign-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a74fc670c833b6a5.json",
+  "parameterValues" : [ "{'CaseId': 12.0, 'CaseName': 'cancel_transfer-out-bills', 'APIName': '其他出库取消签字', 'Headers': \"{'Content-Type':'application/x-www-form-urlencoded','charset': 'UTF-8'}\", 'Path': '/occ-stock/stock/transfer-out-bills/batch-un-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': '{\"ids\":\"create-and-sign-transfer-out1\",\"search_AUTH_APPCODE\":\"transferOutBill\"}', 'CheckTpye': 'only_check_status', 'ExpectedCode': 200.0, 'ExpectedData': '', 'User': 'Manager', 'DependCase': '', 'RelevanceList': '', 'Sql': '', 'IsDepend': ''}" ]
+}
