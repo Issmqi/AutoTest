@@ -1,0 +1,245 @@
+{
+  "uid" : "dbebaf1b8e8d2919",
+  "name" : "test_api[case_data16]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "3cb768ad8c0c9f46c07211f54c489bbe",
+  "time" : {
+    "start" : 1589447669235,
+    "stop" : 1589447675697,
+    "duration" : 6462
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10d6fec88>\ncase_data = {'APIName': '其他入库签字', 'CaseId': 17, 'CaseName': 'sign_transfer-in-bills', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:56: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589447563414,
+      "stop" : 1589447565912,
+      "duration" : 2498
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10d6fec88>\ncase_data = {'APIName': '其他入库签字', 'CaseId': 17, 'CaseName': 'sign_transfer-in-bills', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ntest_allocation.py:56: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447669285,
+        "stop" : 1589447669288,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "778ee6e1df89a203",
+        "name" : "请求类型",
+        "source" : "778ee6e1df89a203.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "e365e2c831fa34b8",
+        "name" : "用例名称:",
+        "source" : "e365e2c831fa34b8.attach",
+        "type" : "text/plain",
+        "size" : 24
+      }, {
+        "uid" : "58921e0d526dc612",
+        "name" : "请求地址:",
+        "source" : "58921e0d526dc612.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "b1124a5d87fae54e",
+        "name" : "请求头",
+        "source" : "b1124a5d87fae54e.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "a3b657da92f8d468",
+        "name" : "请求参数类型",
+        "source" : "a3b657da92f8d468.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "c0c1c2695a64ee65",
+        "name" : "请求参数",
+        "source" : "c0c1c2695a64ee65.attach",
+        "type" : "text/plain",
+        "size" : 6312
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447675612,
+        "stop" : 1589447675614,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "babf3521b12e596a",
+        "name" : "请求类型",
+        "source" : "babf3521b12e596a.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "3b787de0e02bb34",
+        "name" : "用例名称:",
+        "source" : "3b787de0e02bb34.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "9253cc1007b3bd9e",
+        "name" : "请求地址:",
+        "source" : "9253cc1007b3bd9e.attach",
+        "type" : "text/plain",
+        "size" : 65
+      }, {
+        "uid" : "94183e2cdfab1897",
+        "name" : "请求头",
+        "source" : "94183e2cdfab1897.attach",
+        "type" : "text/plain",
+        "size" : 73
+      }, {
+        "uid" : "a6510066d290732b",
+        "name" : "请求参数类型",
+        "source" : "a6510066d290732b.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "d9b22ed3a5bd827b",
+        "name" : "请求参数",
+        "source" : "d9b22ed3a5bd827b.attach",
+        "type" : "text/plain",
+        "size" : 71
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1589447675696,
+        "stop" : 1589447675697,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8c9a849039dcceea",
+        "name" : "预期code是",
+        "source" : "8c9a849039dcceea.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "accff6e4b152843a",
+        "name" : "实际code是",
+        "source" : "accff6e4b152843a.attach",
+        "type" : "text/plain",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "99b141fd0c182c5e",
+      "name" : "log",
+      "source" : "99b141fd0c182c5e.txt",
+      "type" : "text/plain",
+      "size" : 8244
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 15,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589447680476,
+      "stop" : 1589447681062,
+      "duration" : 586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53281-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 17, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': 'create-transfer-in1', 'search_AUTH_APPCODE': 'transferInBill'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': {'ids': '$..id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dbebaf1b8e8d2919.json",
+  "parameterValues" : [ "{'CaseId': 17, 'CaseName': 'sign_transfer-in-bills', 'APIName': '其他入库签字', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-in-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': 'create-transfer-in1', 'search_AUTH_APPCODE': 'transferInBill'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-in-bills', 'RelevanceList': {'ids': '$..id'}}" ]
+}

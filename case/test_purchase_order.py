@@ -19,7 +19,7 @@ import json
 with open(setupMain.PATH + '/data/purchase/purchase_case.json', "r", encoding='utf-8') as f:
     case_dict = json.load(f)
 
-print(case_dict)
+# print(case_dict)
 h = httpClient.HttpClient(case_dict)
 
 
@@ -40,7 +40,6 @@ class TestCase:
 
 
 if __name__ == '__main__':
-    # pytest.main()
-    # pytest.main("test_api.py")
+
     pytest.main(['test_purchase_order.py', '-s', '--alluredir', '../report/xml'])
     os.system('allure generate --clean ../report/xml -o ../report/html')

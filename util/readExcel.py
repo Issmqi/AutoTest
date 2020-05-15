@@ -70,9 +70,9 @@ class ReadExcel:
 
 
 def main():
-    # data = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
+    data = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
     # data = setupMain.PATH + '/data/purchase/purchase_order_data.xlsx'
-    data = setupMain.PATH + '/data/b2border/sales_order_data.xlsx'
+    # data = setupMain.PATH + '/data/b2border/sales_order_data.xlsx'
     excel_data = ReadExcel(data)
     print(excel_data.get_rows())
     # print(excel_data.get_full_dict())

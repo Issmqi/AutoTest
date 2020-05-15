@@ -274,7 +274,7 @@
         }
       ]
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "id": "0C6XPUcrn27sQ3BYTPyV",
@@ -1052,7 +1052,7 @@
         }
       ]
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "id": "0QD8bd9qw77JImY0P8za",
@@ -2053,7 +2053,7 @@
         }
       ]
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "id": "017zS32tXBBykSzGkpxL",
@@ -2943,7 +2943,7 @@
       "mailSendStatusName": "未发送",
       "mailSendMsg": ""
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "id": "0IO0I8KsbugGZcoLdZ5N",
@@ -3268,7 +3268,7 @@
       "id": "0QD8bd9qw77JImY0P8za",
       "search_AUTH_APPCODE": "purchasecenterorderout"
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "id": "0QD8bd9qw77JImY0P8za",
@@ -3814,7 +3814,7 @@
     "Params": {
       "billId": "0S9WknJXMVYbEHf3qGGc"
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "success": "success",
@@ -4148,7 +4148,7 @@
     "Params": {
       "billId": "0S9WknJXMVYbEHf3qGGc"
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "success": "success",
@@ -4482,7 +4482,7 @@
     "Params": {
       "billId": "0S9WknJXMVYbEHf3qGGc"
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "success": "success",
@@ -4816,7 +4816,7 @@
     "Params": {
       "billId": "0S9WknJXMVYbEHf3qGGc"
     },
-    "CheckTpye": "check_json",
+    "CheckType": "check_json",
     "ExpectedCode": 200,
     "ExpectedData": {
       "success": "success",
@@ -5151,7 +5151,7 @@
       "ids": "0iKWS45FRTo2Lmf8zrkb",
       "search_AUTH_APPCODE": "purchasecenterorderout"
     },
-    "CheckTpye": "only_check_status",
+    "CheckType": "only_check_status",
     "ExpectedCode": 200,
     "ExpectedData": "",
     "User": "Manager",

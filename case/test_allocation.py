@@ -13,12 +13,16 @@ from util import checkResult
 from util.readExcel import ReadExcel
 from util.excuteSql import ExecuteSQL
 from util import apiSendCheck
+import json
 
-allocation_data = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
+# allocation_data = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
 allocation_setup_sql = setupMain.PATH + '/data/allocation/allocation_setup_sql'
 allocation_teardown_sql = setupMain.PATH + '/data/allocation/allocation_teardown_sql'
 
-case_dict = ReadExcel(allocation_data).get_full_dict()
+# case_dict = ReadExcel(allocation_data).get_full_dict()
+with open(setupMain.PATH + '/data/allocation/allocation_order_case.json', 'r', encoding='utf-8') as f:
+    case_dict = json.load(f)
+# print(case_dict)
 h = httpClient.HttpClient(case_dict)
 execute_sql = ExecuteSQL()
 
@@ -41,7 +45,7 @@ class TestCase:
 
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
     @allure.story("调拨模块测试")
-    @pytest.mark.flaky(reruns=3, reruns_delay=3)
+    # @pytest.mark.flaky(reruns=3, reruns_delay=3)
     def test_api(self, case_data):
         '''
         :param case_data: 测试用例
@@ -53,7 +57,6 @@ class TestCase:
 
 
 if __name__ == '__main__':
-    # pytest.main()
-    # pytest.main("test_api.py")
+
     pytest.main(['test_allocation.py', '-s', '--alluredir', '../report/xml'])
     os.system('allure generate --clean ../report/xml/ -o ../report/html/')

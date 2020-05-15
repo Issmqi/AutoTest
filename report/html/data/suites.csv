@@ -1,257 +1,141 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Apr 24 18:13:52 CST 2020","Fri Apr 24 18:13:52 CST 2020","126","case","test_api","TestCase","","","test_api[case_data25]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Fri Apr 24 18:13:50 CST 2020","Fri Apr 24 18:13:51 CST 2020","955","case","test_api","TestCase","","","test_api[case_data23]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:27 CST 2020","Fri Apr 24 18:12:51 CST 2020","24313","case","test_api","TestCase","","","test_api[case_data15]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 17:42:44 CST 2020","Wed May 13 17:42:47 CST 2020","3552","case","test_purchase_order","TestCase","","","test_api[case_data5]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 17:42:47 CST 2020","Wed May 13 17:42:52 CST 2020","4831","case","test_purchase_order","TestCase","","","test_api[case_data6]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Wed May 13 14:45:30 CST 2020","Wed May 13 14:45:33 CST 2020","3581","case","test_allocation","TestCase","","","test_api[case_data16]","
+"passed","Fri May 15 11:24:00 CST 2020","Fri May 15 11:24:17 CST 2020","17046","case","test_allocation","TestCase","","","test_api[case_data12]","
         :param case_data: 测试用例
         :return:
         "
-"broken","Fri Apr 24 18:15:46 CST 2020","Fri Apr 24 18:15:46 CST 2020","22","case","test_sales_order","TestCase","","","test_api[case_data3]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Fri Apr 24 18:13:48 CST 2020","Fri Apr 24 18:13:49 CST 2020","1421","case","test_api","TestCase","","","test_api[case_data21]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 17:42:52 CST 2020","Wed May 13 17:42:57 CST 2020","4705","case","test_purchase_order","TestCase","","","test_api[case_data7]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Fri Apr 24 18:12:20 CST 2020","Fri Apr 24 18:12:27 CST 2020","7261","case","test_api","TestCase","","","test_api[case_data14]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:10:47 CST 2020","Fri Apr 24 18:10:50 CST 2020","2805","case","test_api","TestCase","","","test_api[case_data3]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:10:50 CST 2020","Fri Apr 24 18:11:14 CST 2020","24203","case","test_api","TestCase","","","test_api[case_data5]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:15 CST 2020","Fri Apr 24 18:12:15 CST 2020","385","case","test_api","TestCase","","","test_api[case_data9]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Wed May 13 14:45:20 CST 2020","Wed May 13 14:45:24 CST 2020","3703","case","test_allocation","TestCase","","","test_api[case_data14]","
+"passed","Fri May 15 11:22:31 CST 2020","Fri May 15 11:22:37 CST 2020","5419","case","test_allocation","TestCase","","","test_api[case_data2]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:13:49 CST 2020","Fri Apr 24 18:13:50 CST 2020","233","case","test_api","TestCase","","","test_api[case_data22]","
+"passed","Fri May 15 11:37:26 CST 2020","Fri May 15 11:37:33 CST 2020","6628","case","test_purchase_order","TestCase","","","test_api[case_data6]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Fri Apr 24 18:13:19 CST 2020","Fri Apr 24 18:13:21 CST 2020","1738","case","test_api","TestCase","","","test_api[case_data19]","
+"passed","Fri May 15 11:37:09 CST 2020","Fri May 15 11:37:16 CST 2020","7124","case","test_purchase_order","TestCase","","","test_api[case_data3]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"broken","Wed May 13 14:44:01 CST 2020","Wed May 13 14:44:05 CST 2020","3825","case","test_allocation","TestCase","","","test_api[case_data4]","
+"passed","Fri May 15 11:37:38 CST 2020","Fri May 15 11:37:48 CST 2020","9410","case","test_purchase_order","TestCase","","","test_api[case_data8]","
+        :param case_data: 单条测试用例数据
+        :return:
+        "
+"passed","Fri May 15 11:22:54 CST 2020","Fri May 15 11:23:01 CST 2020","7151","case","test_allocation","TestCase","","","test_api[case_data6]","
         :param case_data: 测试用例
         :return:
         "
-"broken","Wed May 13 14:44:23 CST 2020","Wed May 13 14:44:39 CST 2020","16619","case","test_allocation","TestCase","","","test_api[case_data8]","
+"failed","Fri May 15 11:24:38 CST 2020","Fri May 15 11:24:39 CST 2020","77","case","test_allocation","TestCase","","","test_api[case_data17]","
         :param case_data: 测试用例
         :return:
         "
-"passed","Wed May 13 17:42:17 CST 2020","Wed May 13 17:42:20 CST 2020","3260","case","test_purchase_order","TestCase","","","test_api[case_data0]","
+"passed","Fri May 15 11:37:33 CST 2020","Fri May 15 11:37:38 CST 2020","5487","case","test_purchase_order","TestCase","","","test_api[case_data7]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Fri Apr 24 18:09:56 CST 2020","Fri Apr 24 18:10:29 CST 2020","33395","case","test_api","TestCase","","","test_api[case_data0]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Fri Apr 24 18:15:46 CST 2020","Fri Apr 24 18:15:46 CST 2020","23","case","test_sales_order","TestCase","","","test_api[case_data4]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:13:52 CST 2020","Fri Apr 24 18:14:05 CST 2020","12869","case","test_api","TestCase","","","test_api[case_data26]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 17:43:05 CST 2020","Wed May 13 17:43:15 CST 2020","9936","case","test_purchase_order","TestCase","","","test_api[case_data9]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 17:42:20 CST 2020","Wed May 13 17:42:24 CST 2020","4176","case","test_purchase_order","TestCase","","","test_api[case_data1]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Wed May 13 17:42:33 CST 2020","Wed May 13 17:42:37 CST 2020","3720","case","test_purchase_order","TestCase","","","test_api[case_data3]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Wed May 13 14:43:51 CST 2020","Wed May 13 14:43:54 CST 2020","3230","case","test_allocation","TestCase","","","test_api[case_data1]","
+"failed","Fri May 15 11:24:17 CST 2020","Fri May 15 11:24:21 CST 2020","4672","case","test_allocation","TestCase","","","test_api[case_data13]","
         :param case_data: 测试用例
         :return:
         "
-"passed","Wed May 13 17:42:57 CST 2020","Wed May 13 17:43:05 CST 2020","8582","case","test_purchase_order","TestCase","","","test_api[case_data8]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:14:23 CST 2020","Fri Apr 24 18:14:34 CST 2020","11261","case","test_api","TestCase","","","test_api[case_data28]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:10:50 CST 2020","Fri Apr 24 18:10:50 CST 2020","424","case","test_api","TestCase","","","test_api[case_data4]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:51 CST 2020","Fri Apr 24 18:13:16 CST 2020","24594","case","test_api","TestCase","","","test_api[case_data16]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:18 CST 2020","Fri Apr 24 18:12:19 CST 2020","1607","case","test_api","TestCase","","","test_api[case_data12]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:14:34 CST 2020","Fri Apr 24 18:14:43 CST 2020","8897","case","test_api","TestCase","","","test_api[case_data29]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Wed May 13 14:43:54 CST 2020","Wed May 13 14:43:58 CST 2020","3506","case","test_allocation","TestCase","","","test_api[case_data2]","
+"passed","Fri May 15 11:22:48 CST 2020","Fri May 15 11:22:54 CST 2020","5803","case","test_allocation","TestCase","","","test_api[case_data5]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:14:05 CST 2020","Fri Apr 24 18:14:23 CST 2020","17802","case","test_api","TestCase","","","test_api[case_data27]","
+"passed","Fri May 15 11:37:48 CST 2020","Fri May 15 11:37:56 CST 2020","8797","case","test_purchase_order","TestCase","","","test_api[case_data9]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Wed May 13 17:42:37 CST 2020","Wed May 13 17:42:44 CST 2020","6998","case","test_purchase_order","TestCase","","","test_api[case_data4]","
+"passed","Fri May 15 11:37:21 CST 2020","Fri May 15 11:37:26 CST 2020","4785","case","test_purchase_order","TestCase","","","test_api[case_data5]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Fri Apr 24 18:13:51 CST 2020","Fri Apr 24 18:13:52 CST 2020","1639","case","test_api","TestCase","","","test_api[case_data24]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:13 CST 2020","Fri Apr 24 18:12:15 CST 2020","1969","case","test_api","TestCase","","","test_api[case_data8]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Fri Apr 24 18:13:16 CST 2020","Fri Apr 24 18:13:17 CST 2020","1308","case","test_api","TestCase","","","test_api[case_data17]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Fri Apr 24 18:12:15 CST 2020","Fri Apr 24 18:12:16 CST 2020","506","case","test_api","TestCase","","","test_api[case_data10]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"passed","Wed May 13 14:45:33 CST 2020","Wed May 13 14:45:38 CST 2020","4676","case","test_allocation","TestCase","","","test_api[case_data18]","
+"passed","Fri May 15 11:23:44 CST 2020","Fri May 15 11:23:59 CST 2020","15485","case","test_allocation","TestCase","","","test_api[case_data10]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Wed May 13 14:45:33 CST 2020","Wed May 13 14:45:33 CST 2020","52","case","test_allocation","TestCase","","","test_api[case_data17]","
-        :param case_data: 测试用例
-        :return:
-        "
-"failed","Fri Apr 24 18:12:16 CST 2020","Fri Apr 24 18:12:18 CST 2020","1580","case","test_api","TestCase","","","test_api[case_data11]","
+"passed","Fri May 15 11:32:50 CST 2020","Fri May 15 11:33:00 CST 2020","9876","case","test_b2b_order","TestCase","","","test_api[case_data5]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Wed May 13 14:44:51 CST 2020","Wed May 13 14:45:04 CST 2020","13269","case","test_allocation","TestCase","","","test_api[case_data10]","
-        :param case_data: 测试用例
-        :return:
-        "
-"broken","Fri Apr 24 18:15:46 CST 2020","Fri Apr 24 18:15:46 CST 2020","24","case","test_sales_order","TestCase","","","test_api[case_data2]","
+"passed","Fri May 15 11:37:04 CST 2020","Fri May 15 11:37:09 CST 2020","4596","case","test_purchase_order","TestCase","","","test_api[case_data2]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"failed","Fri Apr 24 18:12:19 CST 2020","Fri Apr 24 18:12:20 CST 2020","475","case","test_api","TestCase","","","test_api[case_data13]","
+"failed","Fri May 15 11:24:34 CST 2020","Fri May 15 11:24:38 CST 2020","4690","case","test_allocation","TestCase","","","test_api[case_data16]","
+        :param case_data: 测试用例
+        :return:
+        "
+"passed","Fri May 15 11:31:49 CST 2020","Fri May 15 11:31:58 CST 2020","9283","case","test_b2b_order","TestCase","","","test_api[case_data2]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Wed May 13 17:42:24 CST 2020","Wed May 13 17:42:33 CST 2020","8987","case","test_purchase_order","TestCase","","","test_api[case_data2]","
+"failed","Fri May 15 11:23:59 CST 2020","Fri May 15 11:24:00 CST 2020","88","case","test_allocation","TestCase","","","test_api[case_data11]","
+        :param case_data: 测试用例
+        :return:
+        "
+"passed","Fri May 15 11:22:37 CST 2020","Fri May 15 11:22:43 CST 2020","5988","case","test_allocation","TestCase","","","test_api[case_data3]","
+        :param case_data: 测试用例
+        :return:
+        "
+"passed","Fri May 15 11:32:14 CST 2020","Fri May 15 11:32:50 CST 2020","36026","case","test_b2b_order","TestCase","","","test_api[case_data4]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"broken","Wed May 13 14:44:05 CST 2020","Wed May 13 14:44:11 CST 2020","5706","case","test_allocation","TestCase","","","test_api[case_data5]","
+"failed","Fri May 15 11:24:26 CST 2020","Fri May 15 11:24:34 CST 2020","7768","case","test_allocation","TestCase","","","test_api[case_data15]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Wed May 13 14:45:15 CST 2020","Wed May 13 14:45:20 CST 2020","4873","case","test_allocation","TestCase","","","test_api[case_data13]","
+"passed","Fri May 15 11:24:39 CST 2020","Fri May 15 11:24:43 CST 2020","4686","case","test_allocation","TestCase","","","test_api[case_data18]","
         :param case_data: 测试用例
         :return:
         "
-"broken","Wed May 13 14:44:39 CST 2020","Wed May 13 14:44:51 CST 2020","11366","case","test_allocation","TestCase","","","test_api[case_data9]","
+"failed","Fri May 15 11:24:21 CST 2020","Fri May 15 11:24:26 CST 2020","4697","case","test_allocation","TestCase","","","test_api[case_data14]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:13:21 CST 2020","Fri Apr 24 18:13:48 CST 2020","27034","case","test_api","TestCase","","","test_api[case_data20]","
+"passed","Fri May 15 11:36:55 CST 2020","Fri May 15 11:36:59 CST 2020","4602","case","test_purchase_order","TestCase","","","test_api[case_data0]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"passed","Wed May 13 14:45:04 CST 2020","Wed May 13 14:45:15 CST 2020","10620","case","test_allocation","TestCase","","","test_api[case_data12]","
-        :param case_data: 测试用例
-        :return:
-        "
-"passed","Fri Apr 24 18:13:17 CST 2020","Fri Apr 24 18:13:19 CST 2020","1969","case","test_api","TestCase","","","test_api[case_data18]","
+"passed","Fri May 15 11:31:58 CST 2020","Fri May 15 11:32:14 CST 2020","15190","case","test_b2b_order","TestCase","","","test_api[case_data3]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"broken","Wed May 13 14:44:11 CST 2020","Wed May 13 14:44:23 CST 2020","11466","case","test_allocation","TestCase","","","test_api[case_data7]","
-        :param case_data: 测试用例
-        :return:
-        "
-"broken","Wed May 13 14:43:58 CST 2020","Wed May 13 14:44:01 CST 2020","3450","case","test_allocation","TestCase","","","test_api[case_data3]","
-        :param case_data: 测试用例
-        :return:
-        "
-"broken","Wed May 13 14:43:48 CST 2020","Wed May 13 14:43:51 CST 2020","3092","case","test_allocation","TestCase","","","test_api[case_data0]","
-        :param case_data: 测试用例
-        :return:
-        "
-"failed","Fri Apr 24 18:15:27 CST 2020","Fri Apr 24 18:15:46 CST 2020","19711","case","test_sales_order","TestCase","","","test_api[case_data0]","
+"passed","Fri May 15 11:36:59 CST 2020","Fri May 15 11:37:04 CST 2020","4558","case","test_purchase_order","TestCase","","","test_api[case_data1]","
         :param case_data: 单条测试用例数据
         :return:
         "
-"failed","Wed May 13 14:45:04 CST 2020","Wed May 13 14:45:04 CST 2020","155","case","test_allocation","TestCase","","","test_api[case_data11]","
+"passed","Fri May 15 11:31:48 CST 2020","Fri May 15 11:31:49 CST 2020","949","case","test_b2b_order","TestCase","","","test_api[case_data1]","
+        :param case_data: 单条测试用例数据
+        :return:
+        "
+"passed","Fri May 15 11:37:16 CST 2020","Fri May 15 11:37:21 CST 2020","5545","case","test_purchase_order","TestCase","","","test_api[case_data4]","
+        :param case_data: 单条测试用例数据
+        :return:
+        "
+"passed","Fri May 15 11:22:25 CST 2020","Fri May 15 11:22:31 CST 2020","6765","case","test_allocation","TestCase","","","test_api[case_data1]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:11:44 CST 2020","Fri Apr 24 18:12:13 CST 2020","28636","case","test_api","TestCase","","","test_api[case_data7]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"failed","Wed May 13 14:44:11 CST 2020","Wed May 13 14:44:11 CST 2020","214","case","test_allocation","TestCase","","","test_api[case_data6]","
+"passed","Fri May 15 11:23:01 CST 2020","Fri May 15 11:23:14 CST 2020","12745","case","test_allocation","TestCase","","","test_api[case_data7]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:10:30 CST 2020","Fri Apr 24 18:10:47 CST 2020","17406","case","test_api","TestCase","","","test_api[case_data2]","
-        :param case_data: 单条测试用例数据
-        :return:
-        "
-"broken","Wed May 13 14:45:24 CST 2020","Wed May 13 14:45:30 CST 2020","5951","case","test_allocation","TestCase","","","test_api[case_data15]","
+"passed","Fri May 15 11:22:43 CST 2020","Fri May 15 11:22:48 CST 2020","5016","case","test_allocation","TestCase","","","test_api[case_data4]","
         :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:10:29 CST 2020","Fri Apr 24 18:10:30 CST 2020","231","case","test_api","TestCase","","","test_api[case_data1]","
-        :param case_data: 单条测试用例数据
+"passed","Fri May 15 11:23:14 CST 2020","Fri May 15 11:23:28 CST 2020","14607","case","test_allocation","TestCase","","","test_api[case_data8]","
+        :param case_data: 测试用例
         :return:
         "
-"failed","Fri Apr 24 18:11:14 CST 2020","Fri Apr 24 18:11:44 CST 2020","29939","case","test_api","TestCase","","","test_api[case_data6]","
-        :param case_data: 单条测试用例数据
+"passed","Fri May 15 11:22:20 CST 2020","Fri May 15 11:22:25 CST 2020","4392","case","test_allocation","TestCase","","","test_api[case_data0]","
+        :param case_data: 测试用例
         :return:
         "
-"broken","Fri Apr 24 18:15:46 CST 2020","Fri Apr 24 18:15:46 CST 2020","26","case","test_sales_order","TestCase","","","test_api[case_data1]","
+"failed","Fri May 15 11:23:28 CST 2020","Fri May 15 11:23:44 CST 2020","15718","case","test_allocation","TestCase","","","test_api[case_data9]","
+        :param case_data: 测试用例
+        :return:
+        "
+"passed","Fri May 15 11:31:39 CST 2020","Fri May 15 11:31:48 CST 2020","9572","case","test_b2b_order","TestCase","","","test_api[case_data0]","
         :param case_data: 单条测试用例数据
         :return:
         "

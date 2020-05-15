@@ -4,12 +4,12 @@
     "uid" : "d515153962b2516939ecbdf714186f3e",
     "name" : "渠道云接口自动化测试",
     "statistic" : {
-      "failed" : 4,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 4
+      "total" : 3
     }
   } ]
 }

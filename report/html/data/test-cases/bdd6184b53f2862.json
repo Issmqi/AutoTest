@@ -1,0 +1,320 @@
+{
+  "uid" : "bdd6184b53f2862",
+  "name" : "test_api[case_data8]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "eefd906d21114be63c81ef46335e3f92",
+  "time" : {
+    "start" : 1589447614260,
+    "stop" : 1589447622738,
+    "duration" : 8478
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'str' object has no attribute 'items'",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10d71b400>\ncase_data = {'APIName': '查询调拨出库订单详情', 'CaseId': 9, 'CaseName': 'get_transfer-out-bills', 'CheckType': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_allocation.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/httpClient.py:54: in send_requests\n    parameter = self.init_request(depend_case, relevance, parameter)\n../util/httpClient.py:153: in init_request\n    relevance_response = self.read_relevance_data(dependCase)  # 执行依赖接口\n../util/httpClient.py:210: in read_relevance_data\n    result = self.send_requests(case_data)\n../util/httpClient.py:73: in send_requests\n    result = self.api_method(method, url, parameter, cookie, header, parameter_type)\n../util/httpClient.py:100: in api_method\n    response = requests.post(url=url, headers=header, data=params, cookies=cookie)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:516: in request\n    prep = self.prepare_request(req)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:459: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:315: in prepare\n    self.prepare_headers(headers)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>\nheaders = \"{'Content-Type':'application/json','charset': 'UTF-8'}\"\n\n    def prepare_headers(self, headers):\n        \"\"\"Prepares the given HTTP headers.\"\"\"\n    \n        self.headers = CaseInsensitiveDict()\n        if headers:\n>           for header in headers.items():\nE           AttributeError: 'str' object has no attribute 'items'\n\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:447: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589447563414,
+      "stop" : 1589447565912,
+      "duration" : 2498
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'str' object has no attribute 'items'",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10d71b400>\ncase_data = {'APIName': '查询调拨出库订单详情', 'CaseId': 9, 'CaseName': 'get_transfer-out-bills', 'CheckType': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_allocation.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/httpClient.py:54: in send_requests\n    parameter = self.init_request(depend_case, relevance, parameter)\n../util/httpClient.py:153: in init_request\n    relevance_response = self.read_relevance_data(dependCase)  # 执行依赖接口\n../util/httpClient.py:210: in read_relevance_data\n    result = self.send_requests(case_data)\n../util/httpClient.py:73: in send_requests\n    result = self.api_method(method, url, parameter, cookie, header, parameter_type)\n../util/httpClient.py:100: in api_method\n    response = requests.post(url=url, headers=header, data=params, cookies=cookie)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:516: in request\n    prep = self.prepare_request(req)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:459: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:315: in prepare\n    self.prepare_headers(headers)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>\nheaders = \"{'Content-Type':'application/json','charset': 'UTF-8'}\"\n\n    def prepare_headers(self, headers):\n        \"\"\"Prepares the given HTTP headers.\"\"\"\n    \n        self.headers = CaseInsensitiveDict()\n        if headers:\n>           for header in headers.items():\nE           AttributeError: 'str' object has no attribute 'items'\n\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:447: AttributeError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447614418,
+        "stop" : 1589447614420,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6ea30d4e68673ea1",
+        "name" : "请求类型",
+        "source" : "6ea30d4e68673ea1.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "c0cb699ade85bd87",
+        "name" : "用例名称:",
+        "source" : "c0cb699ade85bd87.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "fed5bc5d540bce8d",
+        "name" : "请求地址:",
+        "source" : "fed5bc5d540bce8d.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "bb33babe31118ae9",
+        "name" : "请求头",
+        "source" : "bb33babe31118ae9.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "cfd027fd566439db",
+        "name" : "请求参数类型",
+        "source" : "cfd027fd566439db.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "2d70a0f4076a4954",
+        "name" : "请求参数",
+        "source" : "2d70a0f4076a4954.attach",
+        "type" : "text/plain",
+        "size" : 5901
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447619900,
+        "stop" : 1589447619902,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cd5d13de2dd881d0",
+        "name" : "请求类型",
+        "source" : "cd5d13de2dd881d0.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "d02e512145a6fba7",
+        "name" : "用例名称:",
+        "source" : "d02e512145a6fba7.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "ea9e8f14e2c41ae9",
+        "name" : "请求地址:",
+        "source" : "ea9e8f14e2c41ae9.attach",
+        "type" : "text/plain",
+        "size" : 69
+      }, {
+        "uid" : "300a71661a801ddf",
+        "name" : "请求头",
+        "source" : "300a71661a801ddf.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "1f1ae0dee16a415b",
+        "name" : "请求参数类型",
+        "source" : "1f1ae0dee16a415b.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "58e6c66f116b120d",
+        "name" : "请求参数",
+        "source" : "58e6c66f116b120d.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447621939,
+        "stop" : 1589447621941,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4e3d22ff56aec4ee",
+        "name" : "请求类型",
+        "source" : "4e3d22ff56aec4ee.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "53ee7efe91b7fa1b",
+        "name" : "用例名称:",
+        "source" : "53ee7efe91b7fa1b.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "99f8af2bf8f58fa9",
+        "name" : "请求地址:",
+        "source" : "99f8af2bf8f58fa9.attach",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "833fde2dfda5469b",
+        "name" : "请求头",
+        "source" : "833fde2dfda5469b.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "e14f5954e4c96f70",
+        "name" : "请求参数类型",
+        "source" : "e14f5954e4c96f70.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "2c1cc25377ed26cf",
+        "name" : "请求参数",
+        "source" : "2c1cc25377ed26cf.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447622734,
+        "stop" : 1589447622737,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c4c2b87a9ffee2",
+        "name" : "请求类型",
+        "source" : "c4c2b87a9ffee2.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "459af37a8d0e1518",
+        "name" : "用例名称:",
+        "source" : "459af37a8d0e1518.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "f3b1839d84d5b65b",
+        "name" : "请求地址:",
+        "source" : "f3b1839d84d5b65b.attach",
+        "type" : "text/plain",
+        "size" : 55
+      }, {
+        "uid" : "da34dbdc01ada82d",
+        "name" : "请求头",
+        "source" : "da34dbdc01ada82d.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "fe1770c2ff5a3b28",
+        "name" : "请求参数类型",
+        "source" : "fe1770c2ff5a3b28.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "f54f43ce5b8b09f0",
+        "name" : "请求参数",
+        "source" : "f54f43ce5b8b09f0.attach",
+        "type" : "text/plain",
+        "size" : 7248
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 6,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4447ce281d614cde",
+      "name" : "log",
+      "source" : "4447ce281d614cde.txt",
+      "type" : "text/plain",
+      "size" : 67846
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 25,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589447680476,
+      "stop" : 1589447681062,
+      "duration" : 586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53281-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 9, 'CaseName': 'get_transfer-out-bills', 'APIName': '查询调拨出库订单详情', 'Headers': '', 'Path': '/occ-stock/stock/transfer-out-bills/findByParentid', 'Method': 'get', 'ParameterType': 'parameter', 'Params': {'id': 'create-transfer-out1', 'search_AUTH_APPCODE': 'transferOutBill'}, 'CheckType': 'check_json', 'ExpectedCode': 200, 'ExpectedData': {'id': '09hvzd0ZYcNlm2Acrklt', 'dr': 0, 'ts': 1587882709000, 'creator': 'tmq', 'creationTime': 1587882670000, 'modifier': 'tmq', 'modifiedTime': 1587882709000, 'persistStatus': 'nrm', 'promptMessage': None, 'stockOrgId': 'e53fc87e-1a16-4a2b-978c-63bfd14fd88b', 'stockOrgCode': '1101', 'stockOrgName': '上海证大喜马拉雅网络科技有限公司', 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020042600004', 'billDate': 1587830400000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '28332dbd-b2d2-4b1f-bc71-3c3c665c658f', 'storageCode': '110102', 'storageName': '知识卡仓', 'ifSlotManage': None, 'inStorageId': '0iBm0HSL0DzMt3O1Ivs9', 'inStorageCode': '121007', 'inStorageName': '高新咖啡店', 'inIfSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': None, 'planArriveDate': None, 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': 1.0, 'totalFactOutNum': 1.0, 'billStatusId': '099aj5df-4y42-4k00-d8d0-3714fdb43e6k', 'billStatusCode': '02', 'billStatusName': '已签字', 'stockBillBelong': '0NfjSVvc0jVxlBNvSScj', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': None, 'bizPersonCode': None, 'bizPersonName': None, 'deparmentId': '0WQbT14w7gylOnPhY2eT', 'deparmentCode': 'FCDEPT01', 'deparmentName': '形态转换部门01', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'siger': 'tmq', 'signTime': 1587882709000, 'cancelReason': None, 'remark': None, 'transferBillOutItems': [{'id': '0XGKeUIfxCyfIAyiaaJ3', 'dr': 0, 'ts': 1587882693000, 'creator': 'tmq', 'creationTime': 1587882693000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'transferOutBillId': '09hvzd0ZYcNlm2Acrklt', 'rowNum': 10, 'goodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'goodsCode': '344030000001', 'goodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsDisplayName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsBasicUnitName': '张', 'goodsAssistUnitName': '张', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'unitId': 'cc7d062c-53ad-4ab2-9fe6-63ef173f0a00', 'unitCode': '003', 'unitName': '张', 'shouldOutNum': 1.0, 'factOutNum': 1.0, 'unitPrice': 20.0, 'amountMoney': 20.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200426000005', 'firstBillBcode': '0pVyy865O7Ogtc0YnSjh', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200426000005', 'srcBillBcode': '0pVyy865O7Ogtc0YnSjh', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'isMotherPiece': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'ext01': '1.00000000', 'ext02': None, 'ext03': 'COO7-Cxx-03', 'ext04': 'COO7-Cxx-03', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'id': '0P2eVkhQHqVyzLrCQZvI', 'dr': 0, 'ts': 1587882693000, 'creator': 'tmq', 'creationTime': 1587882693000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'rowNum': '10', 'goodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'goodsCode': '344030000001', 'goodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsDisplayName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsBasicUnitName': '张', 'goodsAssistUnitName': '张', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'unitId': 'cc7d062c-53ad-4ab2-9fe6-63ef173f0a00', 'unitCode': '003', 'unitName': '张', 'shouldOutNum': 1.0, 'factOutNum': 1.0, 'unitPrice': 20.0, 'amountMoney': 20.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0NfjSVvc0jVxlBNvSScj', 'firstBillBcode': '0pVyy865O7Ogtc0YnSjh', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200426000005', 'srcBillBcode': '0pVyy865O7Ogtc0YnSjh', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'itemId': '0XGKeUIfxCyfIAyiaaJ3', 'billId': None, 'parentGoodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'parentGoodsCode': '344030000001', 'parentGoodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'parentGoodsdisplayName': None, 'parentRowNum': '10', 'childGoodsQty': None, 'firstBillBomCode': '0T4TSD2BkEYNkAawoFlN', 'srcBillBomCode': '0T4TSD2BkEYNkAawoFlN', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'id': '$..id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bdd6184b53f2862.json",
+  "parameterValues" : [ "{'CaseId': 9, 'CaseName': 'get_transfer-out-bills', 'APIName': '查询调拨出库订单详情', 'Headers': '', 'Path': '/occ-stock/stock/transfer-out-bills/findByParentid', 'Method': 'get', 'ParameterType': 'parameter', 'Params': {'id': 'create-transfer-out1', 'search_AUTH_APPCODE': 'transferOutBill'}, 'CheckType': 'check_json', 'ExpectedCode': 200, 'ExpectedData': {'id': '09hvzd0ZYcNlm2Acrklt', 'dr': 0, 'ts': 1587882709000, 'creator': 'tmq', 'creationTime': 1587882670000, 'modifier': 'tmq', 'modifiedTime': 1587882709000, 'persistStatus': 'nrm', 'promptMessage': None, 'stockOrgId': 'e53fc87e-1a16-4a2b-978c-63bfd14fd88b', 'stockOrgCode': '1101', 'stockOrgName': '上海证大喜马拉雅网络科技有限公司', 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020042600004', 'billDate': 1587830400000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '28332dbd-b2d2-4b1f-bc71-3c3c665c658f', 'storageCode': '110102', 'storageName': '知识卡仓', 'ifSlotManage': None, 'inStorageId': '0iBm0HSL0DzMt3O1Ivs9', 'inStorageCode': '121007', 'inStorageName': '高新咖啡店', 'inIfSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': None, 'planArriveDate': None, 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': 1.0, 'totalFactOutNum': 1.0, 'billStatusId': '099aj5df-4y42-4k00-d8d0-3714fdb43e6k', 'billStatusCode': '02', 'billStatusName': '已签字', 'stockBillBelong': '0NfjSVvc0jVxlBNvSScj', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': None, 'bizPersonCode': None, 'bizPersonName': None, 'deparmentId': '0WQbT14w7gylOnPhY2eT', 'deparmentCode': 'FCDEPT01', 'deparmentName': '形态转换部门01', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'siger': 'tmq', 'signTime': 1587882709000, 'cancelReason': None, 'remark': None, 'transferBillOutItems': [{'id': '0XGKeUIfxCyfIAyiaaJ3', 'dr': 0, 'ts': 1587882693000, 'creator': 'tmq', 'creationTime': 1587882693000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'transferOutBillId': '09hvzd0ZYcNlm2Acrklt', 'rowNum': 10, 'goodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'goodsCode': '344030000001', 'goodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsDisplayName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsBasicUnitName': '张', 'goodsAssistUnitName': '张', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'unitId': 'cc7d062c-53ad-4ab2-9fe6-63ef173f0a00', 'unitCode': '003', 'unitName': '张', 'shouldOutNum': 1.0, 'factOutNum': 1.0, 'unitPrice': 20.0, 'amountMoney': 20.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200426000005', 'firstBillBcode': '0pVyy865O7Ogtc0YnSjh', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200426000005', 'srcBillBcode': '0pVyy865O7Ogtc0YnSjh', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'isMotherPiece': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'ext01': '1.00000000', 'ext02': None, 'ext03': 'COO7-Cxx-03', 'ext04': 'COO7-Cxx-03', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'id': '0P2eVkhQHqVyzLrCQZvI', 'dr': 0, 'ts': 1587882693000, 'creator': 'tmq', 'creationTime': 1587882693000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'nrm', 'promptMessage': None, 'rowNum': '10', 'goodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'goodsCode': '344030000001', 'goodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsDisplayName': '喜马拉雅财经创业知识通兑卡（9选1）', 'goodsBasicUnitName': '张', 'goodsAssistUnitName': '张', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'unitId': 'cc7d062c-53ad-4ab2-9fe6-63ef173f0a00', 'unitCode': '003', 'unitName': '张', 'shouldOutNum': 1.0, 'factOutNum': 1.0, 'unitPrice': 20.0, 'amountMoney': 20.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0NfjSVvc0jVxlBNvSScj', 'firstBillBcode': '0pVyy865O7Ogtc0YnSjh', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200426000005', 'srcBillBcode': '0pVyy865O7Ogtc0YnSjh', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'itemId': '0XGKeUIfxCyfIAyiaaJ3', 'billId': None, 'parentGoodsId': '1b6fd0b2-c2c7-490a-9a6e-4404028bb50e', 'parentGoodsCode': '344030000001', 'parentGoodsName': '喜马拉雅财经创业知识通兑卡（9选1）', 'parentGoodsdisplayName': None, 'parentRowNum': '10', 'childGoodsQty': None, 'firstBillBomCode': '0T4TSD2BkEYNkAawoFlN', 'srcBillBomCode': '0T4TSD2BkEYNkAawoFlN', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'id': '$..id'}}" ]
+}
