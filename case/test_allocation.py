@@ -4,16 +4,14 @@ import sys, os
 import allure
 import pytest
 import setupMain
-
+import json
 path = os.path.dirname(sys.path[0])
 sys.path.append(path)
 
 from util import httpClient
 from util import checkResult
-from util.readExcel import ReadExcel
 from util.excuteSql import ExecuteSQL
-from util import apiSendCheck
-import json
+
 
 # allocation_data = setupMain.PATH + '/data/allocation/allocation_data.xlsx'
 allocation_setup_sql = setupMain.PATH + '/data/allocation/allocation_setup_sql'

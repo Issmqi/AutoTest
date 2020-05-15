@@ -1,0 +1,12 @@
+[32mINFO    [0m request:log.py:85 ====================================================================================================
+[32mINFO    [0m request:log.py:85 用例id:12
+[32mINFO    [0m request:log.py:85 用例名称:cancel_transfer-out-bills
+[32mINFO    [0m request:log.py:85 请求头:{'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}
+[32mINFO    [0m request:log.py:85 请求地址:http://192.168.41.16/occ-stock/stock/transfer-out-bills/batch-un-sign
+[32mINFO    [0m request:log.py:85 请求参数:{'ids': 'create-and-sign-transfer-out1', 'search_AUTH_APPCODE': 'transferOutBill'}
+[32mINFO    [0m request:log.py:85 测试用户：Manager
+[32mINFO    [0m request:log.py:85 响应时间为0.08521s
+[32mINFO    [0m request:log.py:85 返回状态码:500
+[32mINFO    [0m request:log.py:85 返回response:
+ {"timestamp":1589522081083,"status":500,"error":"Internal Server Error","message":"已生成下游调拨入库，不能取消签字","path":"/stock/transfer-out-bills/batch-un-sign"}
+[32mINFO    [0m request:log.py:85 HTTP返回状态码与预期不一致

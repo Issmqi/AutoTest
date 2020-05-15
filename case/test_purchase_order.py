@@ -4,6 +4,7 @@ import sys, os
 import allure
 import pytest
 import setupMain
+import json
 
 path = os.path.dirname(sys.path[0])
 sys.path.append(path)
@@ -11,7 +12,7 @@ sys.path.append(path)
 from util import httpClient
 from util import checkResult
 from util.readExcel import ReadExcel
-import json
+
 
 # data1 = setupMain.PATH + '/data/purchase/purchase_order_data.xlsx'
 # case_dict = ReadExcel(data1).get_full_dict()

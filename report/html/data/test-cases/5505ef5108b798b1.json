@@ -1,0 +1,320 @@
+{
+  "uid" : "5505ef5108b798b1",
+  "name" : "test_api[case_data10]",
+  "fullName" : "case.test_allocation.TestCase#test_api",
+  "historyId" : "e1b096717a5c7c2ad448422e53023496",
+  "time" : {
+    "start" : 1589447630453,
+    "stop" : 1589447639980,
+    "duration" : 9527
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'str' object has no attribute 'items'",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10cd39eb8>\ncase_data = {'APIName': '其他出库签字', 'CaseId': 11, 'CaseName': 'sign_transfer-out-bills', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_allocation.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/httpClient.py:54: in send_requests\n    parameter = self.init_request(depend_case, relevance, parameter)\n../util/httpClient.py:153: in init_request\n    relevance_response = self.read_relevance_data(dependCase)  # 执行依赖接口\n../util/httpClient.py:210: in read_relevance_data\n    result = self.send_requests(case_data)\n../util/httpClient.py:73: in send_requests\n    result = self.api_method(method, url, parameter, cookie, header, parameter_type)\n../util/httpClient.py:100: in api_method\n    response = requests.post(url=url, headers=header, data=params, cookies=cookie)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:516: in request\n    prep = self.prepare_request(req)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:459: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:315: in prepare\n    self.prepare_headers(headers)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>\nheaders = \"{'Content-Type':'application/json','charset': 'UTF-8'}\"\n\n    def prepare_headers(self, headers):\n        \"\"\"Prepares the given HTTP headers.\"\"\"\n    \n        self.headers = CaseInsensitiveDict()\n        if headers:\n>           for header in headers.items():\nE           AttributeError: 'str' object has no attribute 'items'\n\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:447: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589447563414,
+      "stop" : 1589447565912,
+      "duration" : 2498
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'str' object has no attribute 'items'",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10cd39eb8>\ncase_data = {'APIName': '其他出库签字', 'CaseId': 11, 'CaseName': 'sign_transfer-out-bills', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n>       code, response = h.send_requests(case_data)\n\ntest_allocation.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../util/httpClient.py:54: in send_requests\n    parameter = self.init_request(depend_case, relevance, parameter)\n../util/httpClient.py:153: in init_request\n    relevance_response = self.read_relevance_data(dependCase)  # 执行依赖接口\n../util/httpClient.py:210: in read_relevance_data\n    result = self.send_requests(case_data)\n../util/httpClient.py:73: in send_requests\n    result = self.api_method(method, url, parameter, cookie, header, parameter_type)\n../util/httpClient.py:100: in api_method\n    response = requests.post(url=url, headers=header, data=params, cookies=cookie)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:516: in request\n    prep = self.prepare_request(req)\n../venv/bin/python/lib/python3.6/site-packages/requests/sessions.py:459: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:315: in prepare\n    self.prepare_headers(headers)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>\nheaders = \"{'Content-Type':'application/json','charset': 'UTF-8'}\"\n\n    def prepare_headers(self, headers):\n        \"\"\"Prepares the given HTTP headers.\"\"\"\n    \n        self.headers = CaseInsensitiveDict()\n        if headers:\n>           for header in headers.items():\nE           AttributeError: 'str' object has no attribute 'items'\n\n../venv/bin/python/lib/python3.6/site-packages/requests/models.py:447: AttributeError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447630574,
+        "stop" : 1589447630576,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ceefb8f3cfcfcf5a",
+        "name" : "请求类型",
+        "source" : "ceefb8f3cfcfcf5a.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "2a81cc0bad5e9a39",
+        "name" : "用例名称:",
+        "source" : "2a81cc0bad5e9a39.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "489d0a92329c1072",
+        "name" : "请求地址:",
+        "source" : "489d0a92329c1072.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "be0374ebbcc4bcaf",
+        "name" : "请求头",
+        "source" : "be0374ebbcc4bcaf.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "9497754c4669d1df",
+        "name" : "请求参数类型",
+        "source" : "9497754c4669d1df.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "404456479bd377dd",
+        "name" : "请求参数",
+        "source" : "404456479bd377dd.attach",
+        "type" : "text/plain",
+        "size" : 5901
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447636896,
+        "stop" : 1589447636897,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b08c304e8b8f5f0f",
+        "name" : "请求类型",
+        "source" : "b08c304e8b8f5f0f.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "4bb9b19f1c6106de",
+        "name" : "用例名称:",
+        "source" : "4bb9b19f1c6106de.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "ff7750e010b114dd",
+        "name" : "请求地址:",
+        "source" : "ff7750e010b114dd.attach",
+        "type" : "text/plain",
+        "size" : 69
+      }, {
+        "uid" : "dbb6d4003d85d658",
+        "name" : "请求头",
+        "source" : "dbb6d4003d85d658.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "a28a5061248eb715",
+        "name" : "请求参数类型",
+        "source" : "a28a5061248eb715.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "5b8b40db40a9a259",
+        "name" : "请求参数",
+        "source" : "5b8b40db40a9a259.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447637307,
+        "stop" : 1589447637309,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "72af2004f98a7a9a",
+        "name" : "请求类型",
+        "source" : "72af2004f98a7a9a.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "40b446f362eb7ce5",
+        "name" : "用例名称:",
+        "source" : "40b446f362eb7ce5.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "d00b340794625a13",
+        "name" : "请求地址:",
+        "source" : "d00b340794625a13.attach",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "aa398c2b1799e60a",
+        "name" : "请求头",
+        "source" : "aa398c2b1799e60a.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "7757af4eff968be8",
+        "name" : "请求参数类型",
+        "source" : "7757af4eff968be8.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "2a3a3f7af31dcca5",
+        "name" : "请求参数",
+        "source" : "2a3a3f7af31dcca5.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589447639976,
+        "stop" : 1589447639979,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ee8aa6b0b6fec9b",
+        "name" : "请求类型",
+        "source" : "4ee8aa6b0b6fec9b.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "852e4cc726fca3c0",
+        "name" : "用例名称:",
+        "source" : "852e4cc726fca3c0.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "6eaed0a30d664d3",
+        "name" : "请求地址:",
+        "source" : "6eaed0a30d664d3.attach",
+        "type" : "text/plain",
+        "size" : 55
+      }, {
+        "uid" : "e5e5730eb3837af8",
+        "name" : "请求头",
+        "source" : "e5e5730eb3837af8.attach",
+        "type" : "text/plain",
+        "size" : 54
+      }, {
+        "uid" : "303e94df52eda540",
+        "name" : "请求参数类型",
+        "source" : "303e94df52eda540.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "54152a57325f84bd",
+        "name" : "请求参数",
+        "source" : "54152a57325f84bd.attach",
+        "type" : "text/plain",
+        "size" : 7248
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "170149e3ee35dfcf",
+      "name" : "log",
+      "source" : "170149e3ee35dfcf.txt",
+      "type" : "text/plain",
+      "size" : 67847
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 25,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589447680476,
+      "stop" : 1589447681062,
+      "duration" : 586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53281-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 11, 'CaseName': 'sign_transfer-out-bills', 'APIName': '其他出库签字', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-out-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': 'create-transfer-out1', 'search_AUTH_APPCODE': 'transferOutBill'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'ids': '$..id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5505ef5108b798b1.json",
+  "parameterValues" : [ "{'CaseId': 11, 'CaseName': 'sign_transfer-out-bills', 'APIName': '其他出库签字', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-out-bills/batch-sign', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': 'create-transfer-out1', 'search_AUTH_APPCODE': 'transferOutBill'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'ids': '$..id'}}" ]
+}
