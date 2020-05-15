@@ -27,7 +27,7 @@ class TestCase:
 
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
     @allure.story("销售订单模块测试")
-    def test_api(self, case_data):
+    def test_b2b_api(self, case_data):
         '''
         :param case_data: 单条测试用例数据
         :return:

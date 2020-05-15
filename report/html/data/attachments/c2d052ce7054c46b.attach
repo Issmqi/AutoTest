@@ -1,0 +1,1 @@
+{"timestamp":"2020-05-15T09:23:08.974+0000","status":500,"error":"Internal Server Error","message":"Load balancer does not have available server for client: occ-purchase"}

@@ -30,7 +30,7 @@ class TestCase:
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
     @allure.story("采购订单模块测试")
     @pytest.mark.flaky(reruns=3, reruns_delay=3)
-    def test_api(self, case_data):
+    def test_purchase_api(self, case_data):
         '''
         :param case_data: 单条测试用例数据
         :return:

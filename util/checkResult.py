@@ -97,6 +97,10 @@ def check_result(case, code, res_data):
                         return False
                     else:
                         log.info('JSON格式校验成功！')
+                        log.debug('预期结果是%s' % expected_data_dict)
+                        log.debug('实际结果是：%s' % res_data)
+                        log.debug('预期类型是%s' % type(expected_data_dict))
+                        log.debug('实际类型是%s' % type(res_data))
                         return True
             else:
                 log.info("HTTP返回状态码%s与预期%s不一致" % (str(code), str(case['ExpectedCode'])))

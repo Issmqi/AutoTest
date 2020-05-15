@@ -1,0 +1,416 @@
+{
+  "uid" : "ef5683f58a334ce0",
+  "name" : "test_allocation_api[case_data9]",
+  "fullName" : "case.test_allocation.TestCase#test_allocation_api",
+  "historyId" : "4b9f784aaf5c022ec2bba3b9da9bc371",
+  "time" : {
+    "start" : 1589535720966,
+    "stop" : 1589535734301,
+    "duration" : 13335
+  },
+  "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 测试用例\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10977e2b0>\ncase_data = {'APIName': '编辑调拨出库订单', 'CaseId': 10, 'CaseName': 'update_transfer-out-bills', 'CheckType': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_allocation_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ncase/test_allocation.py:54: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589535642910,
+      "stop" : 1589535642910,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 测试用例\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_allocation.TestCase object at 0x10977e2b0>\ncase_data = {'APIName': '编辑调拨出库订单', 'CaseId': 10, 'CaseName': 'update_transfer-out-bills', 'CheckType': 'check_json', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"调拨模块测试\")\n    # @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_allocation_api(self, case_data):\n        '''\n        :param case_data: 测试用例\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ncase/test_allocation.py:54: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589535721101,
+        "stop" : 1589535721103,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c24e7288ff6d1ed5",
+        "name" : "请求类型",
+        "source" : "c24e7288ff6d1ed5.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "37ab890de04e05b2",
+        "name" : "用例名称:",
+        "source" : "37ab890de04e05b2.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "eb36e7d8a5cd1e1f",
+        "name" : "请求地址:",
+        "source" : "eb36e7d8a5cd1e1f.attach",
+        "type" : "text/plain",
+        "size" : 52
+      }, {
+        "uid" : "7c58f5ecbb795116",
+        "name" : "请求头",
+        "source" : "7c58f5ecbb795116.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "64da4356aafcd127",
+        "name" : "请求参数类型",
+        "source" : "64da4356aafcd127.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "75f0ac8657a1091a",
+        "name" : "请求参数",
+        "source" : "75f0ac8657a1091a.attach",
+        "type" : "text/plain",
+        "size" : 5901
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589535725470,
+        "stop" : 1589535725471,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ffa222b9591dd1ec",
+        "name" : "请求类型",
+        "source" : "ffa222b9591dd1ec.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "fe44efc5df8802bb",
+        "name" : "用例名称:",
+        "source" : "fe44efc5df8802bb.attach",
+        "type" : "text/plain",
+        "size" : 22
+      }, {
+        "uid" : "73ed4feb465f09e3",
+        "name" : "请求地址:",
+        "source" : "73ed4feb465f09e3.attach",
+        "type" : "text/plain",
+        "size" : 69
+      }, {
+        "uid" : "d82530e87b548a46",
+        "name" : "请求头",
+        "source" : "d82530e87b548a46.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "854e97f4dd4c1e6e",
+        "name" : "请求参数类型",
+        "source" : "854e97f4dd4c1e6e.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "35af88f8282e28cf",
+        "name" : "请求参数",
+        "source" : "35af88f8282e28cf.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589535725905,
+        "stop" : 1589535725906,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c25fd84493c4f43d",
+        "name" : "请求类型",
+        "source" : "c25fd84493c4f43d.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "1f4c9aac9a740be6",
+        "name" : "用例名称:",
+        "source" : "1f4c9aac9a740be6.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "4e92ad2d702f210a",
+        "name" : "请求地址:",
+        "source" : "4e92ad2d702f210a.attach",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "51e0a07ca1f6293b",
+        "name" : "请求头",
+        "source" : "51e0a07ca1f6293b.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "de2c92bf97a2e7b1",
+        "name" : "请求参数类型",
+        "source" : "de2c92bf97a2e7b1.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "589b2ef58c2eb701",
+        "name" : "请求参数",
+        "source" : "589b2ef58c2eb701.attach",
+        "type" : "text/plain",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589535726833,
+        "stop" : 1589535726835,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "330b2ecc38475398",
+        "name" : "请求类型",
+        "source" : "330b2ecc38475398.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "6fe6869e2c7712ed",
+        "name" : "用例名称:",
+        "source" : "6fe6869e2c7712ed.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "238e4bf0f9eb4c66",
+        "name" : "请求地址:",
+        "source" : "238e4bf0f9eb4c66.attach",
+        "type" : "text/plain",
+        "size" : 55
+      }, {
+        "uid" : "20a5dd30710e0074",
+        "name" : "请求头",
+        "source" : "20a5dd30710e0074.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "f179c9dddcd16ad6",
+        "name" : "请求参数类型",
+        "source" : "f179c9dddcd16ad6.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "3bad80a139a55e51",
+        "name" : "请求参数",
+        "source" : "3bad80a139a55e51.attach",
+        "type" : "text/plain",
+        "size" : 7248
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589535732870,
+        "stop" : 1589535732872,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c32547f7848c457c",
+        "name" : "请求类型",
+        "source" : "c32547f7848c457c.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "22cecc28bb4252f0",
+        "name" : "用例名称:",
+        "source" : "22cecc28bb4252f0.attach",
+        "type" : "text/plain",
+        "size" : 25
+      }, {
+        "uid" : "ed9459ba5e10cba7",
+        "name" : "请求地址:",
+        "source" : "ed9459ba5e10cba7.attach",
+        "type" : "text/plain",
+        "size" : 55
+      }, {
+        "uid" : "c425ec75092db22a",
+        "name" : "请求头",
+        "source" : "c425ec75092db22a.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "e41d8156c6ec363e",
+        "name" : "请求参数类型",
+        "source" : "e41d8156c6ec363e.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "da1107e977231232",
+        "name" : "请求参数",
+        "source" : "da1107e977231232.attach",
+        "type" : "text/plain",
+        "size" : 7571
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "校验返回json数据结构",
+      "time" : {
+        "start" : 1589535734298,
+        "stop" : 1589535734301,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "331d24152dff04c8",
+        "name" : "预期code",
+        "source" : "331d24152dff04c8.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "a0fe391c273f5175",
+        "name" : "实际code是",
+        "source" : "a0fe391c273f5175.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "2cd7e0c89235c92b",
+        "name" : "预期data",
+        "source" : "2cd7e0c89235c92b.attach",
+        "type" : "text/plain",
+        "size" : 7382
+      }, {
+        "uid" : "faab5a17998552ff",
+        "name" : "实际data",
+        "source" : "faab5a17998552ff.attach",
+        "type" : "text/plain",
+        "size" : 7504
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3507cc672c0ae16e",
+      "name" : "log",
+      "source" : "3507cc672c0ae16e.txt",
+      "type" : "text/plain",
+      "size" : 121518
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 35,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1589535792082,
+      "stop" : 1589535792082,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调拨模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_allocation"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "57440-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_allocation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 10, 'CaseName': 'update_transfer-out-bills', 'APIName': '编辑调拨出库订单', 'Headers': {'Content-Type': 'application/json', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-out-bills', 'Method': 'put', 'ParameterType': 'json', 'Params': {'id': 'create-transfer-out1', 'stockOrgId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgCode': '1210', 'stockOrgName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020050900003', 'billDate': 1588953600000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '1001ZZ100000000DPAP4', 'storageCode': 'test030201', 'storageName': '测试仓库030201', 'ifSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': '', 'planArriveDate': '', 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': '5.00', 'totalFactOutNum': '3.00', 'billStatusId': '099aj5df-4y42-4700-d8d6-3714fdb43e68', 'billStatusName': '自由', 'billStatusCode': '01', 'stockBillBelong': '0DKeeV9TPwv3UZiad8EH', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': '0mWG6nOSCxjsi1zoKEYs', 'bizPersonCode': '007', 'bizPersonName': '师孟奇', 'deparmentId': 'ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9', 'deparmentCode': '01010102', 'deparmentName': '城市经理', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'siger': None, 'signTime': '', 'cancelReason': None, 'remark': '自动化测试编辑调拨出库单，修改实出数量', 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'inStorageId': '1001ZZ100000000DPAP6', 'inStorageCode': 'test030202', 'inStorageName': 'test030202', 'dr': 0, 'ts': 1589002318000, 'creator': 'smq', 'creationTime': 1589002318000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'inIfSlotManage': None, 'transferBillOutItems': [{'transferOutBill': None, 'rowNum': 10, 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsFullName': None, 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'totalShouldOutNum': None, 'factOutNum': '3.000000', 'unitPrice': '', 'amountMoney': '0.00', 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': '', 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200508000034', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'batchCodeId': None, 'batchCodeCode': None, 'batchCodeName': None, 'supplierId': None, 'supplierName': None, 'supplierCode': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'originalGoodsId': None, 'goodsSelection': None, 'goodsSelectionDescription': None, 'id': '0RVbhbtQZhT5PZkp19zW', 'dr': 0, 'ts': 1589002336000, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'transferOutBillId': '0TszFCIVqcbJkmpWHQhq', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'shouldOutNum': 5, 'isMotherPiece': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'ext01': '5.00000000', 'ext02': None, 'ext03': 'Allocation', 'ext04': 'Allocation', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'transferOutBill': None, 'rowNum': '10', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsFullName': None, 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'totalShouldOutNum': None, 'factOutNum': 3, 'unitPrice': '', 'amountMoney': '0.00', 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': '', 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0DKeeV9TPwv3UZiad8EH', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'goodsNum': None, 'parentGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'parentGoodsCode': '301020000049', 'parentGoodsName': '小雅AI音箱旗舰版_石墨绿', 'parentRowNum': '10', 'childGoodsQty': None, 'batchCodeId': None, 'batchCodeCode': None, 'batchCodeName': None, 'supplierId': None, 'supplierName': None, 'supplierCode': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'id': '0K1xchlRSFmYGxaooi2J', 'dr': 0, 'ts': 1589002336000, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'shouldOutNum': 5, 'itemId': '0RVbhbtQZhT5PZkp19zW', 'billId': None, 'parentGoodsdisplayName': None, 'firstBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'srcBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'CheckType': 'check_json', 'ExpectedCode': 200, 'ExpectedData': {'id': '0TszFCIVqcbJkmpWHQhq', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002318000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': '', 'stockOrgId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgCode': '1210', 'stockOrgName': '西安喜马拉雅网络科技有限公司', 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020050900003', 'billDate': 1588953600000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '1001ZZ100000000DPAP4', 'storageCode': 'test030201', 'storageName': '测试仓库030201', 'ifSlotManage': None, 'inStorageId': '1001ZZ100000000DPAP6', 'inStorageCode': 'test030202', 'inStorageName': 'test030202', 'inIfSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': None, 'planArriveDate': None, 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': 5, 'totalFactOutNum': 3.0, 'billStatusId': '099aj5df-4y42-4700-d8d6-3714fdb43e68', 'billStatusCode': '01', 'billStatusName': '自由', 'stockBillBelong': '0DKeeV9TPwv3UZiad8EH', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': '0mWG6nOSCxjsi1zoKEYs', 'bizPersonCode': '007', 'bizPersonName': '师孟奇', 'deparmentId': 'ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9', 'deparmentCode': '01010102', 'deparmentName': '城市经理', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'siger': None, 'signTime': None, 'cancelReason': None, 'remark': '自动化测试编辑调拨出库单，修改实出数量', 'transferBillOutItems': [{'id': '0RVbhbtQZhT5PZkp19zW', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': None, 'transferOutBillId': '0TszFCIVqcbJkmpWHQhq', 'rowNum': 10, 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'shouldOutNum': 5, 'factOutNum': 3.0, 'unitPrice': None, 'amountMoney': 0.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200508000034', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'isMotherPiece': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'ext01': '5.00000000', 'ext02': None, 'ext03': 'Allocation', 'ext04': 'Allocation', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'id': '0K1xchlRSFmYGxaooi2J', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': None, 'rowNum': '10', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'shouldOutNum': 5, 'factOutNum': 3, 'unitPrice': None, 'amountMoney': 0.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0DKeeV9TPwv3UZiad8EH', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'itemId': '0RVbhbtQZhT5PZkp19zW', 'billId': None, 'parentGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'parentGoodsCode': '301020000049', 'parentGoodsName': '小雅AI音箱旗舰版_石墨绿', 'parentGoodsdisplayName': None, 'parentRowNum': '10', 'childGoodsQty': None, 'firstBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'srcBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'id': '$..id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ef5683f58a334ce0.json",
+  "parameterValues" : [ "{'CaseId': 10, 'CaseName': 'update_transfer-out-bills', 'APIName': '编辑调拨出库订单', 'Headers': {'Content-Type': 'application/json', 'charset': 'UTF-8'}, 'Path': '/occ-stock/stock/transfer-out-bills', 'Method': 'put', 'ParameterType': 'json', 'Params': {'id': 'create-transfer-out1', 'stockOrgId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgCode': '1210', 'stockOrgName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020050900003', 'billDate': 1588953600000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '1001ZZ100000000DPAP4', 'storageCode': 'test030201', 'storageName': '测试仓库030201', 'ifSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': '', 'planArriveDate': '', 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': '5.00', 'totalFactOutNum': '3.00', 'billStatusId': '099aj5df-4y42-4700-d8d6-3714fdb43e68', 'billStatusName': '自由', 'billStatusCode': '01', 'stockBillBelong': '0DKeeV9TPwv3UZiad8EH', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': '0mWG6nOSCxjsi1zoKEYs', 'bizPersonCode': '007', 'bizPersonName': '师孟奇', 'deparmentId': 'ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9', 'deparmentCode': '01010102', 'deparmentName': '城市经理', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'siger': None, 'signTime': '', 'cancelReason': None, 'remark': '自动化测试编辑调拨出库单，修改实出数量', 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'inStorageId': '1001ZZ100000000DPAP6', 'inStorageCode': 'test030202', 'inStorageName': 'test030202', 'dr': 0, 'ts': 1589002318000, 'creator': 'smq', 'creationTime': 1589002318000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'inIfSlotManage': None, 'transferBillOutItems': [{'transferOutBill': None, 'rowNum': 10, 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsFullName': None, 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'totalShouldOutNum': None, 'factOutNum': '3.000000', 'unitPrice': '', 'amountMoney': '0.00', 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': '', 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200508000034', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'batchCodeId': None, 'batchCodeCode': None, 'batchCodeName': None, 'supplierId': None, 'supplierName': None, 'supplierCode': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'originalGoodsId': None, 'goodsSelection': None, 'goodsSelectionDescription': None, 'id': '0RVbhbtQZhT5PZkp19zW', 'dr': 0, 'ts': 1589002336000, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'transferOutBillId': '0TszFCIVqcbJkmpWHQhq', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'shouldOutNum': 5, 'isMotherPiece': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'ext01': '5.00000000', 'ext02': None, 'ext03': 'Allocation', 'ext04': 'Allocation', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'transferOutBill': None, 'rowNum': '10', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsFullName': None, 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'totalShouldOutNum': None, 'factOutNum': 3, 'unitPrice': '', 'amountMoney': '0.00', 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': '', 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0DKeeV9TPwv3UZiad8EH', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'goodsNum': None, 'parentGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'parentGoodsCode': '301020000049', 'parentGoodsName': '小雅AI音箱旗舰版_石墨绿', 'parentRowNum': '10', 'childGoodsQty': None, 'batchCodeId': None, 'batchCodeCode': None, 'batchCodeName': None, 'supplierId': None, 'supplierName': None, 'supplierCode': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'id': '0K1xchlRSFmYGxaooi2J', 'dr': 0, 'ts': 1589002336000, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': None, 'modifiedTime': None, 'persistStatus': 'upd', 'promptMessage': None, 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'shouldOutNum': 5, 'itemId': '0RVbhbtQZhT5PZkp19zW', 'billId': None, 'parentGoodsdisplayName': None, 'firstBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'srcBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'CheckType': 'check_json', 'ExpectedCode': 200, 'ExpectedData': {'id': '0TszFCIVqcbJkmpWHQhq', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002318000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': '', 'stockOrgId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgCode': '1210', 'stockOrgName': '西安喜马拉雅网络科技有限公司', 'stockOrgInId': 'abd7cf79-511d-4307-9bbd-d288b18d0ef9', 'stockOrgInCode': '1210', 'stockOrgInName': '西安喜马拉雅网络科技有限公司', 'billCode': 'TDN2020050900003', 'billDate': 1588953600000, 'billType': 'AllocationOut', 'billTranTypeId': 'AllocationOut', 'billTranTypeCode': 'AllocationOut', 'billTranTypeName': '调拨出库', 'storageId': '1001ZZ100000000DPAP4', 'storageCode': 'test030201', 'storageName': '测试仓库030201', 'ifSlotManage': None, 'inStorageId': '1001ZZ100000000DPAP6', 'inStorageCode': 'test030202', 'inStorageName': 'test030202', 'inIfSlotManage': None, 'storekeeperId': None, 'storekeeperCode': None, 'storekeeperName': None, 'planSendDate': None, 'planArriveDate': None, 'currencyId': None, 'currencyCode': None, 'currencyName': None, 'totalShouldOutNum': 5, 'totalFactOutNum': 3.0, 'billStatusId': '099aj5df-4y42-4700-d8d6-3714fdb43e68', 'billStatusCode': '01', 'billStatusName': '自由', 'stockBillBelong': '0DKeeV9TPwv3UZiad8EH', 'customerId': None, 'customerCode': None, 'customerName': None, 'bizPersonId': '0mWG6nOSCxjsi1zoKEYs', 'bizPersonCode': '007', 'bizPersonName': '师孟奇', 'deparmentId': 'ae96b9ed-82dc-4aa7-bf97-cdd18a18c1a9', 'deparmentCode': '01010102', 'deparmentName': '城市经理', 'logisticsId': None, 'logisticsCode': None, 'logisticsName': None, 'realLogisticsCompanyId': None, 'realLogisticsCompanyCode': None, 'realLogisticsCompanyName': None, 'logisticsBillCode': None, 'siger': None, 'signTime': None, 'cancelReason': None, 'remark': '自动化测试编辑调拨出库单，修改实出数量', 'transferBillOutItems': [{'id': '0RVbhbtQZhT5PZkp19zW', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': None, 'transferOutBillId': '0TszFCIVqcbJkmpWHQhq', 'rowNum': 10, 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productCode': None, 'productLineId': None, 'isOptional': None, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'shouldOutNum': 5, 'factOutNum': 3.0, 'unitPrice': None, 'amountMoney': 0.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': 'DBO20200508000034', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'isMotherPiece': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'enableBatchNoManage': None, 'enableInvStatusManage': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'ext01': '5.00000000', 'ext02': None, 'ext03': 'Allocation', 'ext04': 'Allocation', 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'outStorageId': None, 'outStorageCode': None, 'outStorageName': None, 'outIfSlotManage': None, 'inStorageId': None, 'inStorageCode': None, 'inStorageName': None, 'inIfSlotManage': None}], 'transferOutBillItemBoms': [{'id': '0K1xchlRSFmYGxaooi2J', 'dr': 0, 'ts': 1589005529357, 'creator': 'smq', 'creationTime': 1589002336000, 'modifier': 'smq', 'modifiedTime': 1589005529357, 'persistStatus': 'nrm', 'promptMessage': None, 'rowNum': '10', 'goodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'goodsCode': '301020000049', 'goodsName': '小雅AI音箱旗舰版_石墨绿', 'goodsDisplayName': '小雅AI音箱旗舰版_石墨绿', 'goodsBasicUnitName': '个', 'goodsAssistUnitName': '个', 'goodsConversionRate': 1.0, 'enableBatchNumberManage': None, 'productId': None, 'productLineId': None, 'unitId': 'UNIT-12', 'unitCode': 'EA', 'unitName': '个', 'shouldOutNum': 5, 'factOutNum': 3, 'unitPrice': None, 'amountMoney': 0.0, 'batchNumId': None, 'batchNumCode': None, 'batchNumName': None, 'goodsPositionId': None, 'goodsPositionCode': None, 'goodsPositionName': None, 'stockOutPersonId': None, 'stockOutPersonCode': None, 'stockOutPersonName': None, 'stockOutDate': None, 'receiverAddress': None, 'provinceId': None, 'provinceCode': None, 'provinceName': None, 'cityId': None, 'cityCode': None, 'cityName': None, 'countyId': None, 'countyCode': None, 'countyName': None, 'townId': None, 'townCode': None, 'townName': None, 'detailAddr': None, 'receiver': None, 'receiverPhone': None, 'receiverPhoneSpare': None, 'firstBillCode': '0DKeeV9TPwv3UZiad8EH', 'firstBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'firstBillType': 'Allocation', 'srcBillCode': 'DBO20200508000034', 'srcBillBcode': '0Tr6HVsgvmzwBQYy2d6i', 'srcBillType': 'Allocation', 'remark': None, 'goodsVersion': '1', 'goodsSelection': None, 'customerId': None, 'customerCode': None, 'customerName': None, 'supplierId': None, 'supplierCode': None, 'supplierName': None, 'projectId': None, 'projectCode': None, 'projectName': None, 'batchCodeId': None, 'batchCodeCode': None, 'stockStateId': None, 'stockStateCode': None, 'stockStateName': None, 'originalGoodsId': None, 'goodsSelectionDescription': None, 'itemId': '0RVbhbtQZhT5PZkp19zW', 'billId': None, 'parentGoodsId': '03e77ae0-469d-4d8a-ba34-733c2ada3749', 'parentGoodsCode': '301020000049', 'parentGoodsName': '小雅AI音箱旗舰版_石墨绿', 'parentGoodsdisplayName': None, 'parentRowNum': '10', 'childGoodsQty': None, 'firstBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'srcBillBomCode': '0CrhvlIZ5uIVEXmYN9Hq', 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None}], 'srcSystem': None, 'srcSystemId': None, 'srcSystemCode': None, 'srcSystemName': None, 'ext01': None, 'ext02': None, 'ext03': None, 'ext04': None, 'ext05': None, 'ext06': None, 'ext07': None, 'ext08': None, 'ext09': None, 'ext10': None, 'ext11': None, 'ext12': None, 'ext13': None, 'ext14': None, 'ext15': None, 'sycnOutStatus': None, 'sycnNCStatus': None}, 'User': 'Manager', 'DependCase': 'create_transfer-out-bills', 'RelevanceList': {'id': '$..id'}}" ]
+}

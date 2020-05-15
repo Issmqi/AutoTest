@@ -1,0 +1,215 @@
+{
+  "uid" : "95de58fb11e41b8d",
+  "name" : "test_purchase_api[case_data9]",
+  "fullName" : "case.test_purchase_order.TestCase#test_purchase_api",
+  "historyId" : "00484edfdf992ecb86024c6722c0c696",
+  "time" : {
+    "start" : 1589534797640,
+    "stop" : 1589534798036,
+    "duration" : 396
+  },
+  "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param case_data: 单条测试用例数据\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <case.test_purchase_order.TestCase object at 0x10e2a28d0>\ncase_data = {'APIName': '删除供应商直发外部采购订单-普通仓', 'CaseId': 10, 'CaseName': 'delete_purchase_order', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"采购订单模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_purchase_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ncase/test_purchase_order.py:40: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param case_data: 单条测试用例数据\n        :return:\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <case.test_purchase_order.TestCase object at 0x10e2a28d0>\ncase_data = {'APIName': '删除供应商直发外部采购订单-普通仓', 'CaseId': 10, 'CaseName': 'delete_purchase_order', 'CheckType': 'only_check_status', ...}\n\n    @pytest.mark.parametrize('case_data', case_dict, ids=[])\n    @allure.story(\"采购订单模块测试\")\n    @pytest.mark.flaky(reruns=3, reruns_delay=3)\n    def test_purchase_api(self, case_data):\n        '''\n        :param case_data: 单条测试用例数据\n        :return:\n        '''\n        code, response = h.send_requests(case_data)\n        result = checkResult.check_result(case_data, code, response)\n>       assert result\nE       assert False\n\ncase/test_purchase_order.py:40: AssertionError",
+    "steps" : [ {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589534798004,
+        "stop" : 1589534798006,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bca0f101114da18",
+        "name" : "请求类型",
+        "source" : "6bca0f101114da18.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "ce4ab9af74b0fca9",
+        "name" : "用例名称:",
+        "source" : "ce4ab9af74b0fca9.attach",
+        "type" : "text/plain",
+        "size" : 30
+      }, {
+        "uid" : "6fda22b8e185c187",
+        "name" : "请求地址:",
+        "source" : "6fda22b8e185c187.attach",
+        "type" : "text/plain",
+        "size" : 49
+      }, {
+        "uid" : "673b7d883a42f5c9",
+        "name" : "请求头",
+        "source" : "673b7d883a42f5c9.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "ef9a69bff795d9f7",
+        "name" : "请求参数类型",
+        "source" : "ef9a69bff795d9f7.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "2e29ce2e1180ad8",
+        "name" : "请求参数",
+        "source" : "2e29ce2e1180ad8.attach",
+        "type" : "text/plain",
+        "size" : 11008
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "开始请求接口",
+      "time" : {
+        "start" : 1589534798023,
+        "stop" : 1589534798025,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "77cc9fe53aaf4acf",
+        "name" : "请求类型",
+        "source" : "77cc9fe53aaf4acf.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "cdc5513321c369d8",
+        "name" : "用例名称:",
+        "source" : "cdc5513321c369d8.attach",
+        "type" : "text/plain",
+        "size" : 21
+      }, {
+        "uid" : "7f7be12664fbcf1",
+        "name" : "请求地址:",
+        "source" : "7f7be12664fbcf1.attach",
+        "type" : "text/plain",
+        "size" : 56
+      }, {
+        "uid" : "50a1229fb8b9582",
+        "name" : "请求头",
+        "source" : "50a1229fb8b9582.attach",
+        "type" : "text/plain",
+        "size" : 73
+      }, {
+        "uid" : "558dbc2c336eec64",
+        "name" : "请求参数类型",
+        "source" : "558dbc2c336eec64.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "ac9c209928de0bd0",
+        "name" : "请求参数",
+        "source" : "ac9c209928de0bd0.attach",
+        "type" : "text/plain",
+        "size" : 80
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 6,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口仅校验HTTP状态码",
+      "time" : {
+        "start" : 1589534798035,
+        "stop" : 1589534798036,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fca39878d746a5ec",
+        "name" : "预期code是",
+        "source" : "fca39878d746a5ec.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "351bd39b2f6003a6",
+        "name" : "实际code是",
+        "source" : "351bd39b2f6003a6.attach",
+        "type" : "text/plain",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f00ad8c6bbbc2c05",
+      "name" : "log",
+      "source" : "f00ad8c6bbbc2c05.txt",
+      "type" : "text/plain",
+      "size" : 12879
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 15,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "采购订单模块测试"
+  }, {
+    "name" : "feature",
+    "value" : "渠道云接口自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_purchase_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "xmlydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "57279-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_purchase_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'CaseId': 10, 'CaseName': 'delete_purchase_order', 'APIName': '删除供应商直发外部采购订单-普通仓', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': '0iKWS45FRTo2Lmf8zrkb', 'search_AUTH_APPCODE': 'purchasecenterorderout'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': {'ids': '$..id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "95de58fb11e41b8d.json",
+  "parameterValues" : [ "{'CaseId': 10, 'CaseName': 'delete_purchase_order', 'APIName': '删除供应商直发外部采购订单-普通仓', 'Headers': {'Content-Type': 'application/x-www-form-urlencoded', 'charset': 'UTF-8'}, 'Path': '/occ-purchase/purchase/orders/delete', 'Method': 'post', 'ParameterType': 'form_data', 'Params': {'ids': '0iKWS45FRTo2Lmf8zrkb', 'search_AUTH_APPCODE': 'purchasecenterorderout'}, 'CheckType': 'only_check_status', 'ExpectedCode': 200, 'ExpectedData': '', 'User': 'Manager', 'DependCase': 'create_supplier_purchase_order', 'RelevanceList': {'ids': '$..id'}}" ]
+}

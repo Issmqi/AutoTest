@@ -29,8 +29,8 @@ execute_sql = ExecuteSQL()
 class TestCase:
 
     def setup_class(self):
-        execute_sql.execute_scripts_from_file(allocation_setup_sql)
-
+        # execute_sql.execute_scripts_from_file(allocation_setup_sql)
+        pass
     def setup(self):
         pass
 
@@ -38,13 +38,13 @@ class TestCase:
         pass
 
     def teardown_class(self):
-        execute_sql.execute_scripts_from_file(allocation_teardown_sql)
+        # execute_sql.execute_scripts_from_file(allocation_teardown_sql)
         pass
 
     @pytest.mark.parametrize('case_data', case_dict, ids=[])
     @allure.story("调拨模块测试")
     # @pytest.mark.flaky(reruns=3, reruns_delay=3)
-    def test_api(self, case_data):
+    def test_allocation_api(self, case_data):
         '''
         :param case_data: 测试用例
         :return:

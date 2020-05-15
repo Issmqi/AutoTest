@@ -10,7 +10,3 @@ import json
 #
 # re=json.loads(param)
 # print(re)
-
-param_json='{"ts":47834673647}'
-param_dict=json.loads(param_json)
-print(param_dict)
