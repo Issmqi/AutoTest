@@ -37,18 +37,18 @@ def check_ip(str):
         return False
 
 
-@allure.feature('这是一个测试')
+# @allure.feature('这是一个测试')
 def test_check_ip():
     assert  check_ip('111.222.257.223')
 
 #
 #
 if __name__ == '__main__':
-    # pytest.main()
+    pytest.main()
 
     # pytest.main(['-s', '-q', '--alluredir', './report/xml'])
-    pytest.main(['--alluredir', './report/xml'])
-    os.system('allure generate ./report/xml  -o ./report/html --clean')
+    # pytest.main(['--alluredir', './report/xml'])
+    # os.system('allure generate ./report/xml  -o ./report/html --clean')
 
 
 

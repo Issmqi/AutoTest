@@ -57,3 +57,16 @@ data=['001','123.1ab.234.sddf','123.123.111.222.111','111.123.256.111','000.222.
 
 check_ip("001.123.12.45")
 
+# data=[
+#     ['255.255.255.0',True],
+#     ['255.1.1.256',False],
+#     ['0.0.0.0',True],
+#     ['1.1.1.1',False]
+# ]
+#
+# @pytest.mark.parametrize('test_data',data)
+# def test_ipv4(test_data):
+#     assert check_ipv4(test_data[0]) ==test_data[1]
+#
+# if __name__ == '__main__':
+#     pytest.main(['test.py'])

@@ -1,4 +1,5 @@
 import pytest
+import pytest_parallel
 import os
 import allure
 
@@ -6,3 +7,4 @@ import allure
 pytest.main([ '-s','--alluredir', 'report/xml'])
 os.system('rm -rf report/xml/*')
 os.system('allure generate --clean report/xml -o report/html/')
+
